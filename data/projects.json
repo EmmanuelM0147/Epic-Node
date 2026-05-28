@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Loyalty & Rewards API",
-      "company": "keyrium.com",
+      "company": "Keyrium",
       "dates": "Jul 2025 – Present",
       "description": "Backend API for a multi-brand loyalty app with points, wallets, redemptions, and admin tooling. Built with Node.js, TypeScript, Express, and PostgreSQL and deployed for mobile and admin clients.",
       "language": "TypeScript",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Stock Trading (Social Fintech) Backend",
-      "company": "keyrium.com",
+      "company": "Keyrium",
       "description": "Backend API for a stock-trading and community fintech platform serving mobile and web clients through a documented REST contract. Owned end-to-end delivery across authentication, onboarding, KYC, portfolio, stock discovery, notifications, community feeds, Klans, and Learning Hub. Layered architecture with Zod validation, JWT auth, and rate limiting; deployed on Render. Improved performance with in-memory TTL caching, batch queries, Postgres RPCs, and reduced N+1 round-trips.",
       "language": "TypeScript",
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "Zod", "JWT", "Render"],

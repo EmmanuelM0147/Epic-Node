@@ -444,6 +444,12 @@ a:hover {
   color: var(--color-accent-fg);
 }
 
+.preview-card-meta {
+  margin: 0 0 8px;
+  color: var(--color-fg-muted);
+  font-size: 13px;
+}
+
 .preview-card p {
   margin: 0;
   color: var(--color-fg-muted);

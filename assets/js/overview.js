@@ -20,12 +20,16 @@ function renderProjectPreview(repos) {
       const titleMarkup = repo.url
         ? `<a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>${icon("external")}`
         : escapeHtml(repo.name);
-      const context = repo.company ? `${escapeHtml(repo.company)} · ` : "";
+      const metaParts = [repo.company, repo.private ? "Private" : null].filter(Boolean);
+      const metaMarkup = metaParts.length
+        ? `<p class="preview-card-meta">${metaParts.map((part) => escapeHtml(part)).join(" · ")}</p>`
+        : "";
 
       return `
       <article class="preview-card">
         <h3>${titleMarkup}</h3>
-        <p>${context}${escapeHtml(repo.description || "No description provided.")}</p>
+        ${metaMarkup}
+        <p>${escapeHtml(repo.description || "No description provided.")}</p>
       </article>
     `;
     })
