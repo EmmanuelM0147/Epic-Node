@@ -85,6 +85,11 @@
   ],
   "certifications": [
     {
+      "name": "AI & Machine Learning",
+      "issuer": "3MTT Applied Learning Cluster",
+      "date": "May 2026"
+    },
+    {
       "name": "Member, International Association of Engineers (IAENG)",
       "issuer": "International Association of Engineers",
       "date": "Jan 2026",
