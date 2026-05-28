@@ -151,7 +151,7 @@ function renderExperience(data, profile) {
   const profileName = profile?.name || "Emmanuel Okeowo";
   const jobs = (data.experience || []).map(renderJobCard).join("");
   const education = (data.education || []).map(renderEducationCard).join("");
-  const certifications = (data.certifications || []).map(renderCertItem).join("");
+  const certifications = sortCertifications(data.certifications || []).map(renderCertItem).join("");
 
   container.innerHTML = `
     <div class="cv-document">

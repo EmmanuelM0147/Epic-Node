@@ -26,7 +26,7 @@ async function loadTabCounts() {
     const [reposRes, projectsRes, linkedinRes] = await Promise.all([
       fetch(assetUrl("data/github-repos.json")),
       fetch(assetUrl("data/projects.json")),
-      fetch(assetUrl("data/linkedin.json")),
+      fetch(assetUrl("data/linkedin.json"), { cache: "no-store" }),
     ]);
 
     let githubCount = 0;
@@ -316,10 +316,22 @@ async function initLayout(activeTab) {
   return profile;
 }
 
-async function loadLinkedInData() {
-  const response = await fetch(assetUrl("data/linkedin.json"));
+function sortCertifications(certifications = []) {
+  return [...certifications].sort((a, b) => {
+    const dateA = Date.parse(a.date || "") || 0;
+    const dateB = Date.parse(b.date || "") || 0;
+    return dateB - dateA;
+  });
+}
+
+async function fetchLinkedInJson() {
+  const response = await fetch(assetUrl("data/linkedin.json"), { cache: "no-store" });
   if (!response.ok) {
     throw new Error("Failed to load profile data");
   }
   return response.json();
+}
+
+async function loadLinkedInData() {
+  return fetchLinkedInJson();
 }

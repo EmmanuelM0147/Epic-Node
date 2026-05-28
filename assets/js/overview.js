@@ -48,7 +48,7 @@ function renderCertificationPreview(certifications) {
   const footer = document.getElementById("certifications-footer");
   if (!container) return;
 
-  const featured = (certifications || []).slice(0, 3);
+  const featured = sortCertifications(certifications).slice(0, 3);
   const remaining = (certifications || []).length - featured.length;
 
   if (!featured.length) {

@@ -30,7 +30,7 @@ async function initCertificationsPage() {
 
   try {
     const data = await loadLinkedInData();
-    renderCertifications(data.certifications);
+    renderCertifications(sortCertifications(data.certifications));
   } catch {
     const container = document.getElementById("certifications-list");
     if (container) {
