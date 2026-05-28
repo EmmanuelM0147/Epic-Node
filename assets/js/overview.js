@@ -80,12 +80,18 @@ function renderCertificationPreview(certifications) {
   }
 }
 
+function introBioText(bio) {
+  if (!bio) return "";
+  return bio.replace(/^Backend & AI Engineer\s*\|\s*/i, "").trim();
+}
+
 function renderIntro(profile) {
   const intro = document.getElementById("intro-text");
   if (!intro) return;
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
-  intro.textContent = `My name is ${name} and I'm a Backend & AI Engineer based in ${profile.location || "Lagos"}. ${profile.bio || ""}`;
+  const bio = introBioText(profile.bio);
+  intro.textContent = `My name is ${name} and I'm a Backend & AI Engineer based in ${profile.location || "Lagos"}.${bio ? ` ${bio}` : ""}`;
 }
 
 function renderReadmeSocial(profile) {
