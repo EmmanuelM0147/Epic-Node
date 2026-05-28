@@ -1,6 +1,6 @@
 # Epic Node Portfolio
 
-A GitHub-profile-style personal portfolio inspired by [alexeygrigorev.com/projects.html](https://alexeygrigorev.com/projects.html). It showcases live GitHub repository data and curated LinkedIn career information.
+A GitHub-profile-style personal portfolio that showcases live GitHub repository data and curated LinkedIn career information.
 
 Live site (after deploy): `https://emmanuelm0147.github.io/Epic-Node/`
 
