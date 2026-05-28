@@ -1,0 +1,168 @@
+{
+  "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
+  "headline": "Backend & AI Engineer | Node.js • TypeScript • Python • AWS | Distributed Systems, LLMs, RAG & Agents",
+  "intro": "A backend and AI engineer focused on scalable distributed systems and production-grade LLM applications. I bring APIs, intelligent automation, and cloud infrastructure from early prototypes through deployment, testing, and maintenance.",
+  "contact": {
+    "email": "okeowoemmanuelm@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/okeowoemmanuelm/",
+    "github": "https://github.com/EmmanuelM0147",
+    "orcid": "https://orcid.org/0009-0000-2965-8445"
+  },
+  "summary": {
+    "softwareSince": 2021,
+    "highlights": [
+      "Proficient in Node.js, TypeScript, Python, and AWS",
+      "Experience building production REST APIs and event-driven systems",
+      "Hands-on with LLM orchestration, RAG pipelines, and multi-agent workflows",
+      "Strong background in authentication, caching, and database optimization",
+      "Experience delivering secure, testable backend systems in remote teams",
+      "Open source contributor and continuous learner"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "keyrium.com",
+      "location": "Lagos Island, Nigeria · Hybrid",
+      "dates": "Jul 2025 – Present",
+      "description": "Leading development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architecting secure systems and integrating third-party services to enable seamless multi-channel communication. Established a comprehensive testing framework with 85% code coverage, significantly reducing post-deployment bug reports.",
+      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "AWS", "Testing", "REST APIs"]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "MySoundsGlobal",
+      "location": "United Kingdom · Remote",
+      "dates": "Sep 2025 – Nov 2025",
+      "description": "Refactored and optimized database queries by adding targeted indexes and streamlining joins, achieving 40–60% faster query times with reduced latency. Streamlined the middleware stack by eliminating redundancies and improving throughput, delivering 30–50% faster API response speeds. Implemented a Node.js caching layer to reduce repetitive database calls and optimize cache headers, attaining up to 80% faster static asset loads.",
+      "technologies": ["Node.js", "Express.js", "MySQL", "Redis", "Performance Optimization"]
+    },
+    {
+      "title": "Backend Software Engineer",
+      "company": "Talenvo",
+      "location": "Lagos State, Nigeria · Remote",
+      "dates": "Apr 2025 – Jul 2025",
+      "description": "Engineered the backend for Evently, a dynamic event management platform enabling users to discover, RSVP to, and manage events seamlessly. Built RESTful APIs with Node.js and Express, implemented JWT-based role authentication, integrated PayStack and PCI-DSS compliance, and optimized PostgreSQL schemas for secure, scalable performance under concurrent load.",
+      "technologies": ["Node.js", "Express.js", "PostgreSQL", "JWT", "PayStack", "PCI-DSS"]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Folio Technologies Ltd",
+      "location": "Lagos State, Nigeria · Hybrid",
+      "dates": "Jan 2024 – Jun 2025",
+      "description": "Implemented a server-side caching strategy with optimized cache-control headers, accelerating static asset delivery by up to 80%. Engineered a multi-provider authentication system (JWT, OAuth 2.0, MFA) with role-based access control and third-party integrations for email, SMS, and push notifications. Integrated APIs with the client-side application, ensuring seamless data flow and UI responsiveness.",
+      "technologies": ["Node.js", "OAuth 2.0", "JWT", "AWS", "Caching", "RBAC"]
+    },
+    {
+      "title": "Associate Software Engineer",
+      "company": "Headstarter",
+      "location": "Long Island, Virginia, United States · Remote",
+      "dates": "Aug 2022 – Dec 2022",
+      "description": "Built full-stack applications using React, Python, Django REST Framework, and PostgreSQL to demonstrate production-ready code architecture. Sharpened algorithmic problem-solving through intensive DSA workshops covering time complexity, optimization, and system design fundamentals.",
+      "technologies": ["React", "Python", "Django", "PostgreSQL", "DSA"]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "Macloyd Africa",
+      "location": "Lagos State, Nigeria · Remote",
+      "dates": "Apr 2021 – May 2022",
+      "description": "Maintained and extended web applications built on the Laravel framework, optimizing backend architecture for reliable data management. Designed relational database schemas in MySQL to securely handle records, course progress tracking, and content management. Built responsive, mobile-friendly dashboards and course catalogs using Bootstrap, improving user engagement and content accessibility across devices.",
+      "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"]
+    }
+  ],
+  "education": [
+    {
+      "school": "AltSchool Africa",
+      "degree": "Backend Engineering, Computer Software Engineering",
+      "location": "Remote",
+      "dates": "Apr 2024 – May 2025"
+    },
+    {
+      "school": "Ladoke Akintola University of Technology",
+      "degree": "Bachelor of Technology",
+      "location": "Ogbomoso, Nigeria",
+      "dates": "Jan 2017 – Apr 2021"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Member, International Association of Engineers (IAENG)",
+      "issuer": "International Association of Engineers",
+      "date": "Jan 2026",
+      "url": "https://iaeng.org"
+    },
+    {
+      "name": "AWS Educate Getting Started with Storage",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "Aug 2025",
+      "url": "https://credly.com/badges/c5d62f7c-9553-4f35-8d04-e837e0aa134b"
+    },
+    {
+      "name": "Verified Python Coder",
+      "issuer": "Credmark",
+      "date": "Jul 2025",
+      "url": "https://credmark.ai"
+    },
+    {
+      "name": "Software Engineering (ASIC)",
+      "issuer": "AltSchool Africa",
+      "date": "May 2025"
+    },
+    {
+      "name": "AI Augmented Professional Development Skills in the Digital Age",
+      "issuer": "ALX South Africa",
+      "date": "Jul 2024"
+    },
+    {
+      "name": "Version Control",
+      "issuer": "Meta",
+      "date": "Mar 2024",
+      "url": "https://coursera.org"
+    },
+    {
+      "name": "Introduction to Back-End Development",
+      "issuer": "Meta",
+      "date": "Feb 2024",
+      "url": "https://coursera.org"
+    },
+    {
+      "name": "Programming in Python",
+      "issuer": "Meta",
+      "date": "Feb 2024",
+      "url": "https://coursera.org"
+    },
+    {
+      "name": "Certified Web Developer",
+      "issuer": "Johns Hopkins University",
+      "date": "Oct 2023",
+      "url": "https://coursera.org"
+    }
+  ],
+  "skills": [
+    "Node.js",
+    "Express.js",
+    "NestJS",
+    "TypeScript",
+    "Python",
+    "Django",
+    "GraphQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "AWS",
+    "Google Cloud",
+    "Docker",
+    "Kubernetes",
+    "GitHub Actions",
+    "LangChain",
+    "LangGraph",
+    "RAG Pipelines",
+    "Multi-Agent Workflows",
+    "MLOps",
+    "MLflow",
+    "OpenAI API",
+    "PyTorch",
+    "React",
+    "Next.js",
+    "Tailwind CSS"
+  ]
+}

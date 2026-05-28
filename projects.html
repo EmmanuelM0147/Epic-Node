@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Emmanuel Okeowo" />
+    <title>Projects - Emmanuel Okeowo</title>
+    <link rel="stylesheet" href="assets/css/github-theme.css" />
+  </head>
+  <body>
+    <header id="site-header" class="site-header"></header>
+    <div class="site-shell">
+      <aside id="sidebar" class="sidebar" aria-label="Profile sidebar"></aside>
+      <main class="main-content">
+        <div id="tabs"></div>
+        <div class="page-content">
+          <div class="filters-bar">
+            <div class="filter-group">
+              <label for="filter-type">Type</label>
+              <select id="filter-type">
+                <option value="all">All</option>
+                <option value="public">Public</option>
+                <option value="fork">Fork</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-language">Language</label>
+              <select id="filter-language">
+                <option value="all">All</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-sort">Sort</label>
+              <select id="filter-sort">
+                <option value="updated">Last updated</option>
+                <option value="name">Name</option>
+                <option value="stars">Stars</option>
+              </select>
+            </div>
+            <button id="refresh-repos" class="btn-secondary" type="button">Refresh from GitHub</button>
+          </div>
+
+          <p id="projects-status" class="status-line" aria-live="polite"></p>
+          <p id="projects-count" class="count-line"></p>
+          <div id="projects-list" class="projects-list"></div>
+
+          <p class="section-footer">
+            <a href="https://github.com/EmmanuelM0147?tab=repositories" target="_blank" rel="noopener noreferrer">
+              See all my projects on GitHub →
+            </a>
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/github-api.js"></script>
+    <script src="assets/js/projects.js"></script>
+  </body>
+</html>
