@@ -612,6 +612,22 @@ a:hover {
   border: 1px solid rgba(56, 139, 253, 0.4);
 }
 
+.label-private {
+  background: rgba(210, 153, 34, 0.15);
+  color: #d29922;
+  border: 1px solid rgba(210, 153, 34, 0.4);
+}
+
+.repo-context {
+  margin: 0 0 8px;
+  color: var(--color-fg-muted);
+  font-size: 13px;
+}
+
+.repo-stat-muted {
+  color: var(--color-fg-muted);
+}
+
 .btn-star {
   margin-left: auto;
   display: inline-flex;

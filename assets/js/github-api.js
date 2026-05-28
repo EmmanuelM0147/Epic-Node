@@ -10,16 +10,48 @@ function formatUpdatedDate(isoDate) {
 function normalizeRepo(repo) {
   return {
     name: repo.name,
-    url: repo.html_url,
+    url: repo.html_url || repo.url || null,
     description: repo.description || "",
     language: repo.language || null,
     stars: repo.stargazers_count ?? repo.stars ?? 0,
     forks: repo.forks_count ?? repo.forks ?? 0,
     fork: Boolean(repo.fork),
     private: Boolean(repo.private),
+    curated: Boolean(repo.curated),
+    company: repo.company || null,
+    dates: repo.dates || null,
     updated_at: repo.updated_at,
     updated: repo.updated || formatUpdatedDate(repo.updated_at),
   };
+}
+
+function normalizeCuratedProject(project) {
+  return normalizeRepo({
+    ...project,
+    curated: true,
+    private: project.private !== false,
+    url: project.url || null,
+    stars: 0,
+    forks: 0,
+    fork: false,
+  });
+}
+
+async function loadCuratedProjects() {
+  try {
+    const response = await fetch(assetUrl("data/projects.json"));
+    if (!response.ok) return [];
+    const data = await response.json();
+    return (data.projects || []).map(normalizeCuratedProject);
+  } catch {
+    return [];
+  }
+}
+
+function mergeProjects(githubRepos, curatedProjects) {
+  const githubNames = new Set(githubRepos.map((repo) => repo.name.toLowerCase()));
+  const curated = curatedProjects.filter((project) => !githubNames.has(project.name.toLowerCase()));
+  return [...curated, ...githubRepos];
 }
 
 function isProfileReadmeRepo(repo) {
@@ -27,28 +59,35 @@ function isProfileReadmeRepo(repo) {
 }
 
 async function loadReposFromJson() {
-  const response = await fetch(assetUrl("data/github-repos.json"));
-  if (!response.ok) {
+  const [reposResponse, curatedProjects] = await Promise.all([
+    fetch(assetUrl("data/github-repos.json")),
+    loadCuratedProjects(),
+  ]);
+
+  if (!reposResponse.ok) {
     throw new Error("Failed to load cached GitHub repos");
   }
-  const data = await response.json();
-  return (data.repos || []).map(normalizeRepo).filter((repo) => !isProfileReadmeRepo(repo));
+
+  const data = await reposResponse.json();
+  const githubRepos = (data.repos || []).map(normalizeRepo).filter((repo) => !isProfileReadmeRepo(repo));
+  return mergeProjects(githubRepos, curatedProjects);
 }
 
 async function fetchLiveRepos() {
-  const response = await fetch(
-    `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`,
-    {
+  const [response, curatedProjects] = await Promise.all([
+    fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`, {
       headers: { Accept: "application/vnd.github+json" },
-    }
-  );
+    }),
+    loadCuratedProjects(),
+  ]);
 
   if (!response.ok) {
     throw new Error(`GitHub API error: ${response.status}`);
   }
 
   const repos = await response.json();
-  return repos.map(normalizeRepo).filter((repo) => !isProfileReadmeRepo(repo));
+  const githubRepos = repos.map(normalizeRepo).filter((repo) => !isProfileReadmeRepo(repo));
+  return mergeProjects(githubRepos, curatedProjects);
 }
 
 async function loadRepos({ preferLive = false } = {}) {
@@ -111,7 +150,8 @@ function sortRepos(repos, sortBy) {
 
 function filterRepos(repos, { type = "all", language = "all" } = {}) {
   return repos.filter((repo) => {
-    if (type === "public" && (repo.private || repo.fork)) return false;
+    if (type === "public" && (repo.private || repo.fork || repo.curated)) return false;
+    if (type === "private" && !repo.private) return false;
     if (type === "fork" && !repo.fork) return false;
     if (language !== "all" && repo.language !== language) return false;
     return true;

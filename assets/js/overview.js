@@ -4,21 +4,31 @@ function renderProjectPreview(repos) {
   if (!container) return;
 
   const filtered = repos.filter((repo) => repo.name !== "EmmanuelM0147");
-  const featured = sortRepos(filtered, "stars").slice(0, 3);
+  const curated = sortRepos(
+    filtered.filter((repo) => repo.curated),
+    "updated"
+  );
+  const github = sortRepos(
+    filtered.filter((repo) => !repo.curated),
+    "stars"
+  );
+  const featured = [...curated, ...github].slice(0, 3);
   const remaining = filtered.length - featured.length;
 
   container.innerHTML = featured
-    .map(
-      (repo) => `
+    .map((repo) => {
+      const titleMarkup = repo.url
+        ? `<a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>${icon("external")}`
+        : escapeHtml(repo.name);
+      const context = repo.company ? `${escapeHtml(repo.company)} · ` : "";
+
+      return `
       <article class="preview-card">
-        <h3>
-          <a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>
-          ${icon("external")}
-        </h3>
-        <p>${escapeHtml(repo.description || "No description provided.")}</p>
+        <h3>${titleMarkup}</h3>
+        <p>${context}${escapeHtml(repo.description || "No description provided.")}</p>
       </article>
-    `
-    )
+    `;
+    })
     .join("");
 
   if (footer) {

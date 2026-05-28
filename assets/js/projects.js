@@ -6,22 +6,35 @@ function renderProjectCard(repo) {
     ? `<span class="repo-language"><span class="language-dot" style="background-color:${languageColor(repo.language)}"></span>${escapeHtml(repo.language)}</span>`
     : "";
 
+  const labelClass = repo.private ? "label-private" : "label-public";
+  const labelText = repo.private ? "Private" : "Public";
+  const titleMarkup = repo.url
+    ? `<a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>`
+    : escapeHtml(repo.name);
+  const starMarkup = repo.url
+    ? `<a class="btn-star" href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${icon("star")} Star</a>`
+    : "";
+  const contextMarkup =
+    repo.company || repo.dates
+      ? `<p class="repo-context">${escapeHtml([repo.company, repo.dates].filter(Boolean).join(" · "))}</p>`
+      : "";
+  const statsMarkup = repo.curated
+    ? `<span class="repo-stat repo-stat-muted">Client project</span>`
+    : `<span class="repo-stat">${icon("star")} ${Number(repo.stars).toLocaleString()}</span>
+       <span class="repo-stat">${icon("fork")} ${Number(repo.forks).toLocaleString()}</span>`;
+
   return `
     <article class="repo-card" data-name="${escapeHtml(repo.name.toLowerCase())}">
       <div class="repo-card-header">
-        <h3 class="repo-name">
-          <a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>
-        </h3>
-        <span class="label label-public">Public</span>
-        <a class="btn-star" href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">
-          ${icon("star")} Star
-        </a>
+        <h3 class="repo-name">${titleMarkup}</h3>
+        <span class="label ${labelClass}">${labelText}</span>
+        ${starMarkup}
       </div>
+      ${contextMarkup}
       <p class="repo-description">${escapeHtml(repo.description || "No description provided.")}</p>
       <div class="repo-meta">
         ${languageMarkup}
-        <span class="repo-stat">${icon("star")} ${Number(repo.stars).toLocaleString()}</span>
-        <span class="repo-stat">${icon("fork")} ${Number(repo.forks).toLocaleString()}</span>
+        ${statsMarkup}
         <span class="repo-updated">Updated ${escapeHtml(repo.updated)}</span>
       </div>
     </article>

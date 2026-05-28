@@ -23,17 +23,28 @@ async function loadSiteConfig() {
 
 async function loadTabCounts() {
   try {
-    const [reposRes, linkedinRes] = await Promise.all([
+    const [reposRes, projectsRes, linkedinRes] = await Promise.all([
       fetch(assetUrl("data/github-repos.json")),
+      fetch(assetUrl("data/projects.json")),
       fetch(assetUrl("data/linkedin.json")),
     ]);
 
+    let githubCount = 0;
+    let curatedCount = 0;
+
     if (reposRes.ok) {
       const data = await reposRes.json();
-      tabCounts.projects = (data.repos || []).filter(
+      githubCount = (data.repos || []).filter(
         (repo) => repo.name !== SITE_CONFIG.githubUsername
       ).length;
     }
+
+    if (projectsRes.ok) {
+      const data = await projectsRes.json();
+      curatedCount = (data.projects || []).length;
+    }
+
+    tabCounts.projects = githubCount + curatedCount;
 
     if (linkedinRes.ok) {
       const data = await linkedinRes.json();

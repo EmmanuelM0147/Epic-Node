@@ -51,18 +51,32 @@ A GitHub Action (`.github/workflows/sync-github.yml`) runs this daily and on pus
 
 ## Update LinkedIn data
 
-LinkedIn does not provide a public profile API. Edit [`data/linkedin.json`](data/linkedin.json) when your experience, education, certifications, or skills change:
+LinkedIn does not provide a public profile API. Edit [`data/linkedin.json`](data/linkedin.json) when your experience, education, certifications, or skills change.
+
+## Add private or client projects
+
+Private GitHub repos are not returned by the public GitHub API. Add showcase entries manually in [`data/projects.json`](data/projects.json):
 
 ```json
 {
-  "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "headline": "...",
-  "experience": [{ "title", "company", "dates", "description" }],
-  "education": [{ "school", "degree", "dates" }],
-  "certifications": [{ "name", "issuer", "date", "url" }],
-  "skills": ["Node.js", "Python"]
+  "projects": [
+    {
+      "name": "Project name",
+      "company": "Client or employer",
+      "dates": "Jan 2025 – Present",
+      "description": "What you built and the impact.",
+      "language": "TypeScript",
+      "technologies": ["Node.js", "PostgreSQL"],
+      "private": true,
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  ]
 }
 ```
+
+These appear on the Projects page with a **Private** badge and no repo link.
+
+Edit [`data/linkedin.json`](data/linkedin.json) for CV content: experience, education, certifications, and skills.
 
 ## Deploy to GitHub Pages
 
@@ -86,6 +100,7 @@ Epic Node/
 ├── data/
 │   ├── github-profile.json
 │   ├── github-repos.json
+│   ├── projects.json
 │   └── linkedin.json
 ├── assets/
 │   ├── css/github-theme.css
