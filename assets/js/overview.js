@@ -82,7 +82,11 @@ function renderCertificationPreview(certifications) {
 
 function introBioText(bio) {
   if (!bio) return "";
-  return bio.replace(/^Backend & AI Engineer\s*\|\s*/i, "").trim();
+  return bio.replace(/^Backend (& AI )?Engineer\s*\|\s*/i, "").trim();
+}
+
+function roleTitle() {
+  return SITE_CONFIG.roleTitle || "Backend Engineer";
 }
 
 function renderIntro(profile) {
@@ -91,7 +95,7 @@ function renderIntro(profile) {
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
   const bio = introBioText(profile.bio);
-  intro.textContent = `My name is ${name} and I'm a Backend & AI Engineer based in ${profile.location || "Lagos"}.${bio ? ` ${bio}` : ""}`;
+  intro.textContent = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.${bio ? ` ${bio}` : ""}`;
 }
 
 function renderReadmeSocial(profile) {

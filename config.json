@@ -1,16 +1,18 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - Backend & AI Engineer",
-  "siteDescription": "Personal portfolio of Emmanuel Okeowo - Backend & AI Engineer",
+  "siteTitle": "Emmanuel Okeowo - Backend Engineer",
+  "siteDescription": "Backend engineer building production APIs, distributed systems, and LLM applications.",
   "siteName": "epicnode.dev",
   "email": "okeowoemmanuelm@gmail.com",
+  "roleTitle": "Backend Engineer",
+  "roleTagline": "Node.js & Production APIs · LLM Systems & RAG",
   "highlights": [
-    "Backend & AI Engineer",
+    "Backend Engineer",
     "Open to remote opportunities"
   ],
   "hireMe": {
-    "headline": "Available for backend, AI/ML, and cloud architecture work",
+    "headline": "Available for production backend, API, and LLM system work",
     "summary": "I help teams ship production-grade APIs, LLM applications, RAG pipelines, and scalable cloud infrastructure. From architecture and implementation to CI/CD and observability.",
     "services": [
       {
