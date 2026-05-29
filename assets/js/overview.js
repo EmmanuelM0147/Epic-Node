@@ -1,3 +1,34 @@
+function renderProjectPreviewMeta(repo) {
+  const parts = [];
+
+  if (repo.company) {
+    parts.push(`<span class="preview-card-meta">${escapeHtml(repo.company)}</span>`);
+  }
+  if (repo.private || repo.curated) {
+    parts.push(`<span class="preview-badge">Private</span>`);
+  }
+
+  return parts.length ? `<div class="preview-card-top">${parts.join("")}</div>` : "";
+}
+
+function renderProjectPreviewFooter(repo) {
+  const parts = [];
+
+  if (repo.language) {
+    parts.push(`
+      <span class="repo-language">
+        <span class="language-dot" style="background:${languageColor(repo.language)}"></span>
+        ${escapeHtml(repo.language)}
+      </span>
+    `);
+  }
+  if (repo.stars > 0) {
+    parts.push(`<span class="repo-stat">${icon("star")} ${formatCount(repo.stars)}</span>`);
+  }
+
+  return parts.length ? `<div class="preview-card-footer repo-meta">${parts.join("")}</div>` : "";
+}
+
 function renderProjectPreview(repos) {
   const container = document.getElementById("featured-projects");
   const footer = document.getElementById("projects-footer");
@@ -20,16 +51,13 @@ function renderProjectPreview(repos) {
       const titleMarkup = repo.url
         ? `<a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>${icon("external")}`
         : escapeHtml(repo.name);
-      const metaParts = [repo.company, repo.private ? "Private" : null].filter(Boolean);
-      const metaMarkup = metaParts.length
-        ? `<p class="preview-card-meta">${metaParts.map((part) => escapeHtml(part)).join(" · ")}</p>`
-        : "";
 
       return `
       <article class="preview-card">
         <h3>${titleMarkup}</h3>
-        ${metaMarkup}
+        ${renderProjectPreviewMeta(repo)}
         <p>${escapeHtml(repo.description || "No description provided.")}</p>
+        ${renderProjectPreviewFooter(repo)}
       </article>
     `;
     })
@@ -80,6 +108,13 @@ function renderCertificationPreview(certifications) {
   }
 }
 
+function renderSummarySection(data) {
+  const container = document.getElementById("overview-summary");
+  if (!container) return;
+
+  container.innerHTML = renderSummaryMarkup(data);
+}
+
 function introBioText(bio) {
   if (!bio) return "";
   return bio
@@ -92,28 +127,34 @@ function roleTitle() {
   return SITE_CONFIG.roleTitle || "Backend Engineer";
 }
 
-function renderIntro(profile, linkedinIntro) {
+function renderIntro(profile, linkedin = {}) {
   const intro = document.getElementById("intro-text");
   if (!intro) return;
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
-  const narrative = linkedinIntro || introBioText(profile.bio) || "";
-  intro.textContent = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.${narrative ? ` ${narrative}` : ""}`;
+  const greeting = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.`;
+  const tagline = SITE_CONFIG.roleTagline || linkedin.headline || introBioText(profile.bio) || "";
+
+  intro.innerHTML = tagline
+    ? `${escapeHtml(greeting)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
+    : escapeHtml(greeting);
 }
 
-function renderReadmeSocial(profile) {
+function renderReadmeSocial(profile, contact = {}) {
   const social = document.getElementById("readme-social");
   const cta = document.getElementById("readme-cta");
   if (!social) return;
 
   const twitter = profile?.twitter_username || "Trippie_1800";
   const githubUser = profile?.login || SITE_CONFIG.githubUsername;
+  const linkedinUrl = contact.linkedin || "https://www.linkedin.com/in/okeowoemmanuelm/";
+  const orcidUrl = contact.orcid || "https://orcid.org/0009-0000-2965-8445";
 
   social.innerHTML = `
-    <a class="social-icon-link" href="https://x.com/${escapeHtml(twitter)}" target="_blank" rel="noopener noreferrer" aria-label="X @${escapeHtml(twitter)}" title="@${escapeHtml(twitter)}">${icon("x")}</a>
-    <a class="social-icon-link" href="https://www.linkedin.com/in/okeowoemmanuelm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">${icon("linkedin")}</a>
-    <a class="social-icon-link" href="https://github.com/${escapeHtml(githubUser)}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">${icon("github")}</a>
-    <a class="social-icon-link" href="https://orcid.org/0009-0000-2965-8445" target="_blank" rel="noopener noreferrer" aria-label="ORCID" title="ORCID">${icon("orcid")}</a>
+    <a class="readme-link" href="https://x.com/${escapeHtml(twitter)}" target="_blank" rel="noopener noreferrer">${icon("x")} @${escapeHtml(twitter)}</a>
+    <a class="readme-link" href="${escapeHtml(linkedinUrl)}" target="_blank" rel="noopener noreferrer">${icon("linkedin")} LinkedIn</a>
+    <a class="readme-link" href="https://github.com/${escapeHtml(githubUser)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>
+    <a class="readme-link" href="${escapeHtml(orcidUrl)}" target="_blank" rel="noopener noreferrer">${icon("orcid")} ORCID</a>
   `;
 
   if (cta) {
@@ -134,16 +175,18 @@ function renderContribution(profile) {
 
 async function initOverviewPage() {
   const profile = await initLayout("overview");
-  renderReadmeSocial(profile);
   renderContribution(profile);
 
   try {
     const [repos, linkedin] = await Promise.all([loadRepos(), loadLinkedInData()]);
-    renderIntro(profile, linkedin.intro);
+    renderIntro(profile, linkedin);
+    renderReadmeSocial(profile, linkedin.contact);
+    renderSummarySection(linkedin);
     renderProjectPreview(repos);
     renderCertificationPreview(linkedin.certifications);
   } catch {
     renderIntro(profile);
+    renderReadmeSocial(profile);
     const projects = document.getElementById("featured-projects");
     const certs = document.getElementById("featured-certifications");
     if (projects) {

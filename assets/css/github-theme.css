@@ -345,26 +345,40 @@ a:hover {
 
 .intro-text {
   font-size: 16px;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
+}
+
+.intro-tagline {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-fg-muted);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .readme-social {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 12px 20px;
   margin-bottom: 16px;
 }
 
-.readme-social a {
+.readme-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   color: var(--color-fg-default);
   font-size: 14px;
+  font-weight: 500;
 }
 
-.readme-social a:hover {
+.readme-link:hover {
   color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.readme-link svg {
+  flex-shrink: 0;
 }
 
 .social-icon-link {
@@ -446,9 +460,31 @@ a:hover {
 }
 
 .preview-card-meta {
-  margin: 0 0 8px;
   color: var(--color-fg-muted);
   font-size: 13px;
+}
+
+.preview-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+.preview-badge {
+  display: inline-block;
+  padding: 0 7px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 2em;
+  background: var(--color-canvas-default);
+  color: var(--color-fg-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.preview-card-footer {
+  margin-top: 12px;
 }
 
 .preview-card p {
@@ -722,10 +758,28 @@ a:hover {
   font-weight: 500;
 }
 
-.hire-intro {
-  margin: 0 0 24px;
+.hire-headline {
+  margin: 0 0 12px;
+  max-width: 760px;
   color: var(--color-fg-muted);
-  max-width: 720px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.hire-intro {
+  margin: 0 0 20px;
+  color: var(--color-fg-default);
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hire-services {
+  margin-top: 24px;
+}
+
+#hire-content > .summary-card {
+  margin-bottom: 24px;
 }
 
 .contact-actions {
@@ -738,6 +792,7 @@ a:hover {
 .contact-actions a {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   padding: 8px 16px;
   border: 1px solid var(--color-border-default);
   border-radius: 6px;

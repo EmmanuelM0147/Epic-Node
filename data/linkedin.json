@@ -2,6 +2,7 @@
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
   "updatedAt": "2026-05-29",
   "headline": "Backend Engineer | Node.js · TypeScript · Python · AWS | Production APIs, LLM Systems & RAG",
+  "sidebarBio": "Backend engineer building production APIs, distributed systems, and LLM applications. I take platforms from early prototypes through deployment, testing, and maintenance.",
   "intro": "I mainly focus on backend engineering and the software lifecycle around production systems. I bring API platforms from early prototypes to production: designing services, implementing secure backends, deploying to cloud infrastructure, and maintaining them.",
   "contact": {
     "email": "okeowoemmanuelm@gmail.com",

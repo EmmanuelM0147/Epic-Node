@@ -1,17 +1,21 @@
-function renderHirePage(config) {
+function renderHirePage(config, linkedin) {
   const container = document.getElementById("hire-content");
   if (!container) return;
 
   const hire = config.hireMe || {};
   const services = hire.services || [];
-  const contact = hire.contact || {};
+  const contact = { ...hire.contact, ...linkedin?.contact };
+  const headline = hire.headline || linkedin?.headline || "";
+  const summary = hire.summary || linkedin?.intro || "";
 
   container.innerHTML = `
     <header class="section-header">
       <h2>Hire Me</h2>
     </header>
-    <p class="hire-intro">${escapeHtml(hire.summary || "")}</p>
-    <div class="preview-grid">
+    ${headline ? `<p class="hire-headline">${escapeHtml(headline)}</p>` : ""}
+    <p class="hire-intro">${escapeHtml(summary)}</p>
+    ${renderSummaryMarkup(linkedin || {})}
+    <div class="preview-grid hire-services">
       ${services
         .map(
           (service) => `
@@ -24,10 +28,10 @@ function renderHirePage(config) {
         .join("")}
     </div>
     <div class="contact-actions">
-      ${contact.email ? `<a href="mailto:${escapeHtml(contact.email)}">Email me</a>` : ""}
-      ${contact.linkedin ? `<a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn</a>` : ""}
-      ${contact.github ? `<a href="${escapeHtml(contact.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
-      <a href="${pageUrl("experience.html")}">View CV →</a>
+      ${contact.email ? `<a href="mailto:${escapeHtml(contact.email)}">${icon("email")} Email me</a>` : ""}
+      ${contact.linkedin ? `<a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">${icon("linkedin")} LinkedIn</a>` : ""}
+      ${contact.github ? `<a href="${escapeHtml(contact.github)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>` : ""}
+      <a href="${pageUrl("experience.html")}">${icon("user")} View CV</a>
     </div>
   `;
 }
@@ -35,7 +39,15 @@ function renderHirePage(config) {
 async function initHirePage() {
   await initLayout("hire");
   await loadSiteConfig();
-  renderHirePage(SITE_CONFIG);
+
+  let linkedin = null;
+  try {
+    linkedin = await loadLinkedInData();
+  } catch {
+    // Use config defaults.
+  }
+
+  renderHirePage(SITE_CONFIG, linkedin);
 }
 
 document.addEventListener("DOMContentLoaded", initHirePage);

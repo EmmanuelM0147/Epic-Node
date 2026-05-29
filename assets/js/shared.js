@@ -317,7 +317,9 @@ async function initLayout(activeTab) {
   let sidebarBio = profile?.bio || "";
   try {
     const linkedin = await fetchLinkedInJson();
-    if (linkedin.intro) {
+    if (linkedin.sidebarBio) {
+      sidebarBio = linkedin.sidebarBio;
+    } else if (linkedin.intro) {
       sidebarBio = linkedin.intro;
     }
   } catch {
@@ -334,6 +336,34 @@ function sortCertifications(certifications = []) {
     const dateB = Date.parse(b.date || "") || 0;
     return dateB - dateA;
   });
+}
+
+function buildSummaryItems(data) {
+  const summary = data?.summary || {};
+  const currentYear = new Date().getFullYear();
+  const years = summary.softwareSince ? currentYear - summary.softwareSince : null;
+  const highlights = summary.highlights || [];
+  const items = [];
+
+  if (years) {
+    items.push(`${years}+ years in software engineering`);
+  }
+  items.push(...highlights);
+
+  return items;
+}
+
+function renderSummaryMarkup(data) {
+  const items = buildSummaryItems(data);
+  if (!items.length) return "";
+
+  return `
+    <div class="summary-card">
+      <ul class="summary-list">
+        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    </div>
+  `;
 }
 
 async function fetchLinkedInJson() {

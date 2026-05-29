@@ -116,25 +116,13 @@ function renderPrintBanner(profile, data) {
 }
 
 function renderSummary(data) {
-  const summary = data.summary || {};
-  const currentYear = new Date().getFullYear();
-  const years = summary.softwareSince ? currentYear - summary.softwareSince : null;
-  const highlights = summary.highlights || [];
-
-  const items = [];
-  if (years) {
-    items.push(`${years}+ years in software engineering`);
-  }
-  items.push(...highlights);
+  const markup = renderSummaryMarkup(data);
+  if (!markup) return "";
 
   return `
     <section class="cv-section">
       <h3 class="cv-section-title">${icon("list")} Summary</h3>
-      <div class="summary-card">
-        <ul class="summary-list">
-          ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-        </ul>
-      </div>
+      ${markup}
     </section>
   `;
 }
