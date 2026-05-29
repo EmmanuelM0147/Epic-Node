@@ -5,7 +5,7 @@
   "html_url": "https://github.com/EmmanuelM0147",
   "bio": "Backend & AI Engineer | Architecting scalable distributed systems and production-grade LLM applications.",
   "company": "Kings Technologies & Innovations",
-  "blog": "",
+  "blog": "https://epicnode.hostless.site",
   "location": "Lagos",
   "email": "okeowoemmanuelm@gmail.com",
   "hireable": true,
@@ -15,7 +15,7 @@
   "followers": 9,
   "following": 37,
   "created_at": "2024-01-03T10:26:37Z",
-  "updated_at": "2026-05-28T18:48:52Z",
+  "updated_at": "2026-05-29T04:42:17Z",
   "organizations": [
     {
       "login": "AMP-marketplace",
@@ -33,5 +33,5 @@
       "description": null
     }
   ],
-  "synced_at": "2026-05-29T04:31:31.607Z"
+  "synced_at": "2026-05-29T08:02:03.119Z"
 }
