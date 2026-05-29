@@ -422,6 +422,7 @@ a:hover {
 
 .preview-grid {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -1038,7 +1039,14 @@ body.page-cv .page-content {
   font-size: 12px;
 }
 
+@media (max-width: 1012px) {
+  .preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 720px) {
+  .preview-grid,
   .summary-list,
   .cert-grid {
     grid-template-columns: 1fr;

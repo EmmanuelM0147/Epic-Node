@@ -82,11 +82,10 @@ function renderCertificationPreview(certifications) {
 
 function introBioText(bio) {
   if (!bio) return "";
-  return bio.replace(/^Backend (& AI )?Engineer\s*\|\s*/i, "").trim();
-}
-
-function isHeadlineBio(bio) {
-  return /Node\.js · TypeScript · Python · (AWS|Cloud)/i.test(bio || "");
+  return bio
+    .replace(/^Backend (& AI )?Engineer\s*[|·]\s*/i, "")
+    .replace(/\s*[|·]\s*Node\.js.*$/i, "")
+    .trim();
 }
 
 function roleTitle() {
@@ -98,8 +97,8 @@ function renderIntro(profile, linkedinIntro) {
   if (!intro) return;
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
-  const bio = isHeadlineBio(profile.bio) ? linkedinIntro : introBioText(profile.bio);
-  intro.textContent = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.${bio ? ` ${bio}` : ""}`;
+  const narrative = linkedinIntro || introBioText(profile.bio) || "";
+  intro.textContent = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.${narrative ? ` ${narrative}` : ""}`;
 }
 
 function renderReadmeSocial(profile) {

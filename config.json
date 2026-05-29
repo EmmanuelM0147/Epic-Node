@@ -9,11 +9,12 @@
   "roleTagline": "Node.js · TypeScript · Python · AWS · Production APIs & LLM Systems",
   "highlights": [
     "Backend Engineer",
+    "Production APIs & LLM Systems",
     "Open to remote opportunities"
   ],
   "hireMe": {
     "headline": "Available for production backend, API, and LLM system work",
-    "summary": "I help teams ship production-grade APIs, LLM applications, RAG pipelines, and scalable cloud infrastructure. From architecture and implementation to CI/CD and observability.",
+    "summary": "I mainly focus on backend engineering and the software lifecycle around production systems. I help teams ship production-grade APIs, LLM applications, RAG pipelines, and scalable cloud infrastructure—from architecture and implementation through deployment and maintenance.",
     "services": [
       {
         "title": "Backend & API Engineering",

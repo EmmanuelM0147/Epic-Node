@@ -191,7 +191,7 @@ function initTheme() {
   document.documentElement.setAttribute("data-theme", theme);
 }
 
-function renderSidebar(profile, activeTab) {
+function renderSidebar(profile, activeTab, options = {}) {
   const sidebar = document.getElementById("sidebar");
   if (!sidebar || !profile) return;
 
@@ -199,13 +199,14 @@ function renderSidebar(profile, activeTab) {
   const orgs = profile.organizations || [];
   const highlights = SITE_CONFIG.highlights || [];
   const email = SITE_CONFIG.email || profile.email;
+  const sidebarBio = options.bio || profile.bio || "";
 
   sidebar.innerHTML = `
     <div class="sidebar-profile">
       <img class="avatar" src="${escapeHtml(profile.avatar_url)}" alt="${escapeHtml(profile.name || username)}" width="280" height="280">
       <h1 class="sidebar-name">${escapeHtml(profile.name || username)}</h1>
       <p class="sidebar-username">@${escapeHtml(username)}</p>
-      <p class="sidebar-bio">${escapeHtml(profile.bio || "")}</p>
+      <p class="sidebar-bio">${escapeHtml(sidebarBio)}</p>
       <a class="btn-follow" href="https://github.com/${escapeHtml(username)}?tab=followers" target="_blank" rel="noopener noreferrer">Follow</a>
     </div>
     <div class="sidebar-stats">
@@ -313,7 +314,17 @@ async function initLayout(activeTab) {
     };
   }
 
-  renderSidebar(profile, activeTab);
+  let sidebarBio = profile?.bio || "";
+  try {
+    const linkedin = await fetchLinkedInJson();
+    if (linkedin.intro) {
+      sidebarBio = linkedin.intro;
+    }
+  } catch {
+    // Fall back to GitHub bio.
+  }
+
+  renderSidebar(profile, activeTab, { bio: sidebarBio });
   return profile;
 }
 
