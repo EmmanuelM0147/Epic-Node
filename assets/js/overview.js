@@ -85,16 +85,20 @@ function introBioText(bio) {
   return bio.replace(/^Backend (& AI )?Engineer\s*\|\s*/i, "").trim();
 }
 
+function isHeadlineBio(bio) {
+  return /Node\.js · TypeScript · Python · (AWS|Cloud)/i.test(bio || "");
+}
+
 function roleTitle() {
   return SITE_CONFIG.roleTitle || "Backend Engineer";
 }
 
-function renderIntro(profile) {
+function renderIntro(profile, linkedinIntro) {
   const intro = document.getElementById("intro-text");
   if (!intro) return;
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
-  const bio = introBioText(profile.bio);
+  const bio = isHeadlineBio(profile.bio) ? linkedinIntro : introBioText(profile.bio);
   intro.textContent = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.${bio ? ` ${bio}` : ""}`;
 }
 
@@ -131,15 +135,16 @@ function renderContribution(profile) {
 
 async function initOverviewPage() {
   const profile = await initLayout("overview");
-  renderIntro(profile);
   renderReadmeSocial(profile);
   renderContribution(profile);
 
   try {
     const [repos, linkedin] = await Promise.all([loadRepos(), loadLinkedInData()]);
+    renderIntro(profile, linkedin.intro);
     renderProjectPreview(repos);
     renderCertificationPreview(linkedin.certifications);
   } catch {
+    renderIntro(profile);
     const projects = document.getElementById("featured-projects");
     const certs = document.getElementById("featured-certifications");
     if (projects) {

@@ -298,7 +298,7 @@ async function initLayout(activeTab) {
       login: SITE_CONFIG.githubUsername,
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
-      bio: "Backend Engineer | Architecting production APIs, distributed systems, and applied LLM applications.",
+      bio: "Backend Engineer | Node.js · TypeScript · Python · AWS | Production APIs, LLM Systems & RAG",
       company: "Kings Technologies & Innovations",
       location: "Lagos",
       followers: 9,
