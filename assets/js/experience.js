@@ -101,13 +101,15 @@ function formatPrintContact(contact = {}) {
 
 function renderPrintBanner(profile, data) {
   const name = profile?.name || "Emmanuel Okeowo";
-  const headline = data.headline || data.intro || "";
+  const headline = data.headline || "";
+  const intro = data.intro || headline;
   const links = formatPrintContact(data.contact);
 
   return `
     <header class="cv-print-banner">
       <h1 class="cv-print-name">${escapeHtml(name)}</h1>
-      <p class="cv-print-headline">${escapeHtml(headline)}</p>
+      ${headline ? `<p class="cv-print-headline">${escapeHtml(headline)}</p>` : ""}
+      <p class="cv-print-intro">${escapeHtml(intro)}</p>
       <p class="cv-print-links">${links.map((item) => escapeHtml(item)).join(" · ")}</p>
     </header>
   `;
@@ -128,9 +130,11 @@ function renderSummary(data) {
   return `
     <section class="cv-section">
       <h3 class="cv-section-title">${icon("list")} Summary</h3>
-      <ul class="summary-list">
-        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-      </ul>
+      <div class="summary-card">
+        <ul class="summary-list">
+          ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+      </div>
     </section>
   `;
 }
@@ -164,7 +168,7 @@ function renderExperience(data, profile) {
       </div>
 
       <div class="cv-intro">
-        <p>${escapeHtml(data.intro || data.headline || "")}</p>
+        <p class="cv-focus">${escapeHtml(data.intro || data.headline || "")}</p>
         ${renderCvContact(data.contact)}
       </div>
 
@@ -187,12 +191,9 @@ function renderExperience(data, profile) {
             ? `<ul class="cert-grid">${certifications}</ul>`
             : `<p class="empty-state">No certifications listed yet.</p>`
         }
-        ${
-          (data.certifications || []).length
-            ? `<p class="section-footer"><a href="${pageUrl("certifications.html")}">View all certifications →</a></p>`
-            : ""
-        }
       </section>
+
+      <p class="cv-print-note">Best printed with Google Chrome</p>
     </div>
   `;
 
