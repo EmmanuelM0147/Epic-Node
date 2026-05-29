@@ -7,31 +7,31 @@
   "company": "Kings Technologies & Innovations",
   "blog": "",
   "location": "Lagos",
-  "email": null,
+  "email": "okeowoemmanuelm@gmail.com",
   "hireable": true,
   "twitter_username": "Trippie_1800",
-  "public_repos": 50,
+  "public_repos": 51,
   "public_gists": 2,
   "followers": 9,
   "following": 37,
   "created_at": "2024-01-03T10:26:37Z",
-  "updated_at": "2026-05-28T08:46:16.078Z",
+  "updated_at": "2026-05-28T18:48:52Z",
   "organizations": [
     {
       "login": "AMP-marketplace",
-      "avatar_url": "",
-      "description": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/173890580?v=4",
+      "description": null
     },
     {
       "login": "AltHub-NutriPlan",
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/198872106?v=4",
       "description": ""
     },
     {
       "login": "Keyrium-Launchpad",
-      "avatar_url": "",
-      "description": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/223446496?v=4",
+      "description": null
     }
   ],
-  "synced_at": "2026-05-28T08:46:16.079Z"
+  "synced_at": "2026-05-29T04:22:47.713Z"
 }
