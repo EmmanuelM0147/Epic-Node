@@ -1,8 +1,21 @@
 {
   "username": "EmmanuelM0147",
   "count": 52,
-  "synced_at": "2026-05-29T21:07:41.166Z",
+  "synced_at": "2026-05-30T08:33:07.908Z",
   "repos": [
+    {
+      "name": "EmmanuelM0147",
+      "full_name": "EmmanuelM0147/EmmanuelM0147",
+      "html_url": "https://github.com/EmmanuelM0147/EmmanuelM0147",
+      "description": "Config files for my GitHub profile.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-05-29T21:10:41Z",
+      "updated": "May 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,7 +26,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-05-29T21:07:32Z",
+      "updated_at": "2026-05-29T21:07:45Z",
       "updated": "May 2026"
     },
     {
@@ -27,19 +40,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2026-05-29T18:37:31Z",
-      "updated": "May 2026"
-    },
-    {
-      "name": "EmmanuelM0147",
-      "full_name": "EmmanuelM0147/EmmanuelM0147",
-      "html_url": "https://github.com/EmmanuelM0147/EmmanuelM0147",
-      "description": "Config files for my GitHub profile.",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-05-28T18:55:01Z",
       "updated": "May 2026"
     },
     {
