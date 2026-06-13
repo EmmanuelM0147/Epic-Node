@@ -11,7 +11,6 @@
     "orcid": "https://orcid.org/0009-0000-2965-8445"
   },
   "summary": {
-    "softwareSince": 2021,
     "highlights": [
       "Proficient in Node.js, TypeScript, Python, and cloud infrastructure",
       "Experience building production REST APIs for fintech and distributed systems",
@@ -63,7 +62,7 @@
       "technologies": ["React", "Python", "Django", "PostgreSQL", "DSA"]
     },
     {
-      "title": "Full Stack Engineer",
+      "title": "Web Developer",
       "company": "Macloyd Africa",
       "location": "Lagos State, Nigeria · Remote",
       "dates": "Apr 2021 – May 2022",
