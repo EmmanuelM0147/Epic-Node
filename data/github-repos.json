@@ -1,8 +1,47 @@
 {
   "username": "EmmanuelM0147",
-  "count": 54,
-  "synced_at": "2026-06-13T11:05:26.327Z",
+  "count": 55,
+  "synced_at": "2026-06-14T09:42:13.168Z",
   "repos": [
+    {
+      "name": "marketing_roi",
+      "full_name": "EmmanuelM0147/marketing_roi",
+      "html_url": "https://github.com/EmmanuelM0147/marketing_roi",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-06-14T07:32:49Z",
+      "updated": "Jun 2026"
+    },
+    {
+      "name": "Sales_Prediction",
+      "full_name": "EmmanuelM0147/Sales_Prediction",
+      "html_url": "https://github.com/EmmanuelM0147/Sales_Prediction",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-06-13T11:57:37Z",
+      "updated": "Jun 2026"
+    },
+    {
+      "name": "url-shortener",
+      "full_name": "EmmanuelM0147/url-shortener",
+      "html_url": "https://github.com/EmmanuelM0147/url-shortener",
+      "description": "Node.js TypeScript URL shortener API with PostgreSQL and Docker",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-06-13T11:57:35Z",
+      "updated": "Jun 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,33 +52,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-06-13T11:05:17Z",
-      "updated": "Jun 2026"
-    },
-    {
-      "name": "Sales_Prediction",
-      "full_name": "EmmanuelM0147/Sales_Prediction",
-      "html_url": "https://github.com/EmmanuelM0147/Sales_Prediction",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-06-13T10:56:24Z",
-      "updated": "Jun 2026"
-    },
-    {
-      "name": "url-shortener",
-      "full_name": "EmmanuelM0147/url-shortener",
-      "html_url": "https://github.com/EmmanuelM0147/url-shortener",
-      "description": "Node.js TypeScript URL shortener API with PostgreSQL and Docker",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-06-13T10:46:58Z",
+      "updated_at": "2026-06-13T11:05:30Z",
       "updated": "Jun 2026"
     },
     {
