@@ -1,8 +1,21 @@
 {
   "username": "EmmanuelM0147",
   "count": 56,
-  "synced_at": "2026-06-15T12:25:09.916Z",
+  "synced_at": "2026-06-16T11:20:07.479Z",
   "repos": [
+    {
+      "name": "Epic-Node",
+      "full_name": "EmmanuelM0147/Epic-Node",
+      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
+      "description": "Personal portfolio site for Emmanuel Okeowo",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-06-15T12:25:18Z",
+      "updated": "Jun 2026"
+    },
     {
       "name": "multiple-regression-analysis",
       "full_name": "EmmanuelM0147/multiple-regression-analysis",
@@ -40,19 +53,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2026-06-14T13:21:56Z",
-      "updated": "Jun 2026"
-    },
-    {
-      "name": "Epic-Node",
-      "full_name": "EmmanuelM0147/Epic-Node",
-      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
-      "description": "Personal portfolio site for Emmanuel Okeowo",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-06-14T09:42:17Z",
       "updated": "Jun 2026"
     },
     {
