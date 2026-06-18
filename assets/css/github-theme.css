@@ -356,6 +356,34 @@ a:hover {
   line-height: 1.5;
 }
 
+.readme-about {
+  margin-bottom: 16px;
+  color: var(--color-fg-default);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.readme-about p {
+  margin: 0 0 12px;
+}
+
+.readme-about p:last-child {
+  margin-bottom: 0;
+}
+
+.readme-about strong {
+  font-weight: 600;
+}
+
+.readme-list {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.readme-list li {
+  margin-bottom: 4px;
+}
+
 .readme-social {
   display: flex;
   flex-wrap: wrap;

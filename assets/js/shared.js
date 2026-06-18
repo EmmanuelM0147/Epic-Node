@@ -95,6 +95,62 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+function formatInlineMarkdown(text) {
+  if (!text) return "";
+
+  const parts = [];
+  const pattern = /(\*\*.+?\*\*|\[[^\]]+\]\([^)]+\))/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(escapeHtml(text.slice(lastIndex, match.index)));
+    }
+
+    const token = match[0];
+    if (token.startsWith("**")) {
+      parts.push(`<strong>${escapeHtml(token.slice(2, -2))}</strong>`);
+    } else {
+      const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (linkMatch) {
+        parts.push(
+          `<a href="${escapeHtml(linkMatch[2])}" target="_blank" rel="noopener noreferrer">${escapeHtml(linkMatch[1])}</a>`
+        );
+      }
+    }
+
+    lastIndex = match.index + token.length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(escapeHtml(text.slice(lastIndex)));
+  }
+
+  return parts.join("");
+}
+
+function renderMarkdownLite(text) {
+  if (!text) return "";
+
+  return text
+    .trim()
+    .split(/\n\n+/)
+    .map((block) => {
+      const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+      const isList = lines.length > 0 && lines.every((line) => /^[*-]\s/.test(line));
+
+      if (isList) {
+        return `<ul class="readme-list">${lines
+          .map((line) => `<li>${formatInlineMarkdown(line.replace(/^[*-]\s+/, ""))}</li>`)
+          .join("")}</ul>`;
+      }
+
+      return `<p>${lines.map((line) => formatInlineMarkdown(line)).join("<br>")}</p>`;
+    })
+    .join("");
+}
+
 function icon(name) {
   const icons = {
     location:
@@ -299,7 +355,7 @@ async function initLayout(activeTab) {
       login: SITE_CONFIG.githubUsername,
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
-      bio: "AI Engineer | Backend Roots · Node.js · TypeScript · Python · RAG & Agentic AI",
+      bio: "AI Engineer | Backend Roots · Node.js · TypeScript · Python · Production APIs, RAG & agentic AI · epicnode.hostless.site",
       company: "Kings Technologies & Innovations",
       location: "Lagos",
       followers: 9,
@@ -319,6 +375,8 @@ async function initLayout(activeTab) {
     const linkedin = await fetchLinkedInJson();
     if (linkedin.sidebarBio) {
       sidebarBio = linkedin.sidebarBio;
+    } else if (linkedin.githubBio) {
+      sidebarBio = linkedin.githubBio;
     } else if (linkedin.intro) {
       sidebarBio = linkedin.intro;
     }
