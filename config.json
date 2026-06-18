@@ -1,28 +1,28 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - Backend Engineer",
-  "siteDescription": "Backend engineer building production APIs, distributed systems, and LLM applications.",
+  "siteTitle": "Emmanuel Okeowo - AI Engineer | Backend Roots",
+  "siteDescription": "AI Engineer with backend roots building production APIs, RAG pipelines, and agentic AI systems.",
   "siteName": "epicnode.dev",
   "email": "okeowoemmanuelm@gmail.com",
-  "roleTitle": "Backend Engineer",
-  "roleTagline": "Node.js · TypeScript · Python · AWS · Production APIs & LLM Systems",
+  "roleTitle": "AI Engineer with deep backend roots",
+  "roleTagline": "Node.js · TypeScript · Python · RAG Pipelines · Agentic AI Workflows",
   "highlights": [
-    "Backend Engineer",
+    "AI Engineer · Backend Roots",
     "Production APIs & LLM Systems",
     "Open to remote opportunities"
   ],
   "hireMe": {
-    "headline": "Available for production backend, API, and LLM system work",
-    "summary": "I mainly focus on backend engineering and the software lifecycle around production systems. I help teams ship production-grade APIs, LLM applications, RAG pipelines, and scalable cloud infrastructure—from architecture and implementation through deployment and maintenance.",
+    "headline": "Available for AI engineering, backend, and production LLM system roles",
+    "summary": "AI Engineer with deep backend roots. I help teams ship production-grade APIs, RAG pipelines, agentic workflows, and scalable cloud infrastructure—from architecture and implementation through deployment and maintenance.",
     "services": [
       {
-        "title": "Backend & API Engineering",
-        "description": "REST/GraphQL APIs with Node.js, TypeScript, PostgreSQL, Redis, and event-driven architectures."
+        "title": "AI & LLM Systems",
+        "description": "RAG pipelines, semantic search, multi-agent workflows, prompt engineering, and vector databases with LangChain, OpenAI, and Python."
       },
       {
-        "title": "AI & LLM Applications",
-        "description": "RAG pipelines, multi-agent workflows, prompt engineering, and MLOps with LangChain, OpenAI, and vector databases."
+        "title": "Backend & API Engineering",
+        "description": "REST/gRPC APIs, microservices, and event-driven systems with Node.js, TypeScript, PostgreSQL, Redis, and secure authentication."
       },
       {
         "title": "Cloud & DevOps",

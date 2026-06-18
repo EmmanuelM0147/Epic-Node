@@ -118,26 +118,33 @@ function renderSummarySection(data) {
 function introBioText(bio) {
   if (!bio) return "";
   return bio
-    .replace(/^Backend (& AI )?Engineer\s*[|·]\s*/i, "")
+    .replace(/^(Backend (& AI )?Engineer|AI Engineer|Software Engineer)\s*[|·]\s*/i, "")
     .replace(/\s*[|·]\s*Node\.js.*$/i, "")
     .trim();
 }
 
 function roleTitle() {
-  return SITE_CONFIG.roleTitle || "Backend Engineer";
+  return SITE_CONFIG.roleTitle || "AI Engineer with deep backend roots";
 }
 
 function renderIntro(profile, linkedin = {}) {
-  const intro = document.getElementById("intro-text");
-  if (!intro) return;
+  const introEl = document.getElementById("intro-text");
+  if (!introEl) return;
 
   const name = profile.name?.split(" ")[0] || "Emmanuel";
-  const greeting = `My name is ${name} and I'm a ${roleTitle()} based in ${profile.location || "Lagos"}.`;
-  const tagline = SITE_CONFIG.roleTagline || linkedin.headline || introBioText(profile.bio) || "";
+  const roleLabel = linkedin.roleLabel || `a ${roleTitle()}`;
+  const greeting = `My name is ${name} and I'm ${roleLabel} based in ${profile.location || "Lagos"}.`;
+  const body = linkedin.intro ? ` ${linkedin.intro}` : "";
+  const tagline =
+    SITE_CONFIG.roleTagline ||
+    linkedin.stackLine ||
+    linkedin.headline ||
+    introBioText(profile.bio) ||
+    "";
 
-  intro.innerHTML = tagline
-    ? `${escapeHtml(greeting)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
-    : escapeHtml(greeting);
+  introEl.innerHTML = tagline
+    ? `${escapeHtml(greeting + body)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
+    : escapeHtml(greeting + body);
 }
 
 function renderReadmeSocial(profile, contact = {}) {

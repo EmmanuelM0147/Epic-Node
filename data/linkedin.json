@@ -1,9 +1,12 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-05-29",
-  "headline": "Backend Engineer | Node.js · TypeScript · Python · AWS | Production APIs, LLM Systems & RAG",
-  "sidebarBio": "Backend engineer building production APIs, distributed systems, and LLM applications. I take platforms from early prototypes through deployment, testing, and maintenance.",
-  "intro": "I mainly focus on backend engineering and the software lifecycle around production systems. I bring API platforms from early prototypes to production: designing services, implementing secure backends, deploying to cloud infrastructure, and maintaining them.",
+  "updatedAt": "2026-06-13",
+  "headline": "AI Engineer | Backend Roots",
+  "stackLine": "Node.js · TypeScript · Python · RAG Pipelines · Agentic AI Workflows",
+  "roleLabel": "an AI Engineer with deep backend roots",
+  "sidebarBio": "AI Engineer with backend roots. I build production APIs, distributed systems, and applied LLM systems—from secure backend services to RAG pipelines and agent workflows.",
+  "intro": "I specialize in bridging the gap between scalable server architecture and production-grade artificial intelligence systems.",
+  "cvIntro": "I specialize in bridging the gap between scalable server architecture and production-grade artificial intelligence systems. With a foundation in production backend engineering, I design and ship scalable APIs, RAG pipelines, and multi-agent workflows.",
   "contact": {
     "email": "okeowoemmanuelm@gmail.com",
     "linkedin": "https://www.linkedin.com/in/okeowoemmanuelm/",
@@ -12,12 +15,11 @@
   },
   "summary": {
     "highlights": [
-      "Proficient in Node.js, TypeScript, Python, and cloud infrastructure",
-      "Experience building production REST APIs for fintech and distributed systems",
-      "Hands-on with LLM orchestration, RAG pipelines, and multi-agent workflows",
-      "Strong background in authentication, caching, database optimization, and testing",
-      "Experience delivering secure backend systems in remote and hybrid teams",
-      "Open source contributor and continuous learner"
+      "AI & LLM Orchestration: production-ready RAG pipelines, semantic search, and multi-agent workflows",
+      "Production-Grade Backends: scalable REST/gRPC APIs, microservices, and distributed systems",
+      "Core Tech Stack: Node.js, TypeScript, and Python — moving AI prototypes into production",
+      "Data & Infrastructure: vector databases, relational database optimization, caching, and secure authentication",
+      "Continuous Growth: open-source contributor integrating emerging DeepTech and AI frameworks"
     ]
   },
   "experience": [

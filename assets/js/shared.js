@@ -1,11 +1,11 @@
 const SITE_CONFIG = {
   baseUrl: "/Epic-Node",
   githubUsername: "EmmanuelM0147",
-  siteTitle: "Emmanuel Okeowo - Backend Engineer",
+  siteTitle: "Emmanuel Okeowo - AI Engineer | Backend Roots",
   siteName: "epicnode.dev",
   email: "okeowoemmanuelm@gmail.com",
-  highlights: ["Backend Engineer", "Open to remote opportunities"],
-  roleTitle: "Backend Engineer",
+  highlights: ["AI Engineer · Backend Roots", "Open to remote opportunities"],
+  roleTitle: "AI Engineer with deep backend roots",
 };
 
 let tabCounts = { projects: 0, certifications: 0 };
@@ -299,7 +299,7 @@ async function initLayout(activeTab) {
       login: SITE_CONFIG.githubUsername,
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
-      bio: "Backend Engineer | Node.js · TypeScript · Python · AWS | Production APIs, LLM Systems & RAG",
+      bio: "AI Engineer | Backend Roots · Node.js · TypeScript · Python · RAG & Agentic AI",
       company: "Kings Technologies & Innovations",
       location: "Lagos",
       followers: 9,
