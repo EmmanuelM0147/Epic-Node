@@ -1,19 +1,19 @@
 {
   "username": "EmmanuelM0147",
-  "count": 57,
-  "synced_at": "2026-06-17T11:04:47.862Z",
+  "count": 58,
+  "synced_at": "2026-06-18T10:26:45.309Z",
   "repos": [
     {
-      "name": "node-template",
-      "full_name": "EmmanuelM0147/node-template",
-      "html_url": "https://github.com/EmmanuelM0147/node-template",
-      "description": "Nodejs (Vanilla) Starter Template",
-      "language": "JavaScript",
+      "name": "faq-rag-llmzc",
+      "full_name": "EmmanuelM0147/faq-rag-llmzc",
+      "html_url": "https://github.com/EmmanuelM0147/faq-rag-llmzc",
+      "description": null,
+      "language": "Jupyter Notebook",
       "stargazers_count": 0,
       "forks_count": 0,
-      "fork": true,
+      "fork": false,
       "private": false,
-      "updated_at": "2026-06-17T09:23:28Z",
+      "updated_at": "2026-06-18T09:50:23Z",
       "updated": "Jun 2026"
     },
     {
@@ -26,7 +26,20 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-06-16T11:20:12Z",
+      "updated_at": "2026-06-17T11:04:52Z",
+      "updated": "Jun 2026"
+    },
+    {
+      "name": "node-template",
+      "full_name": "EmmanuelM0147/node-template",
+      "html_url": "https://github.com/EmmanuelM0147/node-template",
+      "description": "Nodejs (Vanilla) Starter Template",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": true,
+      "private": false,
+      "updated_at": "2026-06-17T09:23:28Z",
       "updated": "Jun 2026"
     },
     {
