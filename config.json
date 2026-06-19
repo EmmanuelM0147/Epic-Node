@@ -1,28 +1,28 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - AI Engineer | Backend Roots",
-  "siteDescription": "AI Engineer with backend roots building production APIs, RAG pipelines, and agentic AI systems.",
+  "siteTitle": "Emmanuel Okeowo - Software Engineer",
+  "siteDescription": "Software Engineer building production backends, APIs, RAG pipelines, and agentic AI systems.",
   "siteName": "epicnode.dev",
   "email": "okeowoemmanuelm@gmail.com",
-  "roleTitle": "AI Engineer with deep backend roots",
-  "roleTagline": "Node.js · TypeScript · Python · RAG Pipelines · Agentic AI Workflows",
+  "roleTitle": "Software Engineer",
+  "roleTagline": "Backend & AI Systems · Node.js · TypeScript · Python · RAG Pipelines & Agentic AI Workflows",
   "highlights": [
-    "AI Engineer · Backend Roots",
+    "Software Engineer",
     "Production APIs & LLM Systems",
     "Open to remote opportunities"
   ],
   "hireMe": {
-    "headline": "Available for AI engineering, backend, and production LLM system roles",
-    "summary": "AI Engineer with deep backend roots. I help teams ship production-grade APIs, RAG pipelines, agentic workflows, and scalable cloud infrastructure, from architecture and implementation through deployment and maintenance.",
+    "headline": "Available for software engineering, backend, and production LLM system roles",
+    "summary": "Software Engineer specializing in production backends and applied AI systems. I help teams ship production-grade APIs, RAG pipelines, agentic workflows, and scalable cloud infrastructure, from architecture and implementation through deployment and maintenance.",
     "services": [
-      {
-        "title": "AI & LLM Systems",
-        "description": "RAG pipelines, semantic search, multi-agent workflows, prompt engineering, and vector databases with LangChain, OpenAI, and Python."
-      },
       {
         "title": "Backend & API Engineering",
         "description": "REST/gRPC APIs, microservices, and event-driven systems with Node.js, TypeScript, PostgreSQL, Redis, and secure authentication."
+      },
+      {
+        "title": "AI & LLM Systems",
+        "description": "RAG pipelines, semantic search, multi-agent workflows, prompt engineering, and vector databases with LangChain, OpenAI, and Python."
       },
       {
         "title": "Cloud & DevOps",

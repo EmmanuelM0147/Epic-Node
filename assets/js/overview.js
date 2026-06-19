@@ -134,7 +134,7 @@ function introBioText(bio) {
 }
 
 function roleTitle() {
-  return SITE_CONFIG.roleTitle || "AI Engineer with deep backend roots";
+  return SITE_CONFIG.roleTitle || "Software Engineer";
 }
 
 function renderIntro(profile, linkedin = {}) {
