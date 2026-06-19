@@ -303,6 +303,7 @@ function renderTabs(activeTab) {
 
   const items = [
     { id: "overview", label: "Overview", href: pageUrl("index.html"), icon: "book" },
+    { id: "about", label: "About", href: pageUrl("about.html"), icon: "list" },
     {
       id: "certifications",
       label: "Certifications",
