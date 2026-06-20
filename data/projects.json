@@ -13,7 +13,7 @@
     {
       "name": "Stock Trading (Social Fintech) Backend",
       "company": "Keyrium",
-      "description": "Backend API for a stock-trading and community fintech platform serving mobile and web clients through a documented REST contract. Owned end-to-end delivery across authentication, onboarding, KYC, portfolio, stock discovery, notifications, community feeds, Klans, and Learning Hub. Layered architecture with Zod validation, JWT auth, and rate limiting; deployed on Render. Improved performance with in-memory TTL caching, batch queries, Postgres RPCs, and reduced N+1 round-trips.",
+      "description": "Backend API for a stock-trading and community fintech platform covering auth, onboarding, KYC, portfolio, and social feeds. Built with Node.js, TypeScript, Express, and PostgreSQL, deployed on Render with JWT, Zod validation, and performance optimizations.",
       "language": "TypeScript",
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "Zod", "JWT", "Render"],
       "private": true,
