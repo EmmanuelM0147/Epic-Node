@@ -20,6 +20,7 @@ function normalizeRepo(repo) {
     curated: Boolean(repo.curated),
     company: repo.company || null,
     dates: repo.dates || null,
+    technologies: repo.technologies || null,
     updated_at: repo.updated_at,
     updated: repo.updated || formatUpdatedDate(repo.updated_at),
   };
@@ -39,7 +40,7 @@ function normalizeCuratedProject(project) {
 
 async function loadCuratedProjects() {
   try {
-    const response = await fetch(assetUrl("data/projects.json"));
+    const response = await fetch(assetUrl("data/projects.json"), { cache: "no-store" });
     if (!response.ok) return [];
     const data = await response.json();
     return (data.projects || []).map(normalizeCuratedProject);

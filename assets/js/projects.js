@@ -32,6 +32,7 @@ function renderProjectCard(repo) {
       </div>
       ${contextMarkup}
       <p class="repo-description">${escapeHtml(repo.description || "No description provided.")}</p>
+      ${repo.technologies?.length ? renderTechTags(repo.technologies) : ""}
       <div class="repo-meta">
         ${languageMarkup}
         ${statsMarkup}

@@ -95,6 +95,16 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+function renderTechTags(technologies) {
+  if (!technologies?.length) return "";
+
+  return `
+    <div class="tech-tags">
+      ${technologies.map((tech) => `<span class="tech-tag">${escapeHtml(tech)}</span>`).join("")}
+    </div>
+  `;
+}
+
 function formatInlineMarkdown(text) {
   if (!text) return "";
 

@@ -49,6 +49,7 @@ function renderProjectPreview(repos) {
         <h3>${titleMarkup}</h3>
         ${renderProjectPreviewMeta(repo)}
         <p>${escapeHtml(repo.description || "No description provided.")}</p>
+        ${repo.technologies?.length ? renderTechTags(repo.technologies) : ""}
         ${renderProjectPreviewFooter(repo)}
       </article>
     `;
