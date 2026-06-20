@@ -133,6 +133,139 @@ function uniqueLanguages(repos) {
   return [...languages].sort((a, b) => a.localeCompare(b));
 }
 
+const OVERVIEW_EXCLUDED_REPO_NAMES = new Set([
+  "epic-node",
+  "emmanuelm0147",
+  "node-template",
+  "personalportfolio-project0147",
+]);
+
+const OVERVIEW_LOW_VALUE_DESCRIPTIONS = [
+  /learning purpose/i,
+  /practice purpose/i,
+  /educational purposes only/i,
+  /for practice/i,
+  /tip calculator/i,
+  /birthday party registration/i,
+];
+
+function normalizeFeaturedPublicEntry(entry) {
+  if (typeof entry === "string") {
+    return { name: entry, description: null };
+  }
+  return {
+    name: entry.name,
+    description: entry.description || null,
+  };
+}
+
+function isOverviewExcludedRepo(repo) {
+  if (repo.curated || repo.fork) return Boolean(repo.fork);
+  const name = repo.name.toLowerCase();
+  if (OVERVIEW_EXCLUDED_REPO_NAMES.has(name)) return true;
+  if (isProfileReadmeRepo(repo)) return true;
+  if (name.includes("portfolio") && !(repo.description || "").trim()) return true;
+  return false;
+}
+
+function hasMeaningfulDescription(repo) {
+  const description = (repo.description || "").trim();
+  if (description.length < 12) return false;
+  return !OVERVIEW_LOW_VALUE_DESCRIPTIONS.some((pattern) => pattern.test(description));
+}
+
+function scoreOverviewCandidate(repo) {
+  if (isOverviewExcludedRepo(repo) || repo.private || repo.curated) return -1;
+
+  let score = 0;
+  const description = (repo.description || "").toLowerCase();
+  const name = repo.name.toLowerCase();
+
+  if (hasMeaningfulDescription(repo)) score += 40;
+  else if (!description) score -= 25;
+
+  if (repo.language === "TypeScript") score += 15;
+  if (repo.language === "Python" || repo.language === "Jupyter Notebook") score += 10;
+  if (repo.language === "JavaScript") score += 8;
+
+  [
+    "api",
+    "postgresql",
+    "docker",
+    "node",
+    "typescript",
+    "rag",
+    "llm",
+    "pipeline",
+    "authentication",
+    "backend",
+    "rest",
+  ].forEach((keyword) => {
+    if (description.includes(keyword) || name.includes(keyword)) score += 8;
+  });
+
+  score += Math.min(repo.stars * 3, 9);
+  score += new Date(repo.updated_at || 0).getTime() / 1e15;
+
+  return score;
+}
+
+function applyFeaturedPublicOverrides(repo, featuredEntry) {
+  if (!featuredEntry?.description || (repo.description || "").trim()) {
+    return repo;
+  }
+
+  return {
+    ...repo,
+    description: featuredEntry.description,
+  };
+}
+
+function pickOverviewFeatured(repos, limit = 3) {
+  const filtered = repos.filter((repo) => repo.name !== GITHUB_USERNAME);
+  const curated = sortRepos(
+    filtered.filter((repo) => repo.curated),
+    "updated"
+  );
+  const featuredNames = new Set(curated.map((repo) => repo.name.toLowerCase()));
+  const selected = [...curated];
+  const repoByName = new Map(filtered.map((repo) => [repo.name.toLowerCase(), repo]));
+  const featuredPublic = (SITE_CONFIG.featuredPublicRepos || []).map(normalizeFeaturedPublicEntry);
+
+  for (const entry of featuredPublic) {
+    if (selected.length >= limit) break;
+
+    const repo = repoByName.get(entry.name.toLowerCase());
+    if (!repo || featuredNames.has(repo.name.toLowerCase())) continue;
+
+    selected.push(applyFeaturedPublicOverrides(repo, entry));
+    featuredNames.add(repo.name.toLowerCase());
+  }
+
+  if (selected.length >= limit) {
+    return selected.slice(0, limit);
+  }
+
+  const scored = filtered
+    .filter((repo) => !featuredNames.has(repo.name.toLowerCase()))
+    .map((repo) => ({ repo, score: scoreOverviewCandidate(repo) }))
+    .filter(({ score }) => score > 0)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        b.repo.stars - a.repo.stars ||
+        a.repo.name.localeCompare(b.repo.name)
+    );
+
+  for (const { repo } of scored) {
+    if (selected.length >= limit) break;
+    selected.push(repo);
+    featuredNames.add(repo.name.toLowerCase());
+  }
+
+  return selected;
+}
+
 function sortRepos(repos, sortBy) {
   const sorted = [...repos];
   switch (sortBy) {

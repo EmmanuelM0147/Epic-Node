@@ -35,15 +35,7 @@ function renderProjectPreview(repos) {
   if (!container) return;
 
   const filtered = repos.filter((repo) => repo.name !== "EmmanuelM0147");
-  const curated = sortRepos(
-    filtered.filter((repo) => repo.curated),
-    "updated"
-  );
-  const github = sortRepos(
-    filtered.filter((repo) => !repo.curated),
-    "stars"
-  );
-  const featured = [...curated, ...github].slice(0, 3);
+  const featured = pickOverviewFeatured(filtered, 3);
   const remaining = filtered.length - featured.length;
 
   container.innerHTML = featured

@@ -12,6 +12,20 @@
     "Production APIs & LLM Systems",
     "Open to remote opportunities"
   ],
+  "featuredPublicRepos": [
+    {
+      "name": "url-shortener",
+      "description": "Node.js TypeScript URL shortener API with PostgreSQL and Docker."
+    },
+    {
+      "name": "faq-rag-llmzc",
+      "description": "FAQ RAG pipeline with semantic retrieval and LLM-powered question answering."
+    },
+    {
+      "name": "multiple-regression-analysis",
+      "description": "Multi-channel marketing data pipeline with regression analysis."
+    }
+  ],
   "hireMe": {
     "headline": "Available for software engineering, backend, and production LLM system roles",
     "summary": "Software Engineer specializing in production backends and applied AI systems. I help teams ship production-grade APIs, RAG pipelines, agentic workflows, and scalable cloud infrastructure, from architecture and implementation through deployment and maintenance.",
