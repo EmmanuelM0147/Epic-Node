@@ -115,16 +115,6 @@ function renderSummarySection(data) {
   container.innerHTML = renderSummaryMarkup(data);
 }
 
-function renderReadmeAbout(data) {
-  const container = document.getElementById("readme-about");
-  if (!container) return;
-
-  const about = data?.githubAbout || data?.sidebarBio || "";
-  container.innerHTML = about.includes("**") || about.includes("[")
-    ? renderMarkdownLite(about)
-    : `<p>${escapeHtml(about)}</p>`;
-}
-
 function introBioText(bio) {
   if (!bio) return "";
   return bio
@@ -144,17 +134,15 @@ function renderIntro(profile, linkedin = {}) {
   const name = profile.name?.split(" ")[0] || "Emmanuel";
   const roleLabel = linkedin.roleLabel || `a ${roleTitle()}`;
   const greeting = `My name is ${name} and I'm ${roleLabel} based in ${profile.location || "Lagos"}.`;
-  const body = linkedin.intro ? ` ${linkedin.intro}` : "";
   const tagline =
     SITE_CONFIG.roleTagline ||
     linkedin.stackLine ||
-    linkedin.headline ||
     introBioText(profile.bio) ||
     "";
 
   introEl.innerHTML = tagline
-    ? `${escapeHtml(greeting + body)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
-    : escapeHtml(greeting + body);
+    ? `${escapeHtml(greeting)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
+    : escapeHtml(greeting);
 }
 
 function renderReadmeSocial(profile, contact = {}) {
@@ -197,7 +185,6 @@ async function initOverviewPage() {
   try {
     const [repos, linkedin] = await Promise.all([loadRepos(), loadLinkedInData()]);
     renderIntro(profile, linkedin);
-    renderReadmeAbout(linkedin);
     renderReadmeSocial(profile, linkedin.contact);
     renderSummarySection(linkedin);
     renderProjectPreview(repos);
