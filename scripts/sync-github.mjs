@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -86,6 +86,46 @@ async function fetchContributions() {
   };
 }
 
+function loadProfileOverrides() {
+  try {
+    const linkedin = JSON.parse(readFileSync(join(DATA_DIR, "linkedin.json"), "utf8"));
+    return {
+      company: linkedin.currentCompany || linkedin.experience?.[0]?.company || null,
+      blog: linkedin.portfolioUrl || null,
+    };
+  } catch {
+    return {};
+  }
+}
+
+async function patchGitHubProfile({ company, blog }) {
+  if (!TOKEN) return false;
+
+  const patch = {};
+  if (company) patch.company = company;
+  if (blog) patch.blog = blog;
+  if (!Object.keys(patch).length) return false;
+
+  const response = await fetch("https://api.github.com/user", {
+    method: "PATCH",
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${TOKEN}`,
+      "User-Agent": "Epic-Node-Portfolio-Sync",
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: JSON.stringify(patch),
+  });
+
+  if (!response.ok) {
+    console.warn(`GitHub profile PATCH skipped: ${response.status} ${response.statusText}`);
+    return false;
+  }
+
+  console.log(`Updated GitHub profile: ${Object.keys(patch).join(", ")}`);
+  return true;
+}
+
 async function main() {
   mkdirSync(DATA_DIR, { recursive: true });
 
@@ -121,6 +161,20 @@ async function main() {
     })),
     synced_at: new Date().toISOString(),
   };
+
+  const profileOverrides = loadProfileOverrides();
+  if (profileOverrides.company) {
+    profileOutput.company = profileOverrides.company;
+  }
+  if (profileOverrides.blog) {
+    profileOutput.blog = profileOverrides.blog;
+  }
+
+  if (profileOverrides.company || profileOverrides.blog) {
+    await patchGitHubProfile(profileOverrides).catch((error) => {
+      console.warn(`GitHub profile PATCH failed: ${error.message}`);
+    });
+  }
 
   const reposOutput = {
     username: USERNAME,

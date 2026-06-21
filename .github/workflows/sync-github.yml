@@ -29,7 +29,7 @@ jobs:
 
       - name: Sync GitHub profile and repos
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_USER_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: EmmanuelM0147
         run: node scripts/sync-github.mjs
 

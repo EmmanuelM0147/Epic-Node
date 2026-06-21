@@ -4,6 +4,7 @@ const SITE_CONFIG = {
   siteTitle: "Emmanuel Okeowo - Software Engineer",
   siteName: "epicnode.dev",
   portfolioUrl: "https://epicnode.hostless.site",
+  ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
   highlights: ["Software Engineer", "Open to remote opportunities"],
   roleTitle: "Software Engineer",
@@ -551,6 +552,10 @@ function initPageMeta({ title, description } = {}) {
   const pageTitle = title || SITE_CONFIG.siteTitle;
   const pageDescription = description || SITE_CONFIG.siteDescription || "";
   const url = window.location.href;
+  const imageUrl =
+    SITE_CONFIG.ogImageUrl ||
+    new URL(assetUrl("assets/og-image.png"), window.location.origin).href;
+  const imageAlt = "Emmanuel Okeowo - Software Engineer · Backend & AI Systems";
 
   if (title) {
     document.title = title;
@@ -560,9 +565,13 @@ function initPageMeta({ title, description } = {}) {
   setMetaTag("og:description", pageDescription, { property: true });
   setMetaTag("og:url", url, { property: true });
   setMetaTag("og:type", "website", { property: true });
-  setMetaTag("twitter:card", "summary");
+  setMetaTag("og:image", imageUrl, { property: true });
+  setMetaTag("og:image:alt", imageAlt, { property: true });
+  setMetaTag("twitter:card", "summary_large_image");
   setMetaTag("twitter:title", pageTitle);
   setMetaTag("twitter:description", pageDescription);
+  setMetaTag("twitter:image", imageUrl);
+  setMetaTag("twitter:image:alt", imageAlt);
 }
 
 function injectPersonSchema(profile, linkedin = null) {

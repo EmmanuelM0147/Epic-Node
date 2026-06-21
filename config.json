@@ -5,6 +5,7 @@
   "siteDescription": "Software Engineer building production backends, APIs, RAG pipelines, and agentic AI systems.",
   "siteName": "epicnode.dev",
   "portfolioUrl": "https://epicnode.hostless.site",
+  "ogImageUrl": "https://epicnode.hostless.site/assets/og-image.png",
   "email": "okeowoemmanuelm@gmail.com",
   "roleTitle": "Software Engineer",
   "roleTagline": "Backend & AI Systems · Node.js · TypeScript · Python · RAG Pipelines & Agentic AI Workflows",
