@@ -12,7 +12,7 @@ function renderProjectCard(repo) {
     ? `<a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(repo.name)}</a>`
     : escapeHtml(repo.name);
   const starMarkup = repo.url
-    ? `<a class="btn-star" href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${icon("star")} Star</a>`
+    ? `<a class="btn-star" href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${icon("external")} View on GitHub</a>`
     : "";
   const contextMarkup =
     repo.company || repo.dates
@@ -121,8 +121,15 @@ function setStatus(message, isError = false) {
 }
 
 async function initProjectsPage() {
+  const list = document.getElementById("projects-list");
+  renderLoadingSkeleton(list, 4);
   await initLayout("projects");
   bindFilterEvents();
+
+  const footerLink = document.getElementById("projects-github-link");
+  if (footerLink) {
+    footerLink.href = `https://github.com/${SITE_CONFIG.githubUsername}?tab=repositories`;
+  }
 
   try {
     allRepos = await loadRepos();

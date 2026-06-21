@@ -35,7 +35,6 @@ function renderAboutPage(data) {
 
   const headline = profileAboutTagline(data);
   const body = aboutBodyText(data);
-  const summary = renderSummaryMarkup(data);
 
   container.innerHTML = `
     <header class="about-hero">
@@ -45,20 +44,13 @@ function renderAboutPage(data) {
 
     <div class="about-body readme-about">${renderMarkdownLite(body)}</div>
 
-    ${
-      summary
-        ? `<section class="about-section">
-            <h3 class="about-section-title">${icon("list")} Summary</h3>
-            ${summary}
-          </section>`
-        : ""
-    }
-
     ${renderAboutLinks(data.contact)}
   `;
 }
 
 async function initAboutPage() {
+  const container = document.getElementById("about-content");
+  renderLoadingSkeleton(container, 4);
   await initLayout("about");
 
   try {

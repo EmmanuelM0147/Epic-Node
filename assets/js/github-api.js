@@ -61,7 +61,7 @@ function isProfileReadmeRepo(repo) {
 
 async function loadReposFromJson() {
   const [reposResponse, curatedProjects] = await Promise.all([
-    fetch(assetUrl("data/github-repos.json")),
+    fetch(assetUrl("data/github-repos.json"), { cache: "no-store" }),
     loadCuratedProjects(),
   ]);
 
@@ -285,9 +285,15 @@ function sortRepos(repos, sortBy) {
 function filterRepos(repos, { type = "all", language = "all" } = {}) {
   return repos.filter((repo) => {
     if (type === "public" && (repo.private || repo.fork || repo.curated)) return false;
-    if (type === "private" && !repo.private) return false;
+    if (type === "private" && !repo.private && !repo.curated) return false;
     if (type === "fork" && !repo.fork) return false;
     if (language !== "all" && repo.language !== language) return false;
     return true;
   });
+}
+
+function countPortfolioProjects(repos) {
+  return repos.filter(
+    (repo) => repo.name !== GITHUB_USERNAME && !isOverviewExcludedRepo(repo)
+  ).length;
 }

@@ -7,16 +7,6 @@ function splitDescriptionBullets(text) {
     .filter(Boolean);
 }
 
-function renderTechTags(technologies) {
-  if (!technologies?.length) return "";
-
-  return `
-    <div class="tech-tags">
-      ${technologies.map((tech) => `<span class="tech-tag">${escapeHtml(tech)}</span>`).join("")}
-    </div>
-  `;
-}
-
 function renderEntryBullets(description) {
   const bullets = splitDescriptionBullets(description);
   if (!bullets.length) return "";
@@ -141,7 +131,7 @@ function renderExperience(data, profile) {
   if (!container || !data) return;
 
   const profileName = profile?.name || "Emmanuel Okeowo";
-  const jobs = (data.experience || []).map(renderJobCard).join("");
+  const jobs = sortExperience(data.experience || []).map(renderJobCard).join("");
   const education = (data.education || []).map(renderEducationCard).join("");
   const certifications = sortCertifications(data.certifications || []).map(renderCertItem).join("");
 
@@ -161,6 +151,7 @@ function renderExperience(data, profile) {
       </div>
 
       ${renderSummary(data)}
+      ${renderSkillsSection(data.skills)}
 
       <section class="cv-section">
         <h3 class="cv-section-title">${icon("briefcase")} Professional Experience</h3>
@@ -189,13 +180,14 @@ function renderExperience(data, profile) {
 }
 
 async function initExperiencePage() {
+  const container = document.getElementById("experience-content");
+  renderLoadingSkeleton(container, 5);
   const profile = await initLayout("cv");
 
   try {
     const data = await loadLinkedInData();
     renderExperience(data, profile);
   } catch {
-    const container = document.getElementById("experience-content");
     if (container) {
       container.innerHTML = `<p class="empty-state">CV data unavailable. Edit data/linkedin.json to add your experience.</p>`;
     }

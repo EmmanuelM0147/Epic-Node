@@ -4,6 +4,7 @@
   "siteTitle": "Emmanuel Okeowo - Software Engineer",
   "siteDescription": "Software Engineer building production backends, APIs, RAG pipelines, and agentic AI systems.",
   "siteName": "epicnode.dev",
+  "portfolioUrl": "https://epicnode.hostless.site",
   "email": "okeowoemmanuelm@gmail.com",
   "roleTitle": "Software Engineer",
   "roleTagline": "Backend & AI Systems · Node.js · TypeScript · Python · RAG Pipelines & Agentic AI Workflows",
@@ -27,8 +28,8 @@
     }
   ],
   "hireMe": {
-    "headline": "Available for software engineering, backend, and production LLM system roles",
-    "summary": "Software Engineer specializing in production backends and applied AI systems. I help teams ship production-grade APIs, RAG pipelines, agentic workflows, and scalable cloud infrastructure, from architecture and implementation through deployment and maintenance.",
+    "headline": "Open to remote software engineering, backend, and production LLM roles",
+    "summary": "Remote-friendly Software Engineer focused on production APIs, fintech backends, and applied AI systems. Typical engagements: greenfield API builds, performance tuning, RAG pipeline delivery, and cloud deployment support.",
     "services": [
       {
         "title": "Backend & API Engineering",

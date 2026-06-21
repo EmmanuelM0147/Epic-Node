@@ -3,12 +3,14 @@
   "updatedAt": "2026-06-18",
   "headline": "Software Engineer | Backend & AI Systems · Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
   "aboutTagline": "Software Engineer · Backend & AI Systems",
+  "portfolioUrl": "https://epicnode.hostless.site",
+  "currentCompany": "Keyrium",
   "stackLine": "Backend & AI Systems · Node.js · TypeScript · Python · RAG Pipelines & Agentic AI Workflows",
   "roleLabel": "a Software Engineer",
   "githubBio": "Software Engineer · Backend & AI · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
   "sidebarBio": "Software Engineer building production backends and applied AI systems, from scalable APIs and distributed services to RAG pipelines and agent workflows.",
-  "intro": "I build production backends and applied AI systems, bridging scalable server architecture with RAG pipelines, semantic search, and multi-agent workflows.",
-  "cvIntro": "Software Engineer specializing in production backends and applied AI systems. I design and ship scalable APIs, distributed services, RAG pipelines, and multi-agent workflows from prototype to reliable production.",
+  "intro": "Open to remote software engineering roles with a focus on production APIs, fintech backends, and applied AI systems.",
+  "cvIntro": "Software Engineer specializing in production backends and applied AI systems. I design and ship scalable APIs, distributed services, and reliable cloud infrastructure from architecture through deployment.",
   "githubAbout": "I'm a **Software Engineer** focused on production backends and applied AI systems, bringing RAG pipelines and multi-agent workflows from prototype to stable production.\n\nI bridge high-throughput backend architecture and intelligent LLM orchestration: production APIs, data pipelines, vector database integration, caching, auth, and agent lifecycle management.\n\nCurrently at **Keyrium**, I lead development of backend systems for high-concurrency enterprise APIs (Loyalty Rewards & Stock Trading) using **Node.js**, **TypeScript**, and **PostgreSQL**, including system design, CI/CD automation, cloud deployment, and testing (85% code coverage).\n\n**Focus areas:** Scalable distributed architectures · LLM orchestration · RAG pipelines · Multi-agent workflows · Cloud & API optimization\n\n**Stack:** Node.js · TypeScript · Python · PostgreSQL · AWS · RAG · Agentic AI\n\n**Let's connect:** [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com) · [Portfolio](https://epicnode.hostless.site) · [LinkedIn](https://www.linkedin.com/in/okeowoemmanuelm/)",
   "linkedinAbout": "I'm a Software Engineer based in Lagos, specializing in production backends and applied AI systems. I build scalable APIs, distributed services, RAG pipelines, semantic search, and multi-agent workflows from prototype to reliable production.\n\nMy work spans high-throughput backend engineering and applied LLM orchestration: REST/microservice APIs, data pipelines, vector database integration, caching, authentication, and agent lifecycle management.\n\nCurrently at Keyrium, I lead development of backend systems for high-concurrency enterprise APIs (Loyalty Rewards & Stock Trading) using Node.js, TypeScript, and PostgreSQL, including architecture, CI/CD automation, cloud deployment, and a testing framework with 85% code coverage.\n\nPreviously, I've improved API and database performance by 30–80% across fintech and platform backends, and built secure auth systems with JWT, OAuth 2.0, MFA, and RBAC.\n\nFocus areas: Scalable distributed architectures · LLM orchestration · RAG pipelines · Multi-agent workflows · Cloud & API optimization\n\nStack: Node.js · TypeScript · Python · PostgreSQL · AWS · RAG · Agentic AI\n\nOpen to Software Engineer, Backend Engineer, and AI/LLM system roles (remote/hybrid).\n\nPortfolio: epicnode.hostless.site\nEmail: okeowoemmanuelm@gmail.com",
   "contact": {
@@ -18,12 +20,13 @@
     "orcid": "https://orcid.org/0009-0000-2965-8445"
   },
   "summary": {
+    "softwareSince": 2021,
     "highlights": [
-      "AI & LLM Orchestration: production-ready RAG pipelines, semantic search, and multi-agent workflows",
-      "Production-Grade Backends: scalable REST/gRPC APIs, microservices, and distributed systems",
-      "Core Tech Stack: Node.js, TypeScript, and Python, moving AI prototypes into production",
-      "Data & Infrastructure: vector databases, relational database optimization, caching, and secure authentication",
-      "Continuous Growth: open-source contributor integrating emerging DeepTech and AI frameworks"
+      "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
+      "Applied AI Systems: RAG pipelines, semantic search, and LLM integration from prototype to production",
+      "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
+      "Data & Infrastructure: relational and vector databases, query optimization, and secure authentication",
+      "Continuous Growth: open-source contributor exploring emerging backend and AI tooling"
     ]
   },
   "experience": [
@@ -32,22 +35,25 @@
       "company": "Keyrium",
       "location": "Lagos Island, Nigeria · Hybrid",
       "dates": "Jul 2025 – Present",
-      "description": "Leading development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architecting secure systems and integrating third-party services to enable seamless multi-channel communication. Established a comprehensive testing framework with 85% code coverage, significantly reducing post-deployment bug reports.",
-      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "AWS", "Testing", "REST APIs"]
+      "employmentType": "Full-time",
+      "description": "Own backend delivery for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architect secure REST APIs, third-party integrations, and Docker-based deployment workflows. Established a testing framework with 85% code coverage and prototyped RAG-assisted internal tooling for documentation search.",
+      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs"]
     },
     {
       "title": "Software Engineer",
       "company": "MySoundsGlobal",
       "location": "United Kingdom · Remote",
-      "dates": "Sep 2025 – Nov 2025",
-      "description": "Refactored and optimized database queries by adding targeted indexes and streamlining joins, achieving 40–60% faster query times with reduced latency. Streamlined the middleware stack by eliminating redundancies and improving throughput, delivering 30–50% faster API response speeds. Implemented a Node.js caching layer to reduce repetitive database calls and optimize cache headers, attaining up to 80% faster static asset loads.",
+      "dates": "Sep 2025 – Nov 2025 · Contract",
+      "employmentType": "Contract",
+      "description": "Refactored database queries with targeted indexes and leaner joins, cutting query times by 40–60%. Simplified middleware hot paths to improve API throughput by 30–50%. Introduced Redis-backed caching and tuned cache headers for faster repeat reads on high-traffic endpoints.",
       "technologies": ["Node.js", "Express.js", "MySQL", "Redis", "Performance Optimization"]
     },
     {
       "title": "Backend Software Engineer",
       "company": "Talenvo",
       "location": "Lagos State, Nigeria · Remote",
-      "dates": "Apr 2025 – Jul 2025",
+      "dates": "Apr 2025 – Jul 2025 · Contract",
+      "employmentType": "Contract",
       "description": "Engineered the backend for Evently, a dynamic event management platform enabling users to discover, RSVP to, and manage events seamlessly. Built RESTful APIs with Node.js and Express, implemented JWT-based role authentication, integrated PayStack and PCI-DSS compliance, and optimized PostgreSQL schemas for secure, scalable performance under concurrent load.",
       "technologies": ["Node.js", "Express.js", "PostgreSQL", "JWT", "PayStack", "PCI-DSS"]
     },
@@ -56,7 +62,7 @@
       "company": "Folio Technologies Ltd",
       "location": "Lagos State, Nigeria · Hybrid",
       "dates": "Jan 2024 – Jun 2025",
-      "description": "Implemented a server-side caching strategy with optimized cache-control headers, accelerating static asset delivery by up to 80%. Engineered a multi-provider authentication system (JWT, OAuth 2.0, MFA) with role-based access control and third-party integrations for email, SMS, and push notifications. Integrated APIs with the client-side application, ensuring seamless data flow and UI responsiveness.",
+      "description": "Built server-side caching and cache-control tuning that reduced repeat asset load times on key routes by up to 80%. Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC and integrations for email, SMS, and push notifications. Connected backend APIs to the client app with stable contracts and responsive data flows.",
       "technologies": ["Node.js", "OAuth 2.0", "JWT", "AWS", "Caching", "RBAC"]
     },
     {
@@ -94,35 +100,41 @@
     {
       "name": "AI & Machine Learning",
       "issuer": "3MTT Applied Learning Cluster",
-      "date": "May 2026"
+      "date": "May 2026",
+      "featured": true
     },
     {
       "name": "Member, International Association of Engineers (IAENG)",
       "issuer": "International Association of Engineers",
       "date": "Jan 2026",
-      "url": "https://iaeng.org"
+      "url": "https://iaeng.org",
+      "featured": true
     },
     {
       "name": "AWS Educate Getting Started with Storage",
       "issuer": "Amazon Web Services (AWS)",
       "date": "Aug 2025",
-      "url": "https://credly.com/badges/c5d62f7c-9553-4f35-8d04-e837e0aa134b"
+      "url": "https://credly.com/badges/c5d62f7c-9553-4f35-8d04-e837e0aa134b",
+      "featured": true
     },
     {
       "name": "Verified Python Coder",
       "issuer": "Credmark",
       "date": "Jul 2025",
-      "url": "https://credmark.ai"
+      "url": "https://credmark.ai",
+      "featured": true
     },
     {
       "name": "Software Engineering (ASIC)",
       "issuer": "AltSchool Africa",
-      "date": "May 2025"
+      "date": "May 2025",
+      "featured": true
     },
     {
       "name": "AI Augmented Professional Development Skills in the Digital Age",
       "issuer": "ALX South Africa",
-      "date": "Jul 2024"
+      "date": "Jul 2024",
+      "featured": true
     },
     {
       "name": "Version Control",

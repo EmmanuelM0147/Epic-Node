@@ -30,12 +30,15 @@ function renderHirePage(config, linkedin) {
       ${contact.email ? `<a href="mailto:${escapeHtml(contact.email)}">${icon("email")} Email me</a>` : ""}
       ${contact.linkedin ? `<a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">${icon("linkedin")} LinkedIn</a>` : ""}
       ${contact.github ? `<a href="${escapeHtml(contact.github)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>` : ""}
-      <a href="${pageUrl("experience.html")}">${icon("user")} View CV</a>
+      ${contact.orcid ? `<a href="${escapeHtml(contact.orcid)}" target="_blank" rel="noopener noreferrer">${icon("orcid")} ORCID</a>` : ""}
+      <a href="${pageUrl("cv.html")}">${icon("user")} View CV</a>
     </div>
   `;
 }
 
 async function initHirePage() {
+  const container = document.getElementById("hire-content");
+  renderLoadingSkeleton(container, 4);
   await initLayout("hire");
   await loadSiteConfig();
 

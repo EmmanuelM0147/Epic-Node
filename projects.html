@@ -9,20 +9,26 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/github-theme.css" />
   </head>
-  <body>
+  <body
+    data-page-title="Projects - Emmanuel Okeowo"
+    data-page-description="Projects by Emmanuel Okeowo — production APIs, fintech backends, and open-source work."
+  >
     <header id="site-header" class="site-header"></header>
     <div class="site-shell">
       <aside id="sidebar" class="sidebar" aria-label="Profile sidebar"></aside>
       <main class="main-content">
         <div id="tabs"></div>
         <div class="page-content">
+          <header class="section-header">
+            <h2>Projects</h2>
+          </header>
           <div class="filters-bar">
             <div class="filter-group">
               <label for="filter-type">Type</label>
               <select id="filter-type">
                 <option value="all">All</option>
                 <option value="public">Public</option>
-                <option value="private">Private</option>
+                <option value="private">Client / Private</option>
                 <option value="fork">Fork</option>
               </select>
             </div>
@@ -48,7 +54,7 @@
           <div id="projects-list" class="projects-list"></div>
 
           <p class="section-footer">
-            <a href="https://github.com/EmmanuelM0147?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a id="projects-github-link" href="#" target="_blank" rel="noopener noreferrer">
               See all my projects on GitHub →
             </a>
           </p>

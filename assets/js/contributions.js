@@ -125,6 +125,35 @@ async function loadContributions(username = SITE_CONFIG.githubUsername, { prefer
   }
 }
 
+function initContributionActivityLazy(container, username = SITE_CONFIG.githubUsername) {
+  if (!container) return;
+
+  container.innerHTML = `<p class="empty-state">Loading contribution activity…</p>`;
+
+  const start = () => {
+    if (container.dataset.loaded === "true") return;
+    container.dataset.loaded = "true";
+    initContributionActivity(container, username);
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    start();
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        observer.disconnect();
+        start();
+      }
+    },
+    { rootMargin: "120px" }
+  );
+
+  observer.observe(container);
+}
+
 function initContributionActivity(container, username = SITE_CONFIG.githubUsername) {
   if (!container) return;
 

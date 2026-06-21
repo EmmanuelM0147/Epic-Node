@@ -3,12 +3,30 @@ const SITE_CONFIG = {
   githubUsername: "EmmanuelM0147",
   siteTitle: "Emmanuel Okeowo - Software Engineer",
   siteName: "epicnode.dev",
+  portfolioUrl: "https://epicnode.hostless.site",
   email: "okeowoemmanuelm@gmail.com",
   highlights: ["Software Engineer", "Open to remote opportunities"],
   roleTitle: "Software Engineer",
 };
 
 let tabCounts = { projects: 0, certifications: 0 };
+let linkedInDataCache = null;
+let linkedInDataPromise = null;
+
+const MONTH_INDEX = {
+  jan: 0,
+  feb: 1,
+  mar: 2,
+  apr: 3,
+  may: 4,
+  jun: 5,
+  jul: 6,
+  aug: 7,
+  sep: 8,
+  oct: 9,
+  nov: 10,
+  dec: 11,
+};
 
 async function loadSiteConfig() {
   try {
@@ -24,33 +42,34 @@ async function loadSiteConfig() {
 
 async function loadTabCounts() {
   try {
-    const [reposRes, projectsRes, linkedinRes] = await Promise.all([
-      fetch(assetUrl("data/github-repos.json")),
-      fetch(assetUrl("data/projects.json")),
-      fetch(assetUrl("data/linkedin.json"), { cache: "no-store" }),
+    const [reposRes, projectsRes, linkedin] = await Promise.all([
+      fetch(assetUrl("data/github-repos.json"), { cache: "no-store" }),
+      fetch(assetUrl("data/projects.json"), { cache: "no-store" }),
+      fetchLinkedInJson().catch(() => null),
     ]);
 
     let githubCount = 0;
     let curatedCount = 0;
+    const githubNames = new Set();
 
     if (reposRes.ok) {
       const data = await reposRes.json();
-      githubCount = (data.repos || []).filter(
+      const repos = (data.repos || []).filter(
         (repo) => repo.name !== SITE_CONFIG.githubUsername
-      ).length;
+      );
+      githubCount = repos.length;
+      repos.forEach((repo) => githubNames.add(repo.name.toLowerCase()));
     }
 
     if (projectsRes.ok) {
       const data = await projectsRes.json();
-      curatedCount = (data.projects || []).length;
+      curatedCount = (data.projects || []).filter(
+        (project) => !githubNames.has(project.name.toLowerCase())
+      ).length;
     }
 
     tabCounts.projects = githubCount + curatedCount;
-
-    if (linkedinRes.ok) {
-      const data = await linkedinRes.json();
-      tabCounts.certifications = (data.certifications || []).length;
-    }
+    tabCounts.certifications = linkedin?.certifications?.length || 0;
   } catch {
     tabCounts.projects = tabCounts.projects || 0;
     tabCounts.certifications = tabCounts.certifications || 0;
@@ -103,6 +122,79 @@ function renderTechTags(technologies) {
       ${technologies.map((tech) => `<span class="tech-tag">${escapeHtml(tech)}</span>`).join("")}
     </div>
   `;
+}
+
+function renderSkillsSection(skills, { title = "Skills" } = {}) {
+  if (!skills?.length) return "";
+
+  return `
+    <section class="cv-section">
+      <h3 class="cv-section-title">${icon("list")} ${escapeHtml(title)}</h3>
+      ${renderTechTags(skills)}
+    </section>
+  `;
+}
+
+function renderLoadingSkeleton(container, lines = 3) {
+  if (!container) return;
+  container.innerHTML = `
+    <div class="loading-skeleton" aria-hidden="true">
+      ${Array.from({ length: lines }, () => `<span class="skeleton-line"></span>`).join("")}
+    </div>
+  `;
+}
+
+function parseMonthYearDate(value) {
+  if (!value) return 0;
+
+  const match = String(value).match(/([A-Za-z]{3,9})\s+(\d{4})/);
+  if (match) {
+    const month = MONTH_INDEX[match[1].slice(0, 3).toLowerCase()];
+    if (month !== undefined) {
+      return new Date(Number(match[2]), month, 1).getTime();
+    }
+  }
+
+  return Date.parse(value) || 0;
+}
+
+function parseExperienceDate(value) {
+  if (!value) return 0;
+  if (/present/i.test(value)) return Date.now();
+
+  const matches = [...String(value).matchAll(/([A-Za-z]{3,9})\s+(\d{4})/g)];
+  const last = matches.at(-1);
+  if (last) {
+    const month = MONTH_INDEX[last[1].slice(0, 3).toLowerCase()];
+    if (month !== undefined) {
+      return new Date(Number(last[2]), month, 1).getTime();
+    }
+  }
+
+  return parseMonthYearDate(value);
+}
+
+function portfolioUrl(linkedin = null) {
+  return SITE_CONFIG.portfolioUrl || linkedin?.portfolioUrl || "";
+}
+
+function currentEmployer(linkedin = null) {
+  return linkedin?.currentCompany || linkedin?.experience?.[0]?.company || null;
+}
+
+function sidebarProfileOverrides(profile, linkedin = null) {
+  const nextProfile = { ...profile };
+  const employer = currentEmployer(linkedin);
+  const siteUrl = portfolioUrl(linkedin);
+
+  if (employer) {
+    nextProfile.company = employer;
+  }
+  if (siteUrl) {
+    nextProfile.blog = siteUrl;
+  }
+
+  return nextProfile;
 }
 
 function formatInlineMarkdown(text) {
@@ -234,7 +326,7 @@ function renderHeader() {
   header.innerHTML = `
     <div class="site-header-inner">
       <a class="site-brand" href="${pageUrl("index.html")}">${escapeHtml(SITE_CONFIG.siteName || "epicnode.dev")}</a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="${theme === "light" ? "true" : "false"}">
         ${theme === "light" ? icon("moon") : icon("sun")}
       </button>
     </div>
@@ -273,7 +365,7 @@ function renderSidebar(profile, activeTab, options = {}) {
       <h1 class="sidebar-name">${escapeHtml(profile.name || username)}</h1>
       <p class="sidebar-username">@${escapeHtml(username)}</p>
       <p class="sidebar-bio">${escapeHtml(sidebarBio)}</p>
-      <a class="btn-follow" href="https://github.com/${escapeHtml(username)}?tab=followers" target="_blank" rel="noopener noreferrer">Follow</a>
+      <a class="btn-follow" href="${pageUrl("hire.html")}">${icon("briefcase")} Hire me</a>
     </div>
     <div class="sidebar-stats">
       <span><strong>${formatCount(profile.followers)}</strong> followers</span>
@@ -318,7 +410,7 @@ function renderTabs(activeTab) {
       id: "certifications",
       label: "Certifications",
       href: pageUrl("certifications.html"),
-      icon: "book",
+      icon: "graduation",
       count: tabCounts.certifications,
     },
     {
@@ -329,7 +421,7 @@ function renderTabs(activeTab) {
       count: tabCounts.projects,
     },
     { id: "hire", label: "Hire Me", href: pageUrl("hire.html"), icon: "briefcase" },
-    { id: "cv", label: "CV", href: pageUrl("experience.html"), icon: "user" },
+    { id: "cv", label: "CV", href: pageUrl("cv.html"), icon: "user" },
   ];
 
   tabs.innerHTML = `
@@ -357,7 +449,7 @@ async function initLayout(activeTab) {
 
   let profile = null;
   try {
-    const response = await fetch(assetUrl("data/github-profile.json"));
+    const response = await fetch(assetUrl("data/github-profile.json"), { cache: "no-store" });
     if (response.ok) {
       profile = await response.json();
     }
@@ -366,8 +458,8 @@ async function initLayout(activeTab) {
       login: SITE_CONFIG.githubUsername,
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
-      bio: "Software Engineer · Backend & AI · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
-      company: "Kings Technologies & Innovations",
+      bio: "Software Engineer · Backend & AI · Node.js · TypeScript · Python · RAG & production APIs",
+      company: "Keyrium",
       location: "Lagos",
       followers: 9,
       following: 37,
@@ -381,9 +473,10 @@ async function initLayout(activeTab) {
     };
   }
 
+  let linkedin = null;
   let sidebarBio = profile?.bio || "";
   try {
-    const linkedin = await fetchLinkedInJson();
+    linkedin = await fetchLinkedInJson();
     if (linkedin.sidebarBio) {
       sidebarBio = linkedin.sidebarBio;
     } else if (linkedin.githubBio) {
@@ -395,16 +488,119 @@ async function initLayout(activeTab) {
     // Fall back to GitHub bio.
   }
 
+  profile = sidebarProfileOverrides(profile, linkedin);
   renderSidebar(profile, activeTab, { bio: sidebarBio });
+  renderSiteFooter(linkedin);
+  injectPersonSchema(profile, linkedin);
+  applyPageMetaFromDocument();
   return profile;
+}
+
+function applyPageMetaFromDocument() {
+  const { pageTitle, pageDescription } = document.body.dataset;
+  if (pageTitle || pageDescription) {
+    initPageMeta({ title: pageTitle, description: pageDescription });
+  }
+}
+
+function renderSiteFooter(linkedin = null) {
+  let footer = document.getElementById("site-footer");
+  if (!footer) {
+    footer = document.createElement("footer");
+    footer.id = "site-footer";
+    footer.className = "site-footer";
+    document.querySelector(".site-shell")?.insertAdjacentElement("afterend", footer);
+  }
+
+  const updated = linkedin?.updatedAt ? `Profile updated ${linkedin.updatedAt}` : "";
+  const portfolio = portfolioUrl(linkedin);
+  const username = SITE_CONFIG.githubUsername;
+
+  footer.innerHTML = `
+    <div class="site-footer-inner">
+      <p class="site-footer-copy">© ${new Date().getFullYear()} Emmanuel Okeowo · Software Engineer</p>
+      <div class="site-footer-links">
+        ${portfolio ? `<a href="${escapeHtml(portfolio)}" target="_blank" rel="noopener noreferrer">Portfolio</a>` : ""}
+        <a href="${pageUrl("cv.html")}">CV</a>
+        <a href="${pageUrl("hire.html")}">Hire Me</a>
+        <a href="https://github.com/${escapeHtml(username)}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      ${updated ? `<p class="site-footer-meta">${escapeHtml(updated)}</p>` : ""}
+    </div>
+  `;
+}
+
+function setMetaTag(name, content, { property = false } = {}) {
+  if (!content) return;
+
+  const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+  let tag = document.head.querySelector(selector);
+  if (!tag) {
+    tag = document.createElement("meta");
+    if (property) {
+      tag.setAttribute("property", name);
+    } else {
+      tag.setAttribute("name", name);
+    }
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute("content", content);
+}
+
+function initPageMeta({ title, description } = {}) {
+  const pageTitle = title || SITE_CONFIG.siteTitle;
+  const pageDescription = description || SITE_CONFIG.siteDescription || "";
+  const url = window.location.href;
+
+  if (title) {
+    document.title = title;
+  }
+  setMetaTag("description", pageDescription);
+  setMetaTag("og:title", pageTitle, { property: true });
+  setMetaTag("og:description", pageDescription, { property: true });
+  setMetaTag("og:url", url, { property: true });
+  setMetaTag("og:type", "website", { property: true });
+  setMetaTag("twitter:card", "summary");
+  setMetaTag("twitter:title", pageTitle);
+  setMetaTag("twitter:description", pageDescription);
+}
+
+function injectPersonSchema(profile, linkedin = null) {
+  if (document.getElementById("person-schema")) return;
+
+  const contact = linkedin?.contact || {};
+  const sameAs = [contact.linkedin, contact.github, contact.orcid].filter(Boolean);
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: profile?.name || "Emmanuel Okeowo",
+    jobTitle: SITE_CONFIG.roleTitle || "Software Engineer",
+    url: portfolioUrl(linkedin) || window.location.origin + pageUrl("index.html"),
+    email: contact.email || SITE_CONFIG.email,
+    sameAs,
+    knowsAbout: (linkedin?.skills || []).slice(0, 12),
+  };
+
+  const script = document.createElement("script");
+  script.id = "person-schema";
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 }
 
 function sortCertifications(certifications = []) {
   return [...certifications].sort((a, b) => {
-    const dateA = Date.parse(a.date || "") || 0;
-    const dateB = Date.parse(b.date || "") || 0;
-    return dateB - dateA;
+    const featuredA = a.featured ? 1 : 0;
+    const featuredB = b.featured ? 1 : 0;
+    if (featuredB !== featuredA) return featuredB - featuredA;
+    return parseMonthYearDate(b.date) - parseMonthYearDate(a.date);
   });
+}
+
+function sortExperience(experience = []) {
+  return [...experience].sort(
+    (a, b) => parseExperienceDate(b.dates) - parseExperienceDate(a.dates)
+  );
 }
 
 function buildSummaryItems(data) {
@@ -436,11 +632,28 @@ function renderSummaryMarkup(data) {
 }
 
 async function fetchLinkedInJson() {
-  const response = await fetch(assetUrl("data/linkedin.json"), { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error("Failed to load profile data");
+  if (linkedInDataCache) {
+    return linkedInDataCache;
   }
-  return response.json();
+
+  if (!linkedInDataPromise) {
+    linkedInDataPromise = fetch(assetUrl("data/linkedin.json"), { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load profile data");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        linkedInDataCache = data;
+        return data;
+      })
+      .finally(() => {
+        linkedInDataPromise = null;
+      });
+  }
+
+  return linkedInDataPromise;
 }
 
 async function loadLinkedInData() {

@@ -36,7 +36,7 @@ function renderProjectPreview(repos) {
 
   const filtered = repos.filter((repo) => repo.name !== "EmmanuelM0147");
   const featured = pickOverviewFeatured(filtered, 3);
-  const remaining = filtered.length - featured.length;
+  const remaining = Math.max(0, countPortfolioProjects(filtered) - featured.length);
 
   container.innerHTML = featured
     .map((repo) => {
@@ -167,7 +167,7 @@ function renderContribution(profile) {
   const box = document.getElementById("contribution-box");
   if (!box) return;
 
-  initContributionActivity(box, profile.login || SITE_CONFIG.githubUsername);
+  initContributionActivityLazy(box, profile.login || SITE_CONFIG.githubUsername);
 }
 
 async function initOverviewPage() {
