@@ -33,7 +33,7 @@ function renderAboutPage(data) {
   const container = document.getElementById("about-content");
   if (!container || !data) return;
 
-  const headline = data.headline || "";
+  const headline = profileAboutTagline(data);
   const body = aboutBodyText(data);
   const summary = renderSummaryMarkup(data);
 

@@ -5,7 +5,7 @@ function renderHirePage(config, linkedin) {
   const hire = config.hireMe || {};
   const services = hire.services || [];
   const contact = { ...hire.contact, ...linkedin?.contact };
-  const headline = hire.headline || linkedin?.headline || "";
+  const headline = hire.headline || "";
   const summary = hire.summary || linkedin?.intro || "";
 
   container.innerHTML = `
@@ -14,7 +14,6 @@ function renderHirePage(config, linkedin) {
     </header>
     ${headline ? `<p class="hire-headline">${escapeHtml(headline)}</p>` : ""}
     <p class="hire-intro">${escapeHtml(summary)}</p>
-    ${renderSummaryMarkup(linkedin || {})}
     <div class="preview-grid hire-services">
       ${services
         .map(

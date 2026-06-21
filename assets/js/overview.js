@@ -128,8 +128,7 @@ function renderIntro(profile, linkedin = {}) {
   const roleLabel = linkedin.roleLabel || `a ${roleTitle()}`;
   const greeting = `My name is ${name} and I'm ${roleLabel} based in ${profile.location || "Lagos"}.`;
   const tagline =
-    SITE_CONFIG.roleTagline ||
-    linkedin.stackLine ||
+    profileOverviewTagline(linkedin) ||
     introBioText(profile.bio) ||
     "";
 

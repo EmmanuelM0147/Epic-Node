@@ -101,8 +101,8 @@ function formatPrintContact(contact = {}) {
 
 function renderPrintBanner(profile, data) {
   const name = profile?.name || "Emmanuel Okeowo";
-  const headline = data.headline || "";
-  const intro = data.cvIntro || data.intro || headline;
+  const headline = profileCvPrintHeadline(data);
+  const intro = profileCvIntro(data);
   const links = formatPrintContact(data.contact);
 
   return `
@@ -156,7 +156,7 @@ function renderExperience(data, profile) {
       </div>
 
       <div class="cv-intro">
-        <p class="cv-focus">${escapeHtml(data.cvIntro || data.intro || data.headline || "")}</p>
+        <p class="cv-focus">${escapeHtml(profileCvIntro(data))}</p>
         ${renderCvContact(data.contact)}
       </div>
 

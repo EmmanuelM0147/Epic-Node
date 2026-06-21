@@ -446,3 +446,19 @@ async function fetchLinkedInJson() {
 async function loadLinkedInData() {
   return fetchLinkedInJson();
 }
+
+function profileAboutTagline(data = {}) {
+  return data.aboutTagline || "Software Engineer · Backend & AI Systems";
+}
+
+function profileOverviewTagline(data = {}) {
+  return data.stackLine || SITE_CONFIG.roleTagline || "";
+}
+
+function profileCvIntro(data = {}) {
+  return data.cvIntro || data.intro || "";
+}
+
+function profileCvPrintHeadline(data = {}) {
+  return data.headline || "";
+}
