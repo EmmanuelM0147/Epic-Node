@@ -10,6 +10,7 @@ const DATA_DIR = join(ROOT, "data");
 
 const USERNAME = process.env.GITHUB_USERNAME || "EmmanuelM0147";
 const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
+const USER_TOKEN = process.env.GITHUB_USER_TOKEN || TOKEN;
 
 function formatUpdatedDate(isoDate) {
   if (!isoDate) return "Unknown";
@@ -99,7 +100,7 @@ function loadProfileOverrides() {
 }
 
 async function patchGitHubProfile({ company, blog }) {
-  if (!TOKEN) return false;
+  if (!USER_TOKEN) return false;
 
   const patch = {};
   if (company) patch.company = company;
@@ -110,7 +111,7 @@ async function patchGitHubProfile({ company, blog }) {
     method: "PATCH",
     headers: {
       Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${TOKEN}`,
+      Authorization: `Bearer ${USER_TOKEN}`,
       "User-Agent": "Epic-Node-Portfolio-Sync",
       "X-GitHub-Api-Version": "2022-11-28",
     },
