@@ -179,6 +179,35 @@ function portfolioUrl(linkedin = null) {
   return SITE_CONFIG.portfolioUrl || linkedin?.portfolioUrl || "";
 }
 
+function xProfileUsername(contact = {}, profile = {}) {
+  return contact.xUsername || profile?.twitter_username || SITE_CONFIG.githubUsername || "Trippie_1800";
+}
+
+function xProfileUrl(contact = {}, profile = {}) {
+  if (contact.x) return contact.x;
+  const username = xProfileUsername(contact, profile).replace(/^@/, "");
+  return `https://x.com/${encodeURIComponent(username)}`;
+}
+
+function renderXProfileLink(contact = {}, profile = {}) {
+  const username = xProfileUsername(contact, profile).replace(/^@/, "");
+  const url = xProfileUrl(contact, profile);
+
+  return `
+    <a
+      class="readme-link readme-link-x"
+      href="${escapeHtml(url)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="@${escapeHtml(username)} on X"
+      title="@${escapeHtml(username)} on X"
+    >
+      <span class="social-icon-link">${icon("x")}</span>
+      <span>@${escapeHtml(username)}</span>
+    </a>
+  `;
+}
+
 function currentEmployer(linkedin = null) {
   return linkedin?.currentCompany || linkedin?.experience?.[0]?.company || null;
 }
@@ -578,7 +607,9 @@ function injectPersonSchema(profile, linkedin = null) {
   if (document.getElementById("person-schema")) return;
 
   const contact = linkedin?.contact || {};
-  const sameAs = [contact.linkedin, contact.github, contact.orcid].filter(Boolean);
+  const sameAs = [contact.linkedin, contact.github, contact.orcid, contact.x || xProfileUrl(contact, profile)].filter(
+    Boolean
+  );
   const schema = {
     "@context": "https://schema.org",
     "@type": "Person",

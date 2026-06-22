@@ -423,6 +423,21 @@ a:hover {
   background: var(--color-btn-bg);
 }
 
+.readme-link-x .social-icon-link {
+  width: 28px;
+  height: 28px;
+  color: var(--color-fg-default);
+}
+
+.readme-link-x:hover .social-icon-link {
+  color: var(--color-accent-fg);
+  border-color: var(--color-accent-fg);
+}
+
+.about-links .readme-link-x {
+  gap: 8px;
+}
+
 .social-icon-link:hover {
   background: var(--color-btn-hover-bg);
   text-decoration: none;

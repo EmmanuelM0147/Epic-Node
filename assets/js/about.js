@@ -1,8 +1,28 @@
-function renderAboutLinks(contact = {}) {
+function renderAboutConnectLink(contact = {}, profile = {}) {
+  const username = xProfileUsername(contact, profile).replace(/^@/, "");
+  const url = xProfileUrl(contact, profile);
+
+  return `
+    <a
+      class="about-link readme-link-x"
+      href="${escapeHtml(url)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="@${escapeHtml(username)} on X"
+      title="@${escapeHtml(username)} on X"
+    >
+      <span class="social-icon-link">${icon("x")}</span>
+      <span>@${escapeHtml(username)}</span>
+    </a>
+  `;
+}
+
+function renderAboutLinks(contact = {}, profile = {}) {
   const links = [
     contact.email
       ? `<a href="mailto:${escapeHtml(contact.email)}">${icon("email")} Email</a>`
       : "",
+    renderAboutConnectLink(contact, profile),
     contact.github
       ? `<a href="${escapeHtml(contact.github)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>`
       : "",
@@ -29,7 +49,7 @@ function aboutBodyText(data) {
   return text.split(/\n\n(\*\*)?Focus areas:/i)[0].trim();
 }
 
-function renderAboutPage(data) {
+function renderAboutPage(data, profile = {}) {
   const container = document.getElementById("about-content");
   if (!container || !data) return;
 
@@ -44,18 +64,18 @@ function renderAboutPage(data) {
 
     <div class="about-body readme-about">${renderMarkdownLite(body)}</div>
 
-    ${renderAboutLinks(data.contact)}
+    ${renderAboutLinks(data.contact, profile)}
   `;
 }
 
 async function initAboutPage() {
   const container = document.getElementById("about-content");
   renderLoadingSkeleton(container, 4);
-  await initLayout("about");
+  const profile = await initLayout("about");
 
   try {
     const data = await loadLinkedInData();
-    renderAboutPage(data);
+    renderAboutPage(data, profile);
   } catch {
     const container = document.getElementById("about-content");
     if (container) {

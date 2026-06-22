@@ -142,13 +142,12 @@ function renderReadmeSocial(profile, contact = {}) {
   const cta = document.getElementById("readme-cta");
   if (!social) return;
 
-  const twitter = profile?.twitter_username || "Trippie_1800";
   const githubUser = profile?.login || SITE_CONFIG.githubUsername;
   const linkedinUrl = contact.linkedin || "https://www.linkedin.com/in/okeowoemmanuelm/";
   const orcidUrl = contact.orcid || "https://orcid.org/0009-0000-2965-8445";
 
   social.innerHTML = `
-    <a class="readme-link" href="https://x.com/${escapeHtml(twitter)}" target="_blank" rel="noopener noreferrer">${icon("x")} @${escapeHtml(twitter)}</a>
+    ${renderXProfileLink(contact, profile)}
     <a class="readme-link" href="${escapeHtml(linkedinUrl)}" target="_blank" rel="noopener noreferrer">${icon("linkedin")} LinkedIn</a>
     <a class="readme-link" href="https://github.com/${escapeHtml(githubUser)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>
     <a class="readme-link" href="${escapeHtml(orcidUrl)}" target="_blank" rel="noopener noreferrer">${icon("orcid")} ORCID</a>
