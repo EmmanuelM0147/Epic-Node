@@ -63,7 +63,7 @@
       "title": "Software Engineer",
       "company": "Folio Technologies Ltd",
       "location": "Lagos State, Nigeria · Hybrid",
-      "dates": "Jan 2024 – Jun 2025",
+      "dates": "Jan 2023 – Jun 2025",
       "description": "Built server-side caching and cache-control tuning that reduced repeat asset load times on key routes by up to 80%. Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC and integrations for email, SMS, and push notifications. Connected backend APIs to the client app with stable contracts and responsive data flows.",
       "technologies": ["Node.js", "OAuth 2.0", "JWT", "AWS", "Caching", "RBAC"]
     },
