@@ -1,8 +1,21 @@
 {
   "username": "EmmanuelM0147",
   "count": 58,
-  "synced_at": "2026-06-28T09:16:47.105Z",
+  "synced_at": "2026-06-29T11:08:29.856Z",
   "repos": [
+    {
+      "name": "sales_prediction",
+      "full_name": "EmmanuelM0147/sales_prediction",
+      "html_url": "https://github.com/EmmanuelM0147/sales_prediction",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-06-29T07:22:21Z",
+      "updated": "Jun 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,7 +26,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-06-27T08:41:33Z",
+      "updated_at": "2026-06-28T09:16:51Z",
       "updated": "Jun 2026"
     },
     {
@@ -92,19 +105,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2026-06-14T13:21:56Z",
-      "updated": "Jun 2026"
-    },
-    {
-      "name": "Sales_Prediction",
-      "full_name": "EmmanuelM0147/Sales_Prediction",
-      "html_url": "https://github.com/EmmanuelM0147/Sales_Prediction",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-06-13T11:57:37Z",
       "updated": "Jun 2026"
     },
     {
