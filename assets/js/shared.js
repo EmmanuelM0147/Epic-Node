@@ -189,21 +189,24 @@ function xProfileUrl(contact = {}, profile = {}) {
   return `https://x.com/${encodeURIComponent(username)}`;
 }
 
-function renderXProfileLink(contact = {}, profile = {}) {
+function renderXProfileLink(contact = {}, profile = {}, options = {}) {
   const username = xProfileUsername(contact, profile).replace(/^@/, "");
   const url = xProfileUrl(contact, profile);
+  const linkClass = options.linkClass ? ` ${options.linkClass}` : "";
 
   return `
     <a
-      class="readme-link readme-link-x"
+      class="readme-link readme-link-x${linkClass}"
       href="${escapeHtml(url)}"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="@${escapeHtml(username)} on X"
       title="@${escapeHtml(username)} on X"
     >
-      <span class="social-icon-link">${icon("x")}</span>
-      <span>@${escapeHtml(username)}</span>
+      <span class="social-icon-link social-icon-link-x">
+        ${icon("x")}
+        <span class="x-handle">@${escapeHtml(username)}</span>
+      </span>
     </a>
   `;
 }

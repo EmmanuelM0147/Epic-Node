@@ -1,20 +1,5 @@
 function renderAboutConnectLink(contact = {}, profile = {}) {
-  const username = xProfileUsername(contact, profile).replace(/^@/, "");
-  const url = xProfileUrl(contact, profile);
-
-  return `
-    <a
-      class="about-link readme-link-x"
-      href="${escapeHtml(url)}"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="@${escapeHtml(username)} on X"
-      title="@${escapeHtml(username)} on X"
-    >
-      <span class="social-icon-link">${icon("x")}</span>
-      <span>@${escapeHtml(username)}</span>
-    </a>
-  `;
+  return renderXProfileLink(contact, profile, { linkClass: "about-link" });
 }
 
 function renderAboutLinks(contact = {}, profile = {}) {

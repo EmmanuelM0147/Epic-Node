@@ -423,19 +423,28 @@ a:hover {
   background: var(--color-btn-bg);
 }
 
-.readme-link-x .social-icon-link {
-  width: 28px;
+.readme-link-x .social-icon-link-x {
+  width: auto;
   height: 28px;
+  padding: 0 10px 0 8px;
+  gap: 6px;
   color: var(--color-fg-default);
 }
 
-.readme-link-x:hover .social-icon-link {
+.readme-link-x .x-handle {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.readme-link-x:hover .social-icon-link-x {
   color: var(--color-accent-fg);
   border-color: var(--color-accent-fg);
 }
 
 .about-links .readme-link-x {
-  gap: 8px;
+  gap: 0;
 }
 
 .social-icon-link:hover {
