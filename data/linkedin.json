@@ -23,6 +23,7 @@
   },
   "summary": {
     "softwareSince": 2021,
+    "lead": "Career Arc: {years}+ years shipping backend systems — from web platforms to fintech APIs, loyalty backends, and RAG pipelines (since {since})",
     "highlights": [
       "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
       "Applied AI Systems: RAG pipelines, semantic search, LLM integration, and agentic workflows",

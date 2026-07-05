@@ -643,16 +643,33 @@ function sortExperience(experience = []) {
   );
 }
 
+function buildSummaryLead(summary = {}) {
+  const currentYear = new Date().getFullYear();
+  const since = summary.softwareSince || null;
+  const years = since ? currentYear - since : null;
+
+  if (summary.lead) {
+    return summary.lead
+      .replace(/\{years\}/g, years != null ? String(years) : "")
+      .replace(/\{since\}/g, since != null ? String(since) : "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
+
+  if (years && since) {
+    return `Career Arc: ${years}+ years shipping backend systems — from web platforms to fintech APIs, loyalty backends, and RAG pipelines (since ${since})`;
+  }
+
+  return null;
+}
+
 function buildSummaryItems(data) {
   const summary = data?.summary || {};
-  const currentYear = new Date().getFullYear();
-  const years = summary.softwareSince ? currentYear - summary.softwareSince : null;
   const highlights = summary.highlights || [];
+  const lead = buildSummaryLead(summary);
   const items = [];
 
-  if (years) {
-    items.push(`${years} years in software`);
-  }
+  if (lead) items.push(lead);
   items.push(...highlights);
 
   return items;
