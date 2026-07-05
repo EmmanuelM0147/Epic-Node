@@ -651,7 +651,7 @@ function buildSummaryItems(data) {
   const items = [];
 
   if (years) {
-    items.push(`${years}+ years in software engineering`);
+    items.push(`${years} years in software`);
   }
   items.push(...highlights);
 
