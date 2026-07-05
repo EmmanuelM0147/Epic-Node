@@ -657,7 +657,7 @@ function buildSummaryLead(summary = {}) {
   }
 
   if (years && since) {
-    return `Career Arc: ${years}+ years shipping backend systems — from web platforms to fintech APIs, loyalty backends, and RAG pipelines`;
+    return `Career Arc: ${years}+ years shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines`;
   }
 
   return null;
