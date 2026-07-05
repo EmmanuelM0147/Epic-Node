@@ -1,13 +1,13 @@
 const SITE_CONFIG = {
   baseUrl: "/Epic-Node",
   githubUsername: "EmmanuelM0147",
-  siteTitle: "Emmanuel Okeowo - Software Engineer",
+  siteTitle: "Emmanuel Okeowo - Senior Backend & AI Engineer",
   siteName: "epicnode.dev",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
-  highlights: ["Software Engineer", "Open to remote opportunities"],
-  roleTitle: "Software Engineer",
+  highlights: ["Senior Backend & AI Engineer", "Open to hybrid & remote roles"],
+  roleTitle: "Senior Backend & AI Engineer",
 };
 
 let tabCounts = { projects: 0, certifications: 0 };
@@ -489,7 +489,7 @@ async function initLayout(activeTab) {
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
       bio: "Software Engineer · Backend & AI · Node.js · TypeScript · Python · RAG & production APIs",
-      company: "Keyrium",
+      company: "Keyrium Consulting",
       location: "Lagos",
       followers: 9,
       following: 37,
@@ -584,7 +584,7 @@ function initPageMeta({ title, description } = {}) {
   const imageUrl =
     SITE_CONFIG.ogImageUrl ||
     new URL(assetUrl("assets/og-image.png"), window.location.origin).href;
-  const imageAlt = "Emmanuel Okeowo - Software Engineer · Backend & AI Systems";
+  const imageAlt = "Emmanuel Okeowo - Senior Backend & AI Engineer";
 
   if (title) {
     document.title = title;
@@ -701,7 +701,7 @@ async function loadLinkedInData() {
 }
 
 function profileAboutTagline(data = {}) {
-  return data.aboutTagline || "Software Engineer · Backend & AI Systems";
+  return data.aboutTagline || "Senior Backend & AI Engineer · Backend & AI Systems";
 }
 
 function profileOverviewTagline(data = {}) {

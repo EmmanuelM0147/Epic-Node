@@ -60,7 +60,7 @@ function renderCertItem(cert) {
   return `
     <li class="cert-item">
       <span class="cert-name">${label}</span>
-      <span class="cert-meta">${escapeHtml(cert.issuer)} · ${escapeHtml(cert.date)}</span>
+      <span class="cert-meta">${escapeHtml(cert.issuer)} · ${escapeHtml(cert.date)}${cert.credentialId ? ` · ID ${escapeHtml(cert.credentialId)}` : ""}</span>
     </li>
   `;
 }

@@ -1,18 +1,18 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
   "updatedAt": "2026-07-05",
-  "headline": "Software Engineer | Architecting Scalable Backend Systems & AI/ML Solutions | Node.js · TypeScript · Python · AWS",
-  "aboutTagline": "Software Engineer · Scalable Backend Systems & AI/ML",
+  "headline": "Senior Backend & AI Engineer · Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
+  "aboutTagline": "Senior Backend & AI Engineer · Backend & AI Systems",
   "portfolioUrl": "https://epicnode.hostless.site",
-  "currentCompany": "Keyrium",
-  "stackLine": "Scalable Backend Systems & AI/ML · Node.js · TypeScript · Python · AWS",
-  "roleLabel": "a Software Engineer",
-  "githubBio": "Software Engineer · Backend & AI · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
-  "sidebarBio": "Software Engineer building production backends and applied AI systems, from scalable APIs and distributed services to RAG pipelines and agent workflows.",
-  "intro": "Open to remote software engineering roles with a focus on production APIs, fintech backends, and applied AI systems.",
-  "cvIntro": "Software Engineer specializing in scalable backend systems and applied AI/ML solutions. I design and ship production APIs, distributed services, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "I'm a **Software Engineer** focused on scalable backend systems and applied AI/ML solutions, bringing production APIs and intelligent workflows from prototype to stable production.\n\nI bridge high-throughput backend architecture and applied ML orchestration: REST APIs, data pipelines, secure authentication, caching, and cloud infrastructure on AWS.\n\nCurrently at **Keyrium**, I lead development of production-grade RESTful APIs for Universal Loyalty Rewards and Kronix Stock Trading using **Node.js**, **TypeScript**, and **PostgreSQL**, including testing (85% code coverage) and end-to-end AWS architecture with security and monitoring.\n\n**Focus areas:** Scalable distributed architectures · Backend systems · AI/ML pipelines · Cloud & API optimization\n\n**Stack:** Node.js · TypeScript · Python · PostgreSQL · AWS · Docker · RAG · Agentic AI\n\n**Let's connect:** [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com) · [Portfolio](https://epicnode.hostless.site) · [LinkedIn](https://www.linkedin.com/in/okeowoemmanuelm/)",
-  "linkedinAbout": "Innovative engineer focused on performance and reliability. I build high-scale backend systems and applied AI/ML solutions for production environments.\n\nMy work spans RESTful API development, database optimization, secure authentication, caching, AWS infrastructure, and cross-functional collaboration with cybersecurity and product teams.\n\nCurrently at Keyrium, I lead development of production-grade RESTful APIs for Universal Loyalty Rewards and Kronix Stock Trading using Node.js, TypeScript, and PostgreSQL, including a testing framework with 85% code coverage and end-to-end AWS architecture design with IAM, encryption, Grafana monitoring, and audit controls.\n\nI also engineer AI-powered applications and ML pipelines through Kings Technologies & Innovations, using Python, OpenAI APIs, Scikit-Learn, and MLflow.\n\nPreviously, I've improved API and database performance by 30–80% across fintech and platform backends, and built secure auth systems with JWT, OAuth 2.0, MFA, and RBAC.\n\nOpen to Software Engineer, Backend Engineer, and AI/ML system roles (remote/hybrid).\n\nPortfolio: epicnode.hostless.site\nEmail: okeowoemmanuelm@gmail.com",
+  "currentCompany": "Keyrium Consulting",
+  "stackLine": "Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
+  "roleLabel": "a Senior Backend & AI Engineer",
+  "githubBio": "Senior Backend & AI Engineer · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
+  "sidebarBio": "Senior Backend & AI Engineer building production APIs and applied AI systems, from scalable fintech backends to RAG pipelines and agent workflows.",
+  "intro": "Open to hybrid and remote senior backend and applied AI roles focused on production APIs, fintech systems, and LLM integration.",
+  "cvIntro": "Senior Backend & AI Engineer specializing in production APIs and applied AI systems. I design and ship scalable REST services, distributed backends, and reliable cloud infrastructure from architecture through deployment.",
+  "githubAbout": "I'm a **Senior Backend & AI Engineer** focused on production APIs and applied AI systems, bringing RAG pipelines and multi-agent workflows from prototype to stable production.\n\nI bridge high-throughput backend architecture and intelligent LLM orchestration: production APIs, data pipelines, vector database integration, caching, auth, and agent lifecycle management.\n\nCurrently at **Keyrium Consulting**, I lead development of backend systems for high-concurrency enterprise APIs (Loyalty Rewards & Stock Trading) using **Node.js**, **TypeScript**, and **PostgreSQL**, including system design, CI/CD automation, cloud deployment, and testing (85% code coverage).\n\n**Focus areas:** Scalable distributed architectures · LLM orchestration · RAG pipelines · Multi-agent workflows · Cloud & API optimization\n\n**Stack:** Node.js · TypeScript · Python · PostgreSQL · AWS · RAG · Agentic AI\n\n**Let's connect:** [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com) · [Portfolio](https://epicnode.hostless.site) · [LinkedIn](https://www.linkedin.com/in/okeowoemmanuelm/)",
+  "linkedinAbout": "I'm a Senior Backend & AI Engineer based in Lagos State, Nigeria, specializing in production APIs and applied AI systems. I build scalable REST services, distributed backends, RAG pipelines, semantic search, and multi-agent workflows from prototype to reliable production.\n\nMy work spans high-throughput backend engineering and applied LLM orchestration: microservice APIs, data pipelines, vector database integration, caching, authentication, and agent lifecycle management.\n\nCurrently at Keyrium Consulting, I lead development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript, including architecture, CI/CD automation, cloud deployment, and a testing framework with 85% code coverage.\n\nPreviously, I've improved API and database performance by 30–80% across fintech and platform backends, and built secure auth systems with JWT, OAuth 2.0, MFA, and RBAC.\n\nOpen to senior backend, software engineering, and production LLM system roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site\nEmail: okeowoemmanuelm@gmail.com",
   "contact": {
     "email": "okeowoemmanuelm@gmail.com",
     "linkedin": "https://www.linkedin.com/in/okeowoemmanuelm/",
@@ -25,30 +25,21 @@
     "softwareSince": 2021,
     "highlights": [
       "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
-      "Applied AI/ML Systems: LLM integration, ML pipelines, semantic search, and intelligent automation",
+      "Applied AI Systems: RAG pipelines, semantic search, LLM integration, and agentic workflows",
       "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
-      "Data & Infrastructure: relational databases, query optimization, AWS architecture, and secure authentication",
-      "Continuous Growth: open-source contributor exploring emerging backend and AI tooling"
+      "Data & Infrastructure: relational and vector databases, query optimization, and secure authentication",
+      "Continuous Growth: LLM Zoomcamp, IAENG membership, and ongoing AI fellowship programs"
     ]
   },
   "experience": [
     {
-      "title": "Software Engineer",
-      "company": "Keyrium",
-      "location": "Lagos Island, Nigeria · Hybrid",
+      "title": "Senior Software Engineer",
+      "company": "Keyrium Consulting",
+      "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Jul 2025 – Present",
       "employmentType": "Full-time",
-      "description": "Leading development of production-grade RESTful APIs for Universal Loyalty Rewards and Kronix Stock Trading platforms using Node.js and TypeScript. Architecting secure authentication systems and third-party integrations for multi-channel communication. Established a comprehensive testing framework with 85% code coverage. Leading cross-functional collaboration with cybersecurity to design end-to-end AWS infrastructure architecture, including network security, IAM, encryption, Grafana monitoring, and audit controls.",
-      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "AWS", "Grafana", "REST APIs"]
-    },
-    {
-      "title": "Founder",
-      "company": "Kings Technologies & Innovations",
-      "location": "Lagos State, Nigeria",
-      "dates": "Dec 2025 – Present",
-      "employmentType": "Full-time",
-      "description": "Engineering AI-powered applications and ML pipelines using Python, OpenAI APIs, Scikit-Learn, MLflow, and modern MLOps practices. Building scalable, high-availability systems that turn data into intelligent automation.",
-      "technologies": ["Python", "OpenAI API", "Scikit-Learn", "MLflow", "MLOps"]
+      "description": "Leading development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architect secure systems, third-party integrations, and Docker-based deployment workflows. Established a testing framework with 85% code coverage and prototyped RAG-assisted internal tooling for documentation search.",
+      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs"]
     },
     {
       "title": "Software Engineer",
@@ -56,90 +47,85 @@
       "location": "United Kingdom · Remote",
       "dates": "Sep 2025 – Nov 2025 · Contract",
       "employmentType": "Contract",
-      "description": "Refactored database queries with targeted indexes and leaner joins, cutting query times by 40–60%. Streamlined middleware to improve API throughput by 30–50%. Introduced Redis-backed caching and tuned cache headers for faster static asset loads. Improved memory efficiency through logging cleanup, yielding 20–30% better resource utilization. Added an admin performance endpoint with key metrics for tracking and debugging.",
+      "description": "Refactored and optimized database queries by adding targeted indexes and streamlining joins, achieving 40–60% faster query times with reduced latency. Streamlined the middleware stack to improve API throughput by 30–50%. Introduced Redis-backed caching and tuned cache headers for faster repeat reads on high-traffic endpoints.",
       "technologies": ["Node.js", "Express.js", "MySQL", "Redis", "Performance Optimization"]
     },
     {
       "title": "Backend Software Engineer",
       "company": "Talenvo",
       "location": "Lagos State, Nigeria · Remote",
-      "dates": "Apr 2025 – Jul 2025 · Contract",
-      "employmentType": "Contract",
-      "description": "Engineered the backend for Evently, a dynamic event management platform enabling users to discover, RSVP to, and manage events seamlessly. Built RESTful APIs with Node.js and Express, implemented JWT-based role authentication, integrated PayStack and PCI-DSS compliance, and optimized PostgreSQL schemas for secure, scalable performance under concurrent load.",
+      "dates": "Apr 2025 – Jul 2025 · Freelance",
+      "employmentType": "Freelance",
+      "description": "Engineered the backend for a dynamic event management web platform enabling users to discover, RSVP to, and manage events seamlessly. Built RESTful APIs with Node.js and Express, implemented JWT-based role authentication, integrated PayStack and PCI-DSS compliance, and optimized PostgreSQL schemas for secure, scalable performance under concurrent load.",
       "technologies": ["Node.js", "Express.js", "PostgreSQL", "JWT", "PayStack", "PCI-DSS"]
     },
     {
-      "title": "Software Developer",
+      "title": "Software Engineer",
       "company": "Folio Technologies Ltd",
       "location": "Lagos State, Nigeria · Hybrid",
-      "dates": "Jan 2024 – Jun 2025",
-      "description": "Developed advanced features for an Edtech platform using React, Node.js, TypeScript, and PostgreSQL, enhancing user engagement. Led project deployments and AI application development. Integrated APIs to support systematic software development.",
-      "technologies": ["Node.js", "TypeScript", "React", "PostgreSQL", "REST APIs"]
-    },
-    {
-      "title": "Backend Software Engineer",
-      "company": "AltHub",
-      "location": "New York City, United States · Remote",
-      "dates": "Jun 2024 – May 2025 · Contract",
-      "employmentType": "Contract",
-      "description": "Designed and implemented robust APIs for backend systems using Node.js to enhance scalability and efficiency. Managed databases and server-side development to ensure seamless functionality. Collaborated with teams to deliver impactful solutions in a remote setting.",
-      "technologies": ["Node.js", "PostgreSQL", "REST APIs", "Backend Systems"]
-    },
-    {
-      "title": "Software Developer",
-      "company": "SkyeStudio",
-      "location": "Nigeria · Remote",
-      "dates": "Nov 2024 – Jan 2025 · Contract",
-      "employmentType": "Contract",
-      "description": "Developed UI using React and Next.js for video player functionality. Integrated Fabric.js with Video.js for overlay features and ffmpeg.wasm for client-side video editing. Implemented advanced video editing capabilities using ffmpeg on the backend API.",
-      "technologies": ["React", "Next.js", "Node.js", "Video.js", "Fabric.js"]
+      "dates": "Jan 2023 – Jun 2025",
+      "employmentType": "Full-time",
+      "description": "Built server-side caching and cache-control tuning that reduced repeat asset load times on key routes by up to 80%. Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC and integrations for email, SMS, and push notifications. Connected backend APIs to the client app with stable contracts and responsive data flows.",
+      "technologies": ["Node.js", "OAuth 2.0", "JWT", "AWS", "Caching", "RBAC"]
     },
     {
       "title": "Associate Software Engineer",
       "company": "Headstarter",
-      "location": "Long Island, New York, United States · Remote",
-      "dates": "Aug 2024 – Sep 2024 · Fellowship",
-      "employmentType": "Contract",
-      "description": "Developed AI apps and APIs using Next.js, OpenAI, Pinecone, and Stripe API with 98% accuracy for 1000 users. Led a team of 4 engineering fellows in designing and deploying projects using MVC patterns. Received coaching from Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns.",
-      "technologies": ["Next.js", "OpenAI API", "Pinecone", "Stripe", "Node.js"]
+      "location": "Long Island, Virginia, United States · Remote",
+      "dates": "Aug 2022 – Dec 2022",
+      "employmentType": "Internship",
+      "description": "Built full-stack applications using React, Python, Django REST Framework, and PostgreSQL to demonstrate production-ready code architecture. Sharpened algorithmic problem-solving through intensive DSA workshops covering time complexity, optimization, and system design fundamentals.",
+      "technologies": ["React", "Python", "Django", "PostgreSQL", "DSA"]
     },
     {
-      "title": "Information Technology Officer",
+      "title": "Web Developer",
       "company": "Macloyd Africa",
       "location": "Lagos State, Nigeria · Remote",
-      "dates": "Apr 2023 – Jul 2024",
-      "description": "Developed and maintained projects from design to deployment using advanced design patterns. Implemented email marketing strategies to enhance client engagement. Collaborated with cross-functional teams to optimize website performance and user experience.",
-      "technologies": ["JavaScript", "Web Development", "Email Marketing", "Performance Optimization"]
-    },
-    {
-      "title": "Information Technology Assistant",
-      "company": "Emzor Pharmaceutical",
-      "location": "Lagos State, Nigeria",
-      "dates": "Aug 2021 – Dec 2021",
-      "description": "Managed IT inventory, performing system maintenance and backups. Resolved issues with common office software, printers, and photocopiers.",
-      "technologies": ["IT Support", "Systems Administration", "Troubleshooting"]
+      "dates": "Apr 2021 – May 2022",
+      "employmentType": "Full-time",
+      "description": "Maintained and extended web applications built on the Laravel framework, optimizing backend architecture for reliable data management. Designed relational database schemas in MySQL to securely handle records, course progress tracking, and content management. Built responsive, mobile-friendly dashboards and course catalogs using Bootstrap, improving user engagement and content accessibility across devices.",
+      "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"]
     }
   ],
   "education": [
     {
-      "school": "AltSchool Africa",
-      "degree": "Diploma, Backend Engineering · Computer Software Engineering",
+      "school": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
+      "location": "Nigeria",
+      "dates": "Jan 2026 – Present"
+    },
+    {
+      "school": "African Tech Foundation",
+      "degree": "AI School (Powered by Google.org), Large Language Models & AI Agents",
       "location": "Remote",
-      "dates": "2024 – 2025"
+      "dates": "Jun 2026 – May 2027"
+    },
+    {
+      "school": "AltSchool Africa",
+      "degree": "Computer Software Engineering, Backend Engineering",
+      "location": "Remote",
+      "dates": "Apr 2024 – May 2025"
     },
     {
       "school": "Ladoke Akintola University of Technology",
-      "degree": "Bachelor of Technology, Software Engineering",
+      "degree": "Bachelor of Technology (Hons.)",
       "location": "Ogbomoso, Nigeria",
-      "dates": "2017 – 2022"
+      "dates": "Jan 2017 – Apr 2021"
     }
   ],
   "certifications": [
     {
+      "name": "Large Language Model (LLM) Zoomcamp",
+      "issuer": "DataTalksClub",
+      "date": "Jun 2026",
+      "featured": true
+    },
+    {
       "name": "Member, International Association of Engineers (IAENG)",
-      "issuer": "International Association of Engineers",
+      "issuer": "International Association of Engineers (IAENG)",
       "date": "Jan 2026",
       "url": "https://iaeng.org",
+      "credentialId": "547793",
       "featured": true
     },
     {
@@ -153,7 +139,7 @@
       "name": "Verified Python Coder",
       "issuer": "Credmark",
       "date": "Jul 2025",
-      "url": "https://credmark.ai/badge/CM-2507-NFKRKQU",
+      "url": "https://credmark.ai",
       "featured": true
     },
     {
@@ -163,16 +149,9 @@
       "featured": true
     },
     {
-      "name": "The Soft Skills Online Course for the Ogun State Gateway Program",
-      "issuer": "GFA Technologies",
-      "date": "Oct 2024",
-      "featured": true
-    },
-    {
       "name": "AI Augmented Professional Development Skills in the Digital Age",
       "issuer": "ALX South Africa",
       "date": "Jul 2024",
-      "url": "https://intranet.alxswe.com/certificates/Zxc5XSsETH",
       "featured": true
     },
     {

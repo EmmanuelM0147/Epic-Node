@@ -10,7 +10,7 @@ function renderCertificationCards(certifications) {
               : escapeHtml(cert.name)
           }
         </h3>
-        <p class="cert-meta">${escapeHtml(cert.issuer)} · ${escapeHtml(cert.date)}</p>
+        <p class="cert-meta">${escapeHtml(cert.issuer)} · ${escapeHtml(cert.date)}${cert.credentialId ? ` · ID ${escapeHtml(cert.credentialId)}` : ""}</p>
       </article>
     `
     )

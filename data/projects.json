@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "Universal Loyalty Rewards API",
-      "company": "Keyrium",
+      "name": "Loyalty & Rewards API",
+      "company": "Keyrium Consulting",
       "dates": "Jul 2025 – Present",
       "description": "Backend API for a multi-brand loyalty app with points, wallets, redemptions, and admin tooling. Built with Node.js, TypeScript, Express, and PostgreSQL and deployed for mobile and admin clients.",
       "language": "TypeScript",
@@ -11,8 +11,8 @@
       "updated_at": "2025-07-01T00:00:00Z"
     },
     {
-      "name": "Kronix Stock Trading Backend",
-      "company": "Keyrium",
+      "name": "Stock Trading (Social Fintech) Backend",
+      "company": "Keyrium Consulting",
       "description": "Backend API for a stock-trading and community fintech platform covering auth, onboarding, KYC, portfolio, and social feeds. Built with Node.js, TypeScript, Express, PostgreSQL, and Docker, with JWT, Zod validation, and performance optimizations.",
       "language": "TypeScript",
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "Zod", "JWT", "Docker"],
