@@ -231,7 +231,6 @@ function xProfileUrl(contact = {}, profile = {}) {
 }
 
 function renderXProfileLink(contact = {}, profile = {}, options = {}) {
-  const username = xProfileUsername(contact, profile).replace(/^@/, "");
   const url = xProfileUrl(contact, profile);
   const linkClass = options.linkClass ? ` ${options.linkClass}` : "";
 
@@ -247,6 +246,24 @@ function renderXProfileLink(contact = {}, profile = {}, options = {}) {
       <span class="social-icon-link">${icon("x")}</span>
     </a>
   `;
+}
+
+function sanitizeXProfileLinks(root = document) {
+  root.querySelectorAll(".readme-link-x").forEach((link) => {
+    link.querySelectorAll(".x-handle").forEach((el) => el.remove());
+    [...link.childNodes].forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+        node.remove();
+      }
+    });
+    [...link.querySelectorAll("span")].forEach((span) => {
+      if (!span.classList.contains("social-icon-link")) {
+        span.remove();
+      }
+    });
+    link.setAttribute("aria-label", "X profile");
+    link.setAttribute("title", "X");
+  });
 }
 
 function currentEmployer(linkedin = null) {

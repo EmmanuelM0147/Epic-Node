@@ -423,9 +423,16 @@ a:hover {
   background: var(--color-btn-bg);
 }
 
+.readme-link-x {
+  font-size: 0;
+  line-height: 0;
+}
+
 .readme-link-x .social-icon-link {
   width: 28px;
   height: 28px;
+  font-size: 14px;
+  line-height: 1;
   color: var(--color-fg-default);
 }
 

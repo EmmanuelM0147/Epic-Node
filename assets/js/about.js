@@ -51,6 +51,7 @@ function renderAboutPage(data, profile = {}) {
 
     ${renderAboutLinks(data.contact, profile)}
   `;
+  sanitizeXProfileLinks(container);
 }
 
 async function initAboutPage() {

@@ -152,6 +152,7 @@ function renderReadmeSocial(profile, contact = {}) {
     <a class="readme-link" href="https://github.com/${escapeHtml(githubUser)}" target="_blank" rel="noopener noreferrer">${icon("github")} GitHub</a>
     <a class="readme-link" href="${escapeHtml(orcidUrl)}" target="_blank" rel="noopener noreferrer">${icon("orcid")} ORCID</a>
   `;
+  sanitizeXProfileLinks(social);
 
   if (cta) {
     cta.innerHTML = `
