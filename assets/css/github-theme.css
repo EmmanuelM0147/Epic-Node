@@ -423,22 +423,13 @@ a:hover {
   background: var(--color-btn-bg);
 }
 
-.readme-link-x .social-icon-link-x {
-  width: auto;
+.readme-link-x .social-icon-link {
+  width: 28px;
   height: 28px;
-  padding: 0 10px 0 8px;
-  gap: 6px;
   color: var(--color-fg-default);
 }
 
-.readme-link-x .x-handle {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.readme-link-x:hover .social-icon-link-x {
+.readme-link-x:hover .social-icon-link {
   color: var(--color-accent-fg);
   border-color: var(--color-accent-fg);
 }

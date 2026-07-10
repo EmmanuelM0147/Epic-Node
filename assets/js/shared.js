@@ -203,10 +203,7 @@ function renderXProfileLink(contact = {}, profile = {}, options = {}) {
       aria-label="@${escapeHtml(username)} on X"
       title="@${escapeHtml(username)} on X"
     >
-      <span class="social-icon-link social-icon-link-x">
-        ${icon("x")}
-        <span class="x-handle">@${escapeHtml(username)}</span>
-      </span>
+      <span class="social-icon-link">${icon("x")}</span>
     </a>
   `;
 }
