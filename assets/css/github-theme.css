@@ -429,6 +429,11 @@ a:hover {
   color: var(--color-fg-default);
 }
 
+.readme-link-x .x-handle,
+.readme-link-x > span:not(.social-icon-link) {
+  display: none !important;
+}
+
 .readme-link-x:hover .social-icon-link {
   color: var(--color-accent-fg);
   border-color: var(--color-accent-fg);
