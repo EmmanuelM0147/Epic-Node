@@ -50,16 +50,17 @@ function renderCertifications(certifications) {
 async function initCertificationsPage() {
   const container = document.getElementById("certifications-list");
   renderLoadingSkeleton(container, 4);
-  await initLayout("certifications");
 
-  try {
-    const data = await loadLinkedInData();
-    renderCertifications(data.certifications);
-  } catch {
-    if (container) {
-      container.innerHTML = `<p class="empty-state">Certifications unavailable. Edit data/linkedin.json to add them.</p>`;
+  await bootstrapPage("certifications", async () => {
+    try {
+      const data = await loadLinkedInData();
+      renderCertifications(data.certifications);
+    } catch {
+      if (container) {
+        container.innerHTML = `<p class="empty-state">Certifications unavailable. Edit data/linkedin.json to add them.</p>`;
+      }
     }
-  }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initCertificationsPage);

@@ -56,17 +56,17 @@ function renderAboutPage(data, profile = {}) {
 async function initAboutPage() {
   const container = document.getElementById("about-content");
   renderLoadingSkeleton(container, 4);
-  const profile = await initLayout("about");
 
-  try {
-    const data = await loadLinkedInData();
-    renderAboutPage(data, profile);
-  } catch {
-    const container = document.getElementById("about-content");
-    if (container) {
-      container.innerHTML = `<p class="empty-state">About content unavailable.</p>`;
+  await bootstrapPage("about", async (profile) => {
+    try {
+      const data = await loadLinkedInData();
+      renderAboutPage(data, profile);
+    } catch {
+      if (container) {
+        container.innerHTML = `<p class="empty-state">About content unavailable.</p>`;
+      }
     }
-  }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initAboutPage);

@@ -1534,3 +1534,19 @@ body.page-cv .page-content {
 .content-section-compact {
   margin-bottom: 24px;
 }
+
+.app-loader-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-loader-brand {
+  margin: 0;
+  font-family: var(--font-stack);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-fg-muted);
+}

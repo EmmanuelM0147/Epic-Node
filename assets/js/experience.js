@@ -182,16 +182,17 @@ function renderExperience(data, profile) {
 async function initExperiencePage() {
   const container = document.getElementById("experience-content");
   renderLoadingSkeleton(container, 5);
-  const profile = await initLayout("cv");
 
-  try {
-    const data = await loadLinkedInData();
-    renderExperience(data, profile);
-  } catch {
-    if (container) {
-      container.innerHTML = `<p class="empty-state">CV data unavailable. Edit data/linkedin.json to add your experience.</p>`;
+  await bootstrapPage("cv", async (profile) => {
+    try {
+      const data = await loadLinkedInData();
+      renderExperience(data, profile);
+    } catch {
+      if (container) {
+        container.innerHTML = `<p class="empty-state">CV data unavailable. Edit data/linkedin.json to add your experience.</p>`;
+      }
     }
-  }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initExperiencePage);

@@ -39,17 +39,19 @@ function renderHirePage(config, linkedin) {
 async function initHirePage() {
   const container = document.getElementById("hire-content");
   renderLoadingSkeleton(container, 4);
-  await initLayout("hire");
-  await loadSiteConfig();
 
-  let linkedin = null;
-  try {
-    linkedin = await loadLinkedInData();
-  } catch {
-    // Use config defaults.
-  }
+  await bootstrapPage("hire", async () => {
+    await loadSiteConfig();
 
-  renderHirePage(SITE_CONFIG, linkedin);
+    let linkedin = null;
+    try {
+      linkedin = await loadLinkedInData();
+    } catch {
+      // Use config defaults.
+    }
+
+    renderHirePage(SITE_CONFIG, linkedin);
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initHirePage);

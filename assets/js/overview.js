@@ -170,28 +170,29 @@ function renderContribution(profile) {
 }
 
 async function initOverviewPage() {
-  const profile = await initLayout("overview");
-  renderContribution(profile);
+  await bootstrapPage("overview", async (profile) => {
+    renderContribution(profile);
 
-  try {
-    const [repos, linkedin] = await Promise.all([loadRepos(), loadLinkedInData()]);
-    renderIntro(profile, linkedin);
-    renderReadmeSocial(profile, linkedin.contact);
-    renderSummarySection(linkedin);
-    renderProjectPreview(repos);
-    renderCertificationPreview(linkedin.certifications);
-  } catch {
-    renderIntro(profile);
-    renderReadmeSocial(profile);
-    const projects = document.getElementById("featured-projects");
-    const certs = document.getElementById("featured-certifications");
-    if (projects) {
-      projects.innerHTML = `<p class="empty-state">Projects will appear after GitHub data sync.</p>`;
+    try {
+      const [repos, linkedin] = await Promise.all([loadRepos(), loadLinkedInData()]);
+      renderIntro(profile, linkedin);
+      renderReadmeSocial(profile, linkedin.contact);
+      renderSummarySection(linkedin);
+      renderProjectPreview(repos);
+      renderCertificationPreview(linkedin.certifications);
+    } catch {
+      renderIntro(profile);
+      renderReadmeSocial(profile);
+      const projects = document.getElementById("featured-projects");
+      const certs = document.getElementById("featured-certifications");
+      if (projects) {
+        projects.innerHTML = `<p class="empty-state">Projects will appear after GitHub data sync.</p>`;
+      }
+      if (certs) {
+        certs.innerHTML = `<p class="empty-state">Certifications will appear after profile data is loaded.</p>`;
+      }
     }
-    if (certs) {
-      certs.innerHTML = `<p class="empty-state">Certifications will appear after profile data is loaded.</p>`;
-    }
-  }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initOverviewPage);

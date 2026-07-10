@@ -123,22 +123,24 @@ function setStatus(message, isError = false) {
 async function initProjectsPage() {
   const list = document.getElementById("projects-list");
   renderLoadingSkeleton(list, 4);
-  await initLayout("projects");
-  bindFilterEvents();
 
-  const footerLink = document.getElementById("projects-github-link");
-  if (footerLink) {
-    footerLink.href = `https://github.com/${SITE_CONFIG.githubUsername}?tab=repositories`;
-  }
+  await bootstrapPage("projects", async () => {
+    bindFilterEvents();
 
-  try {
-    allRepos = await loadRepos();
-    populateLanguageFilter(allRepos);
-    applyFilters();
-    setStatus("Loaded from cached GitHub data.");
-  } catch (error) {
-    setStatus(error.message || "Failed to load projects.", true);
-  }
+    const footerLink = document.getElementById("projects-github-link");
+    if (footerLink) {
+      footerLink.href = `https://github.com/${SITE_CONFIG.githubUsername}?tab=repositories`;
+    }
+
+    try {
+      allRepos = await loadRepos();
+      populateLanguageFilter(allRepos);
+      applyFilters();
+      setStatus("Loaded from cached GitHub data.");
+    } catch (error) {
+      setStatus(error.message || "Failed to load projects.", true);
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initProjectsPage);

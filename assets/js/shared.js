@@ -29,6 +29,47 @@ const MONTH_INDEX = {
   dec: 11,
 };
 
+const APP_LOADER_MIN_MS = 320;
+let appLoaderHidePromise = null;
+
+function hideAppLoader() {
+  if (appLoaderHidePromise) return appLoaderHidePromise;
+
+  appLoaderHidePromise = new Promise((resolve) => {
+    const loader = document.getElementById("app-loader");
+    const root = document.documentElement;
+    const start = window.__loaderStart || performance.now();
+    const wait = Math.max(0, APP_LOADER_MIN_MS - (performance.now() - start));
+
+    const finish = () => {
+      if (loader) {
+        loader.classList.add("is-leaving");
+        loader.setAttribute("aria-busy", "false");
+      }
+      root.classList.remove("is-loading");
+      window.setTimeout(() => {
+        loader?.remove();
+        resolve();
+      }, 280);
+    };
+
+    window.setTimeout(finish, wait);
+  });
+
+  return appLoaderHidePromise;
+}
+
+async function bootstrapPage(activeTab, hydrate) {
+  try {
+    const profile = await initLayout(activeTab);
+    await hydrate(profile);
+  } catch (error) {
+    console.error("Page bootstrap failed:", error);
+  } finally {
+    hideAppLoader();
+  }
+}
+
 async function loadSiteConfig() {
   try {
     const response = await fetch(assetUrl("config.json"));

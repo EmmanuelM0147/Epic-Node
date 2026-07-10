@@ -15,11 +15,77 @@
     <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/github-theme.css" />
+    <script>
+      window.__loaderStart = performance.now();
+      document.documentElement.classList.add("is-loading");
+    </script>
+    <style id="app-loader-critical">
+      html.is-loading body {
+        overflow: hidden;
+      }
+
+      html.is-loading #site-header,
+      html.is-loading .site-shell {
+        visibility: hidden;
+      }
+
+      #app-loader {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0d1117;
+        color: #e6edf3;
+      }
+
+      [data-theme="light"] #app-loader {
+        background: #ffffff;
+        color: #1f2328;
+      }
+
+      #app-loader .app-loader-spinner {
+        width: 32px;
+        height: 32px;
+        border: 3px solid #30363d;
+        border-top-color: #4493f8;
+        border-radius: 50%;
+        animation: app-loader-spin 0.75s linear infinite;
+      }
+
+      [data-theme="light"] #app-loader .app-loader-spinner {
+        border-color: #d0d7de;
+        border-top-color: #0969da;
+      }
+
+      @keyframes app-loader-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      #app-loader.is-leaving {
+        opacity: 0;
+        transition: opacity 0.28s ease;
+        pointer-events: none;
+      }
+
+      html:not(.is-loading) #app-loader {
+        display: none;
+      }
+    </style>
   </head>
   <body
     data-page-title="Certifications - Emmanuel Okeowo"
     data-page-description="Certifications and credentials for Emmanuel Okeowo."
   >
+    <div id="app-loader" class="app-loader" role="status" aria-live="polite" aria-busy="true" aria-label="Loading portfolio">
+      <div class="app-loader-panel">
+        <div class="app-loader-spinner" aria-hidden="true"></div>
+        <p class="app-loader-brand">epicnode.dev</p>
+      </div>
+    </div>
     <header id="site-header" class="site-header"></header>
     <div class="site-shell">
       <aside id="sidebar" class="sidebar" aria-label="Profile sidebar"></aside>
