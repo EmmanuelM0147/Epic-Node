@@ -200,8 +200,8 @@ function renderXProfileLink(contact = {}, profile = {}, options = {}) {
       href="${escapeHtml(url)}"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="@${escapeHtml(username)} on X"
-      title="@${escapeHtml(username)} on X"
+      aria-label="X profile"
+      title="X"
     >
       <span class="social-icon-link">${icon("x")}</span>
     </a>
