@@ -16,16 +16,16 @@
   ],
   "featuredPublicRepos": [
     {
+      "name": "ChefBot-AI",
+      "description": "Grounded inventory-aware recipe RAG with FastAPI, Qdrant, Gemini 2.5 Flash streaming, and Streamlit."
+    },
+    {
       "name": "url-shortener",
       "description": "Node.js TypeScript URL shortener API with PostgreSQL and Docker."
     },
     {
       "name": "faq-rag-llmzc",
       "description": "FAQ RAG pipeline with semantic retrieval and LLM-powered question answering."
-    },
-    {
-      "name": "multiple-regression-analysis",
-      "description": "Multi-channel marketing data pipeline with regression analysis."
     }
   ],
   "hireMe": {
@@ -38,7 +38,7 @@
       },
       {
         "title": "AI & LLM Systems",
-        "description": "RAG pipelines, semantic search, multi-agent workflows, prompt engineering, and vector databases with LangChain, OpenAI, and Python."
+        "description": "RAG pipelines, semantic search, multi-agent workflows, and vector retrieval with FastAPI, Qdrant, Gemini, LangChain, OpenAI, and Python."
       },
       {
         "title": "Cloud & DevOps",

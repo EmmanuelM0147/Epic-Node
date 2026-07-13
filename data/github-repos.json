@@ -1,8 +1,22 @@
 {
   "username": "EmmanuelM0147",
-  "count": 58,
+  "count": 59,
   "synced_at": "2026-07-13T09:35:03.159Z",
   "repos": [
+    {
+      "name": "ChefBot-AI",
+      "full_name": "EmmanuelM0147/ChefBot-AI",
+      "html_url": "https://github.com/EmmanuelM0147/ChefBot-AI",
+      "description": "Grounded inventory-aware recipe generation with FastAPI, Qdrant, Gemini, and Streamlit",
+      "language": "Python",
+      "technologies": ["Python", "FastAPI", "Qdrant", "Gemini", "Streamlit", "PostgreSQL", "Docker", "RAG"],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-07-13T00:00:00Z",
+      "updated": "Jul 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
