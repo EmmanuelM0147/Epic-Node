@@ -1,8 +1,21 @@
 {
   "username": "EmmanuelM0147",
-  "count": 59,
-  "synced_at": "2026-07-25T08:11:35.992Z",
+  "count": 60,
+  "synced_at": "2026-07-26T08:31:44.919Z",
   "repos": [
+    {
+      "name": "inflammatory_speech_flagger",
+      "full_name": "EmmanuelM0147/inflammatory_speech_flagger",
+      "html_url": "https://github.com/EmmanuelM0147/inflammatory_speech_flagger",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-07-26T01:24:54Z",
+      "updated": "Jul 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,7 +26,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-07-24T08:33:11Z",
+      "updated_at": "2026-07-25T08:11:58Z",
       "updated": "Jul 2026"
     },
     {
