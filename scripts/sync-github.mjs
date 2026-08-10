@@ -53,13 +53,37 @@ async function fetchAllRepos() {
   return repos;
 }
 
-function normalizeRepo(repo) {
+function loadExistingRepoExtras() {
+  try {
+    const data = JSON.parse(readFileSync(join(DATA_DIR, "github-repos.json"), "utf8"));
+    const extrasByName = new Map();
+
+    for (const repo of data.repos || []) {
+      const extras = {};
+      if (repo.technologies?.length) extras.technologies = repo.technologies;
+      if (repo.language) extras.language = repo.language;
+      if (Object.keys(extras).length) {
+        extrasByName.set(repo.name.toLowerCase(), extras);
+      }
+    }
+
+    return extrasByName;
+  } catch {
+    return new Map();
+  }
+}
+
+function normalizeRepo(repo, extrasByName = new Map()) {
+  const extras = extrasByName.get(repo.name.toLowerCase()) || {};
+
   return {
     name: repo.name,
     full_name: repo.full_name,
     html_url: repo.html_url,
+    homepage: repo.homepage || null,
     description: repo.description,
-    language: repo.language,
+    language: extras.language || repo.language,
+    ...(extras.technologies?.length ? { technologies: extras.technologies } : {}),
     stargazers_count: repo.stargazers_count,
     forks_count: repo.forks_count,
     fork: repo.fork,
@@ -177,11 +201,13 @@ async function main() {
     });
   }
 
+  const repoExtras = loadExistingRepoExtras();
+
   const reposOutput = {
     username: USERNAME,
     count: repos.length,
     synced_at: new Date().toISOString(),
-    repos: repos.map(normalizeRepo),
+    repos: repos.map((repo) => normalizeRepo(repo, repoExtras)),
   };
 
   writeFileSync(

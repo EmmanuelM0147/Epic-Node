@@ -11,6 +11,7 @@ function normalizeRepo(repo) {
   return {
     name: repo.name,
     url: repo.html_url || repo.url || null,
+    homepage: repo.homepage || null,
     description: repo.description || "",
     language: repo.language || null,
     stars: repo.stargazers_count ?? repo.stars ?? 0,
@@ -201,6 +202,10 @@ function scoreOverviewCandidate(repo) {
     "authentication",
     "backend",
     "rest",
+    "fastapi",
+    "streamlit",
+    "machine learning",
+    "ml",
   ].forEach((keyword) => {
     if (description.includes(keyword) || name.includes(keyword)) score += 8;
   });

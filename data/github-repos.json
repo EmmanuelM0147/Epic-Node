@@ -1,8 +1,23 @@
 {
   "username": "EmmanuelM0147",
   "count": 60,
-  "synced_at": "2026-08-10T00:17:58.381Z",
+  "synced_at": "2026-08-10T01:14:56.866Z",
   "repos": [
+    {
+      "name": "inflammatory_speech_flagger",
+      "full_name": "EmmanuelM0147/inflammatory_speech_flagger",
+      "html_url": "https://github.com/EmmanuelM0147/inflammatory_speech_flagger",
+      "homepage": "https://inflammatoryspeechflagger.vercel.app",
+      "description": "TF-IDF + Logistic Regression model that flags potentially inflammatory Nigerian social media posts, served with FastAPI, a Streamlit UI, and feedback monitoring.",
+      "language": "Python",
+      "technologies": ["Python", "FastAPI", "Streamlit", "scikit-learn", "SQLite", "Docker", "Vercel"],
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-08-10T01:12:44Z",
+      "updated": "Aug 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,20 +28,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-08-10T00:17:39Z",
-      "updated": "Aug 2026"
-    },
-    {
-      "name": "inflammatory_speech_flagger",
-      "full_name": "EmmanuelM0147/inflammatory_speech_flagger",
-      "html_url": "https://github.com/EmmanuelM0147/inflammatory_speech_flagger",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-06T20:08:21Z",
+      "updated_at": "2026-08-10T00:18:03Z",
       "updated": "Aug 2026"
     },
     {

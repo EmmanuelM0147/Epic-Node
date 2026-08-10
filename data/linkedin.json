@@ -28,6 +28,11 @@
       "title": "ChefBot AI — Inventory-Aware RAG",
       "description": "Grounded recipe generation with FastAPI, Qdrant, Gemini, and Streamlit.",
       "url": "https://github.com/EmmanuelM0147/ChefBot-AI"
+    },
+    {
+      "title": "Inflammatory Speech Flagger",
+      "description": "Nigerian hate-speech ML classifier with FastAPI, Streamlit UI, feedback monitoring, and live demo.",
+      "url": "https://inflammatoryspeechflagger.vercel.app"
     }
   ],
   "contact": {

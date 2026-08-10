@@ -14,6 +14,9 @@ function renderProjectCard(repo) {
   const starMarkup = repo.url
     ? `<a class="btn-star" href="${escapeHtml(repo.url)}" target="_blank" rel="noopener noreferrer">${icon("external")} View on GitHub</a>`
     : "";
+  const demoMarkup = repo.homepage
+    ? `<a class="btn-star" href="${escapeHtml(repo.homepage)}" target="_blank" rel="noopener noreferrer">${icon("external")} Live demo</a>`
+    : "";
   const contextMarkup =
     repo.company || repo.dates
       ? `<p class="repo-context">${escapeHtml([repo.company, repo.dates].filter(Boolean).join(" · "))}</p>`
@@ -29,6 +32,7 @@ function renderProjectCard(repo) {
         <h3 class="repo-name">${titleMarkup}</h3>
         <span class="label ${labelClass}">${labelText}</span>
         ${starMarkup}
+        ${demoMarkup}
       </div>
       ${contextMarkup}
       <p class="repo-description">${escapeHtml(repo.description || "No description provided.")}</p>

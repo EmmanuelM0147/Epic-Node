@@ -16,12 +16,12 @@
   ],
   "featuredPublicRepos": [
     {
-      "name": "ChefBot-AI",
-      "description": "Grounded inventory-aware recipe RAG with FastAPI, Qdrant, Gemini 2.5 Flash streaming, and Streamlit."
+      "name": "inflammatory_speech_flagger",
+      "description": "Nigerian hate-speech classifier with TF-IDF + Logistic Regression, FastAPI API, Streamlit UI, and live feedback monitoring."
     },
     {
-      "name": "url-shortener",
-      "description": "Node.js TypeScript URL shortener API with PostgreSQL and Docker."
+      "name": "ChefBot-AI",
+      "description": "Grounded inventory-aware recipe RAG with FastAPI, Qdrant, Gemini 2.5 Flash streaming, and Streamlit."
     },
     {
       "name": "faq-rag-llmzc",

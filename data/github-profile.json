@@ -3,11 +3,11 @@
   "name": "Emmanuel Okeowo",
   "avatar_url": "https://avatars.githubusercontent.com/u/155535967?v=4",
   "html_url": "https://github.com/EmmanuelM0147",
-  "bio": "AI Engineer | Production LLM Systems, RAG Pipelines & Agentic Applications | Node.js · TypeScript · Python | Backend & Distributed Systems",
+  "bio": "Lead Backend Engineer · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
   "company": "Keyrium Consulting",
   "blog": "https://epicnode.hostless.site",
   "location": "Lagos",
-  "email": "okeowoemmanuelm@gmail.com",
+  "email": null,
   "hireable": true,
   "twitter_username": null,
   "public_repos": 60,
@@ -28,5 +28,5 @@
       "description": null
     }
   ],
-  "synced_at": "2026-08-10T00:17:58.233Z"
+  "synced_at": "2026-08-10T01:14:56.857Z"
 }
