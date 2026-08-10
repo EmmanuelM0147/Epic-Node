@@ -1,16 +1,16 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - Senior Backend & AI Engineer",
-  "siteDescription": "Senior Backend & AI Engineer building production APIs, RAG pipelines, and agentic AI systems.",
+  "siteTitle": "Emmanuel Okeowo - Lead Backend Engineer",
+  "siteDescription": "Lead Backend Engineer building production APIs, applied AI systems, and RAG pipelines.",
   "siteName": "epicnode.dev",
   "portfolioUrl": "https://epicnode.hostless.site",
   "ogImageUrl": "https://epicnode.hostless.site/assets/og-image.png",
   "email": "okeowoemmanuelm@gmail.com",
-  "roleTitle": "Senior Backend & AI Engineer",
-  "roleTagline": "Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
+  "roleTitle": "Lead Backend Engineer",
+  "roleTagline": "Node.js · TypeScript · Python · RAG · LLMs",
   "highlights": [
-    "Senior Backend & AI Engineer",
+    "Lead Backend Engineer",
     "Production APIs & LLM Systems",
     "Open to hybrid & remote roles"
   ],
@@ -29,8 +29,8 @@
     }
   ],
   "hireMe": {
-    "headline": "Open to hybrid and remote senior backend and production LLM roles",
-    "summary": "Senior Backend & AI Engineer available for production API builds, fintech backends, RAG pipeline delivery, and cloud deployment support. Hybrid or remote preferred.",
+    "headline": "Open to hybrid and remote lead backend and production LLM roles",
+    "summary": "Lead Backend Engineer available for production API builds, fintech backends, RAG pipeline delivery, and cloud deployment support. Hybrid or remote preferred.",
     "services": [
       {
         "title": "Backend & API Engineering",

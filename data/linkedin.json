@@ -1,18 +1,35 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-07-05",
-  "headline": "Senior Backend & AI Engineer · Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
-  "aboutTagline": "Senior Backend & AI Engineer · Backend & AI Systems",
+  "updatedAt": "2026-08-10",
+  "headline": "Lead Backend Engineer | AI/ML Engineer | Node.js · TypeScript · Python · RAG · LLMs",
+  "aboutTagline": "Lead Backend Engineer · Applied AI & RAG Systems",
   "portfolioUrl": "https://epicnode.hostless.site",
   "currentCompany": "Keyrium Consulting",
-  "stackLine": "Node.js · TypeScript · Python · Production APIs, RAG Pipelines & Agentic AI",
-  "roleLabel": "a Senior Backend & AI Engineer",
-  "githubBio": "Senior Backend & AI Engineer · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
-  "sidebarBio": "Senior Backend & AI Engineer building production APIs and applied AI systems, from scalable fintech backends to RAG pipelines and agent workflows.",
-  "intro": "Open to hybrid and remote senior backend and applied AI roles focused on production APIs, fintech systems, and LLM integration.",
-  "cvIntro": "Senior Backend & AI Engineer specializing in production APIs and applied AI systems. I design and ship scalable REST services, distributed backends, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "I'm a **Senior Backend & AI Engineer** focused on production APIs and applied AI systems, bringing RAG pipelines and multi-agent workflows from prototype to stable production.\n\nI bridge high-throughput backend architecture and intelligent LLM orchestration: production APIs, data pipelines, vector database integration, caching, auth, and agent lifecycle management.\n\nCurrently at **Keyrium Consulting**, I lead development of backend systems for high-concurrency enterprise APIs (Loyalty Rewards & Stock Trading) using **Node.js**, **TypeScript**, and **PostgreSQL**, including system design, CI/CD automation, cloud deployment, and testing (85% code coverage).\n\n**Focus areas:** Scalable distributed architectures · LLM orchestration · RAG pipelines · Multi-agent workflows · Cloud & API optimization\n\n**Stack:** Node.js · TypeScript · Python · PostgreSQL · AWS · RAG · Agentic AI\n\n**Let's connect:** [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com) · [Portfolio](https://epicnode.hostless.site) · [LinkedIn](https://www.linkedin.com/in/okeowoemmanuelm/)",
-  "linkedinAbout": "I'm a Senior Backend & AI Engineer based in Lagos State, Nigeria, specializing in production APIs and applied AI systems. I build scalable REST services, distributed backends, RAG pipelines, semantic search, and multi-agent workflows from prototype to reliable production.\n\nMy work spans high-throughput backend engineering and applied LLM orchestration: microservice APIs, data pipelines, vector database integration, caching, authentication, and agent lifecycle management.\n\nCurrently at Keyrium Consulting, I lead development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript, including architecture, CI/CD automation, cloud deployment, and a testing framework with 85% code coverage.\n\nPreviously, I've improved API and database performance by 30–80% across fintech and platform backends, and built secure auth systems with JWT, OAuth 2.0, MFA, and RBAC.\n\nOpen to senior backend, software engineering, and production LLM system roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site\nEmail: okeowoemmanuelm@gmail.com",
+  "stackLine": "Node.js · TypeScript · Python · RAG · LLMs",
+  "roleLabel": "a Lead Backend Engineer",
+  "githubBio": "Lead Backend Engineer · Node.js · TypeScript · Python · RAG & production APIs · epicnode.hostless.site",
+  "sidebarBio": "Lead Backend Engineer building production APIs and applied AI systems, from scalable fintech backends to RAG pipelines and LLM integration.",
+  "intro": "Open to hybrid and remote lead backend and applied AI roles focused on production APIs, fintech systems, and LLM integration.",
+  "cvIntro": "Lead Backend Engineer specializing in production APIs and applied AI systems. I design and ship scalable REST services, distributed backends, and reliable cloud infrastructure from architecture through deployment.",
+  "githubAbout": "I'm a **Lead Backend Engineer** focused on production APIs and applied AI systems, bringing RAG pipelines and multi-agent workflows from prototype to stable production.\n\nI bridge high-throughput backend architecture and intelligent LLM orchestration: production APIs, data pipelines, vector database integration, caching, auth, and agent lifecycle management.\n\nCurrently at **Keyrium Consulting**, I lead backend development for high-concurrency enterprise APIs (Loyalty Rewards & Stock Trading) using **Node.js**, **TypeScript**, and **PostgreSQL**, including system design, CI/CD automation, cloud deployment, and testing (85% code coverage).\n\n**Focus areas:** Scalable distributed architectures · LLM orchestration · RAG pipelines · Multi-agent workflows · Cloud & API optimization\n\n**Stack:** Node.js · TypeScript · Python · PostgreSQL · AWS · RAG · LLMs\n\n**Let's connect:** [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com) · [Portfolio](https://epicnode.hostless.site) · [LinkedIn](https://www.linkedin.com/in/okeowoemmanuelm/)",
+  "linkedinAbout": "Lead Backend Engineer transitioning into AI/ML, with 4–5 years building production systems that combine scalable APIs with applied LLM integration.\n\nAt Keyrium, I lead backend for Loyalty Rewards and Stock Trading platforms, and build RAG-assisted tooling for internal search, using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS.\n\nImpact: 30–80% API/DB performance gains, and multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) shipped to production.\n\nOpen to backend, applied AI, and LLM system roles.\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
+  "linkedinFeatured": [
+    {
+      "title": "Engineering Portfolio",
+      "description": "Production APIs, fintech backends, and applied AI projects — Node.js, TypeScript, Python, RAG.",
+      "url": "https://epicnode.hostless.site"
+    },
+    {
+      "title": "FAQ RAG Pipeline",
+      "description": "Semantic retrieval and LLM-powered Q&A built with Python, vector search, and RAG.",
+      "url": "https://github.com/EmmanuelM0147/faq-rag-llmzc"
+    },
+    {
+      "title": "ChefBot AI — Inventory-Aware RAG",
+      "description": "Grounded recipe generation with FastAPI, Qdrant, Gemini, and Streamlit.",
+      "url": "https://github.com/EmmanuelM0147/ChefBot-AI"
+    }
+  ],
   "contact": {
     "email": "okeowoemmanuelm@gmail.com",
     "linkedin": "https://www.linkedin.com/in/okeowoemmanuelm/",
@@ -34,7 +51,7 @@
   },
   "experience": [
     {
-      "title": "Senior Software Engineer",
+      "title": "Lead Backend Engineer",
       "company": "Keyrium Consulting",
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Jul 2025 – Present",
@@ -90,18 +107,6 @@
   ],
   "education": [
     {
-      "school": "Federal Ministry of Communications, Innovation and Digital Economy",
-      "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
-      "location": "Nigeria",
-      "dates": "Jan 2026 – Present"
-    },
-    {
-      "school": "African Tech Foundation",
-      "degree": "AI School (Powered by Google.org), Large Language Models & AI Agents",
-      "location": "Remote",
-      "dates": "Jun 2026 – May 2027"
-    },
-    {
       "school": "AltSchool Africa",
       "degree": "Computer Software Engineering, Backend Engineering",
       "location": "Remote",
@@ -112,6 +117,18 @@
       "degree": "Bachelor of Technology (Hons.)",
       "location": "Ogbomoso, Nigeria",
       "dates": "Jan 2017 – Apr 2021"
+    },
+    {
+      "school": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
+      "location": "Nigeria",
+      "dates": "Jan 2026 – Present"
+    },
+    {
+      "school": "African Tech Foundation",
+      "degree": "AI School (Powered by Google.org), Large Language Models & AI Agents",
+      "location": "Remote",
+      "dates": "Jun 2026 – May 2027"
     }
   ],
   "certifications": [

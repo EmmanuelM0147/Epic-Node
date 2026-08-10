@@ -1,13 +1,13 @@
 const SITE_CONFIG = {
   baseUrl: "/Epic-Node",
   githubUsername: "EmmanuelM0147",
-  siteTitle: "Emmanuel Okeowo - Senior Backend & AI Engineer",
+  siteTitle: "Emmanuel Okeowo - Lead Backend Engineer",
   siteName: "epicnode.dev",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
-  highlights: ["Senior Backend & AI Engineer", "Open to hybrid & remote roles"],
-  roleTitle: "Senior Backend & AI Engineer",
+  highlights: ["Lead Backend Engineer", "Open to hybrid & remote roles"],
+  roleTitle: "Lead Backend Engineer",
 };
 
 let tabCounts = { projects: 0, certifications: 0 };
@@ -642,7 +642,7 @@ function initPageMeta({ title, description } = {}) {
   const imageUrl =
     SITE_CONFIG.ogImageUrl ||
     new URL(assetUrl("assets/og-image.png"), window.location.origin).href;
-  const imageAlt = "Emmanuel Okeowo - Senior Backend & AI Engineer";
+  const imageAlt = "Emmanuel Okeowo - Lead Backend Engineer";
 
   if (title) {
     document.title = title;
@@ -776,7 +776,7 @@ async function loadLinkedInData() {
 }
 
 function profileAboutTagline(data = {}) {
-  return data.aboutTagline || "Senior Backend & AI Engineer · Backend & AI Systems";
+  return data.aboutTagline || "Lead Backend Engineer · Applied AI & RAG Systems";
 }
 
 function profileOverviewTagline(data = {}) {
