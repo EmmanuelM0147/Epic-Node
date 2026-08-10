@@ -1,0 +1,25 @@
+name: Push GitHub Profile
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  push-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Push GitHub profile bio and README
+        env:
+          GITHUB_USER_TOKEN: ${{ secrets.GITHUB_USER_TOKEN }}
+          GITHUB_USERNAME: EmmanuelM0147
+        run: node scripts/push-github-profile.mjs

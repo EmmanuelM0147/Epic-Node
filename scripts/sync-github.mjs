@@ -53,37 +53,13 @@ async function fetchAllRepos() {
   return repos;
 }
 
-function loadExistingRepoExtras() {
-  try {
-    const data = JSON.parse(readFileSync(join(DATA_DIR, "github-repos.json"), "utf8"));
-    const extrasByName = new Map();
-
-    for (const repo of data.repos || []) {
-      const extras = {};
-      if (repo.technologies?.length) extras.technologies = repo.technologies;
-      if (repo.language) extras.language = repo.language;
-      if (Object.keys(extras).length) {
-        extrasByName.set(repo.name.toLowerCase(), extras);
-      }
-    }
-
-    return extrasByName;
-  } catch {
-    return new Map();
-  }
-}
-
-function normalizeRepo(repo, extrasByName = new Map()) {
-  const extras = extrasByName.get(repo.name.toLowerCase()) || {};
-
+function normalizeRepo(repo) {
   return {
     name: repo.name,
     full_name: repo.full_name,
     html_url: repo.html_url,
-    homepage: repo.homepage || null,
     description: repo.description,
-    language: extras.language || repo.language,
-    ...(extras.technologies?.length ? { technologies: extras.technologies } : {}),
+    language: repo.language,
     stargazers_count: repo.stargazers_count,
     forks_count: repo.forks_count,
     fork: repo.fork,
@@ -117,18 +93,22 @@ function loadProfileOverrides() {
     return {
       company: linkedin.currentCompany || linkedin.experience?.[0]?.company || null,
       blog: linkedin.portfolioUrl || null,
+      bio: linkedin.githubBio || null,
+      twitter_username: linkedin.contact?.xUsername || null,
     };
   } catch {
     return {};
   }
 }
 
-async function patchGitHubProfile({ company, blog }) {
+async function patchGitHubProfile(overrides) {
   if (!USER_TOKEN) return false;
 
   const patch = {};
-  if (company) patch.company = company;
-  if (blog) patch.blog = blog;
+  if (overrides.company) patch.company = overrides.company;
+  if (overrides.blog) patch.blog = overrides.blog;
+  if (overrides.bio) patch.bio = overrides.bio;
+  if (overrides.twitter_username) patch.twitter_username = overrides.twitter_username;
   if (!Object.keys(patch).length) return false;
 
   const response = await fetch("https://api.github.com/user", {
@@ -194,20 +174,24 @@ async function main() {
   if (profileOverrides.blog) {
     profileOutput.blog = profileOverrides.blog;
   }
+  if (profileOverrides.bio) {
+    profileOutput.bio = profileOverrides.bio;
+  }
+  if (profileOverrides.twitter_username) {
+    profileOutput.twitter_username = profileOverrides.twitter_username;
+  }
 
-  if (profileOverrides.company || profileOverrides.blog) {
+  if (Object.keys(profileOverrides).length) {
     await patchGitHubProfile(profileOverrides).catch((error) => {
       console.warn(`GitHub profile PATCH failed: ${error.message}`);
     });
   }
 
-  const repoExtras = loadExistingRepoExtras();
-
   const reposOutput = {
     username: USERNAME,
     count: repos.length,
     synced_at: new Date().toISOString(),
-    repos: repos.map((repo) => normalizeRepo(repo, repoExtras)),
+    repos: repos.map(normalizeRepo),
   };
 
   writeFileSync(

@@ -40,6 +40,15 @@ Optional environment variables:
 
 - `GITHUB_USERNAME` (default: `EmmanuelM0147`)
 - `GITHUB_TOKEN` or `GH_TOKEN` — increases API rate limits
+- `GITHUB_USER_TOKEN` — required to push profile bio, company, blog, and profile README
+
+Push live GitHub profile settings and the profile README from `data/linkedin.json` and `data/github-profile-readme.md`:
+
+```bash
+node scripts/push-github-profile.mjs
+```
+
+You can also run the **Push GitHub Profile** workflow manually in GitHub Actions. It requires a `GITHUB_USER_TOKEN` repository secret with `user` scope.
 
 Output files:
 
