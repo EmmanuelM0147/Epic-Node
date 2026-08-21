@@ -18,6 +18,17 @@
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "Zod", "JWT", "Docker"],
       "private": true,
       "updated_at": "2025-08-01T00:00:00Z"
+    },
+    {
+      "name": "Apply-Kit",
+      "company": "Personal Project",
+      "dates": "Aug 2026 – Present",
+      "description": "Private job search CRM for dual-lane applications (backend + applied AI). Syncs profile data from Epic Node, archives job descriptions, matches JD keywords, generates tailored intros, and tracks follow-ups via Node.js CLI.",
+      "language": "JavaScript",
+      "technologies": ["Node.js", "JavaScript", "CLI", "JSON"],
+      "html_url": "https://github.com/EmmanuelM0147/Apply-Kit",
+      "private": true,
+      "updated_at": "2026-08-21T00:00:00Z"
     }
   ]
 }
