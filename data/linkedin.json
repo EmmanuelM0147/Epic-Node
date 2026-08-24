@@ -11,12 +11,12 @@
   "sidebarBio": "Lead Backend & AI Engineer building production APIs and applied LLM systems, from scalable fintech backends to RAG pipelines and agent workflows.",
   "intro": "Open to hybrid and remote lead/senior backend and applied AI engineering roles focused on production APIs, fintech systems, and LLM integration.",
   "cvIntro": "Lead Backend & AI Engineer specializing in production APIs and applied LLM systems. I design and ship scalable REST services, distributed backends, RAG pipelines, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "Lead Backend & AI Engineer with 4–5 years building production systems — from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS — including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Lead Backend & AI Engineer with 4–5 years building production systems — from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS — including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
+  "githubAbout": "Lead Backend & AI Engineer with 4–5 years building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "linkedinAbout": "Lead Backend & AI Engineer with 4–5 years building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
       "title": "Engineering Portfolio",
-      "description": "Production APIs, fintech backends, and applied AI projects — Node.js, TypeScript, Python, RAG.",
+      "description": "Production APIs, fintech backends, and applied AI projects: Node.js, TypeScript, Python, RAG.",
       "url": "https://epicnode.hostless.site"
     },
     {
@@ -25,7 +25,7 @@
       "url": "https://github.com/EmmanuelM0147/faq-rag-llmzc"
     },
     {
-      "title": "ChefBot AI — Inventory-Aware RAG",
+      "title": "ChefBot AI: Inventory-Aware RAG",
       "description": "Grounded recipe generation with FastAPI, Qdrant, Gemini, and Streamlit.",
       "url": "https://github.com/EmmanuelM0147/ChefBot-AI"
     },

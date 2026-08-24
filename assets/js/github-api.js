@@ -30,9 +30,9 @@ function normalizeRepo(repo) {
 function normalizeCuratedProject(project) {
   return normalizeRepo({
     ...project,
-    curated: true,
+    curated: project.curated !== false,
     private: project.private !== false,
-    url: project.url || null,
+    url: project.html_url || project.url || null,
     stars: 0,
     forks: 0,
     fork: false,
@@ -51,9 +51,28 @@ async function loadCuratedProjects() {
 }
 
 function mergeProjects(githubRepos, curatedProjects) {
+  const projectByName = new Map(curatedProjects.map((project) => [project.name.toLowerCase(), project]));
   const githubNames = new Set(githubRepos.map((repo) => repo.name.toLowerCase()));
-  const curated = curatedProjects.filter((project) => !githubNames.has(project.name.toLowerCase()));
-  return [...curated, ...githubRepos];
+
+  const enrichedGithub = githubRepos.map((repo) => {
+    const override = projectByName.get(repo.name.toLowerCase());
+    if (!override) return repo;
+
+    return {
+      ...repo,
+      description: override.description || repo.description,
+      technologies: override.technologies || repo.technologies,
+      company: override.company || repo.company,
+      dates: override.dates || repo.dates,
+      url: override.url || repo.url,
+    };
+  });
+
+  const curatedOnly = curatedProjects.filter(
+    (project) => project.curated && !githubNames.has(project.name.toLowerCase())
+  );
+
+  return [...curatedOnly, ...enrichedGithub];
 }
 
 function isProfileReadmeRepo(repo) {
