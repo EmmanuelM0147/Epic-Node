@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Post Visual · Download</title>
+    <style>
+      :root {
+        --bg: #0a1628;
+        --panel: #111d33;
+        --border: #1e3a5f;
+        --text: #f0f6fc;
+        --muted: #8b949e;
+        --accent: #4493f8;
+        --accent-hover: #58a6ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: radial-gradient(circle at 20% 20%, #12243d 0%, var(--bg) 45%, #060d18 100%);
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 40px 24px 56px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .lead {
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .preview {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        background: #060d18;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      }
+
+      .preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 24px 0 18px;
+      }
+
+      .btn {
+        appearance: none;
+        border: 1px solid rgba(68, 147, 248, 0.45);
+        background: linear-gradient(180deg, #1f6feb 0%, #1158c7 100%);
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 24px rgba(31, 111, 235, 0.35);
+        background: linear-gradient(180deg, var(--accent-hover) 0%, #1f6feb 100%);
+      }
+
+      .btn-secondary {
+        background: var(--panel);
+        border-color: var(--border);
+      }
+
+      .btn-secondary:hover {
+        background: #162743;
+        box-shadow: none;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+      }
+
+      .meta-card {
+        background: rgba(17, 29, 51, 0.85);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+      }
+
+      .meta-card strong {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 6px;
+      }
+
+      .meta-card span {
+        font-size: 14px;
+        color: #c9d1d9;
+      }
+
+      .note {
+        margin-top: 22px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        background: rgba(68, 147, 248, 0.08);
+        border: 1px solid rgba(68, 147, 248, 0.22);
+        color: #c9d1d9;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      code {
+        color: var(--accent-hover);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <h1>LinkedIn Post Visual</h1>
+      <p class="lead">
+        Production systems architecture graphic styled to match your LinkedIn banner. Attach this image to your reliability post on LinkedIn.
+      </p>
+
+      <div class="preview">
+        <img
+          src="linkedin-post-architecture.png"
+          alt="Production Systems: Trust by Design architecture diagram"
+          width="1200"
+          height="627"
+        />
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="linkedin-post-architecture.png" download="linkedin-post-architecture.png">Download PNG</a>
+        <a class="btn btn-secondary" href="linkedin-banner.png" download="linkedin-banner.png">Download Banner PNG</a>
+      </div>
+
+      <div class="meta">
+        <div class="meta-card">
+          <strong>File</strong>
+          <span>linkedin-post-architecture.png</span>
+        </div>
+        <div class="meta-card">
+          <strong>Size</strong>
+          <span>1200 × 627 px (LinkedIn post)</span>
+        </div>
+        <div class="meta-card">
+          <strong>Style</strong>
+          <span>Navy · Plexus network · Fintech + AI</span>
+        </div>
+      </div>
+
+      <p class="note">
+        Tip: On LinkedIn, create your post first, paste the text, then click the image icon and upload
+        <code>linkedin-post-architecture.png</code>. Pair it with your first comment for best reach.
+      </p>
+    </main>
+  </body>
+</html>
