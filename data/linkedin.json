@@ -3,21 +3,21 @@
   "updatedAt": "2026-08-21",
   "headline": "Lead Backend & AI Engineer · Python · Node.js · TypeScript · Production APIs · RAG & LLM Systems",
   "aboutTagline": "Lead Backend & AI Engineer · Production APIs & LLM Systems",
-  "portfolioUrl": "https://epic-node.onrender.com",
+  "portfolioUrl": "https://epicnode.hostless.site",
   "currentCompany": "Keyrium Consulting",
   "stackLine": "Node.js · TypeScript · Python · Production APIs · RAG & LLM Systems",
   "roleLabel": "a Lead Backend & AI Engineer",
-  "githubBio": "Lead Backend & AI Engineer · Python · Node.js · TypeScript · RAG & production APIs · epic-node.onrender.com",
+  "githubBio": "Lead Backend & AI Engineer · Python · Node.js · TypeScript · RAG & production APIs · epicnode.hostless.site",
   "sidebarBio": "Lead Backend & AI Engineer building production APIs and applied LLM systems, from scalable fintech backends to RAG pipelines and agent workflows.",
   "intro": "Open to hybrid and remote lead/senior backend and applied AI engineering roles focused on production APIs, fintech systems, and LLM integration.",
   "cvIntro": "Lead Backend & AI Engineer specializing in production APIs and applied LLM systems. I design and ship scalable REST services, distributed backends, RAG pipelines, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epic-node.onrender.com](https://epic-node.onrender.com) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epic-node.onrender.com · okeowoemmanuelm@gmail.com",
+  "githubAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "linkedinAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
       "title": "Engineering Portfolio",
       "description": "Production APIs, fintech backends, and applied AI projects: Node.js, TypeScript, Python, RAG.",
-      "url": "https://epic-node.onrender.com"
+      "url": "https://epicnode.hostless.site"
     },
     {
       "title": "FAQ RAG Pipeline",
