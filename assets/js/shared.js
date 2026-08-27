@@ -702,23 +702,11 @@ function sortExperience(experience = []) {
 }
 
 function buildSummaryLead(summary = {}) {
-  const currentYear = new Date().getFullYear();
-  const since = summary.softwareSince || null;
-  const years = since ? currentYear - since : null;
-
   if (summary.lead) {
-    return summary.lead
-      .replace(/\{years\}/g, years != null ? String(years) : "")
-      .replace(/\{since\}/g, since != null ? String(since) : "")
-      .replace(/\s{2,}/g, " ")
-      .trim();
+    return summary.lead.trim();
   }
 
-  if (years && since) {
-    return `Career Arc: ${years}+ years shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines`;
-  }
-
-  return null;
+  return "Career Arc: Shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines";
 }
 
 function buildSummaryItems(data) {

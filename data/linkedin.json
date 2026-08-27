@@ -11,8 +11,8 @@
   "sidebarBio": "Lead Backend & AI Engineer building production APIs and applied LLM systems, from scalable fintech backends to RAG pipelines and agent workflows.",
   "intro": "Open to hybrid and remote lead/senior backend and applied AI engineering roles focused on production APIs, fintech systems, and LLM integration.",
   "cvIntro": "Lead Backend & AI Engineer specializing in production APIs and applied LLM systems. I design and ship scalable REST services, distributed backends, RAG pipelines, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "Lead Backend & AI Engineer with 4–5 years building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epic-node.onrender.com](https://epic-node.onrender.com) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Lead Backend & AI Engineer with 4–5 years building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epic-node.onrender.com · okeowoemmanuelm@gmail.com",
+  "githubAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epic-node.onrender.com](https://epic-node.onrender.com) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "linkedinAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epic-node.onrender.com · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
       "title": "Engineering Portfolio",
@@ -45,13 +45,13 @@
   },
   "summary": {
     "softwareSince": 2021,
-    "lead": "Career Arc: {years}+ years shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines",
+    "lead": "Career Arc: Shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines",
     "highlights": [
       "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
       "Applied AI Systems: RAG pipelines, FastAPI + Qdrant retrieval, Gemini streaming, and agentic workflows",
       "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
       "Data & Infrastructure: PostgreSQL, Redis, Qdrant vector search, query optimization, and secure authentication",
-      "Continuous Growth: LLM Zoomcamp, IAENG membership, and ongoing AI fellowship programs"
+      "Continuous Growth: LLM Zoomcamp, 3MTT AI/ML fellowship (NITDA), IAENG membership, and applied AI programs"
     ]
   },
   "experience": [
@@ -124,10 +124,10 @@
       "dates": "Jan 2017 – Apr 2021"
     },
     {
-      "school": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "school": "3MTT · Federal Ministry of Communications, Innovation and Digital Economy",
       "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
       "location": "Nigeria",
-      "dates": "Jan 2026 – Present"
+      "dates": "Jan 2026 – Aug 2026"
     },
     {
       "school": "African Tech Foundation",
@@ -144,6 +144,13 @@
       "featured": true
     },
     {
+      "name": "Certificate of Completion, Artificial Intelligence & Machine Learning",
+      "issuer": "3MTT (3 Million Technical Talent) · NITDA",
+      "date": "Aug 2026",
+      "url": "https://3mtt.nitda.gov.ng",
+      "featured": true
+    },
+    {
       "name": "Member, International Association of Engineers (IAENG)",
       "issuer": "International Association of Engineers (IAENG)",
       "date": "Jan 2026",
@@ -152,11 +159,10 @@
       "featured": true
     },
     {
-      "name": "AWS Educate Getting Started with Storage",
-      "issuer": "Amazon Web Services (AWS)",
-      "date": "Aug 2025",
-      "url": "https://credly.com/badges/c5d62f7c-9553-4f35-8d04-e837e0aa134b",
-      "featured": true
+      "name": "Introduction to Back-End Development",
+      "issuer": "Meta",
+      "date": "Feb 2024",
+      "url": "https://coursera.org"
     },
     {
       "name": "Verified Python Coder",
@@ -174,19 +180,12 @@
     {
       "name": "AI Augmented Professional Development Skills in the Digital Age",
       "issuer": "ALX South Africa",
-      "date": "Jul 2024",
-      "featured": true
+      "date": "Jul 2024"
     },
     {
       "name": "Version Control",
       "issuer": "Meta",
       "date": "Mar 2024",
-      "url": "https://coursera.org"
-    },
-    {
-      "name": "Introduction to Back-End Development",
-      "issuer": "Meta",
-      "date": "Feb 2024",
       "url": "https://coursera.org"
     },
     {
