@@ -1,23 +1,23 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-08-21",
-  "headline": "Lead Backend & AI Engineer · Python · Node.js · TypeScript · Production APIs · RAG & LLM Systems",
-  "aboutTagline": "Lead Backend & AI Engineer · Production APIs & LLM Systems",
+  "updatedAt": "2026-08-30",
+  "headline": "AI Software Engineer · RAG & LLM Systems · Python · Node.js · TypeScript · Production APIs",
+  "aboutTagline": "AI Software Engineer · RAG & LLM Systems · Production APIs",
   "portfolioUrl": "https://epicnode.hostless.site",
   "currentCompany": "Keyrium Consulting",
-  "stackLine": "Node.js · TypeScript · Python · Production APIs · RAG & LLM Systems",
-  "roleLabel": "a Lead Backend & AI Engineer",
-  "githubBio": "Lead Backend & AI Engineer · Python · Node.js · TypeScript · RAG & production APIs · epicnode.hostless.site",
-  "sidebarBio": "Lead Backend & AI Engineer building production APIs and applied LLM systems, from scalable fintech backends to RAG pipelines and agent workflows.",
-  "intro": "Open to hybrid and remote lead/senior backend and applied AI engineering roles focused on production APIs, fintech systems, and LLM integration.",
-  "cvIntro": "Lead Backend & AI Engineer specializing in production APIs and applied LLM systems. I design and ship scalable REST services, distributed backends, RAG pipelines, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior **backend engineering** and **applied AI engineering** roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Lead Backend & AI Engineer building production systems, from high-concurrency fintech APIs to applied LLM integration, RAG pipelines, and agent workflows.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, Python, PostgreSQL, Redis, and AWS, including architecture, third-party integrations, Docker deployment, CI/CD, and 85% test coverage. I also build RAG-assisted tooling for internal documentation search.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to lead/senior backend engineering and applied AI engineering roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
+  "stackLine": "Python · RAG & LLM Systems · Node.js · TypeScript · Production APIs",
+  "roleLabel": "an AI Software Engineer",
+  "githubBio": "AI Software Engineer · RAG & LLM Systems · Python · Node.js · TypeScript · epicnode.hostless.site",
+  "sidebarBio": "AI Software Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.",
+  "intro": "Open to hybrid and remote AI software engineering and senior backend roles focused on RAG, LLM integration, and production APIs.",
+  "cvIntro": "AI Software Engineer specializing in RAG pipelines, LLM integration, and production APIs. I design and ship grounded retrieval systems, scalable backend services, and reliable cloud infrastructure from architecture through deployment.",
+  "githubAbout": "AI Software Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Keyrium Consulting, I build RAG-assisted internal tooling and lead backend development for Loyalty Rewards and Stock Trading platforms using Python, Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, and a testing framework with 85% code coverage.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to AI software engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "linkedinAbout": "AI Software Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Keyrium Consulting, I build RAG-assisted internal tooling and lead backend development for Loyalty Rewards and Stock Trading platforms using Python, Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, and a testing framework with 85% code coverage.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to AI software engineering and senior backend roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
-      "title": "Engineering Portfolio",
-      "description": "Production APIs, fintech backends, and applied AI projects: Node.js, TypeScript, Python, RAG.",
-      "url": "https://epicnode.hostless.site"
+      "title": "ChefBot AI: Inventory-Aware RAG",
+      "description": "Grounded recipe generation with FastAPI, Qdrant, Gemini, and Streamlit.",
+      "url": "https://github.com/EmmanuelM0147/ChefBot-AI"
     },
     {
       "title": "FAQ RAG Pipeline",
@@ -25,14 +25,14 @@
       "url": "https://github.com/EmmanuelM0147/faq-rag-llmzc"
     },
     {
-      "title": "ChefBot AI: Inventory-Aware RAG",
-      "description": "Grounded recipe generation with FastAPI, Qdrant, Gemini, and Streamlit.",
-      "url": "https://github.com/EmmanuelM0147/ChefBot-AI"
-    },
-    {
       "title": "Inflammatory Speech Flagger",
       "description": "Nigerian hate-speech ML classifier with FastAPI, Streamlit UI, feedback monitoring, and live demo.",
       "url": "https://inflammatoryspeechflagger.vercel.app"
+    },
+    {
+      "title": "Engineering Portfolio",
+      "description": "Production APIs, fintech backends, and applied AI projects: Node.js, TypeScript, Python, RAG.",
+      "url": "https://epicnode.hostless.site"
     }
   ],
   "contact": {
@@ -45,7 +45,7 @@
   },
   "summary": {
     "softwareSince": 2021,
-    "lead": "Career Arc: Shipping backend systems, from web platforms to fintech APIs, loyalty backends, and RAG pipelines",
+    "lead": "Career Arc: Building applied AI systems and production backends, from RAG pipelines and LLM integration to fintech APIs and scalable infrastructure",
     "highlights": [
       "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
       "Applied AI Systems: RAG pipelines, FastAPI + Qdrant retrieval, Gemini streaming, and agentic workflows",

@@ -77,7 +77,7 @@ async function pushProfileReadme(content) {
   }
 
   const body = {
-    message: "Update profile README to Lead Backend Engineer positioning",
+    message: "Update profile README to AI Software Engineer positioning",
     content: Buffer.from(content, "utf8").toString("base64"),
   };
 

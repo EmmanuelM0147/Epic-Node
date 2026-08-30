@@ -1,17 +1,17 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - Lead Backend Engineer",
-  "siteDescription": "Lead Backend Engineer building production APIs, applied AI systems, and RAG pipelines.",
+  "siteTitle": "Emmanuel Okeowo - AI Software Engineer",
+  "siteDescription": "AI Software Engineer building RAG pipelines, LLM systems, and production APIs.",
   "siteName": "epicnode.dev",
   "portfolioUrl": "https://epicnode.hostless.site",
   "ogImageUrl": "https://epicnode.hostless.site/assets/og-image.png",
   "email": "okeowoemmanuelm@gmail.com",
-  "roleTitle": "Lead Backend Engineer",
-  "roleTagline": "Node.js · TypeScript · Python · RAG · LLMs",
+  "roleTitle": "AI Software Engineer",
+  "roleTagline": "RAG & LLM Systems · Python · Node.js · TypeScript",
   "highlights": [
-    "Lead Backend Engineer",
-    "Production APIs & LLM Systems",
+    "AI Software Engineer",
+    "RAG & LLM Systems",
     "Open to hybrid & remote roles"
   ],
   "featuredPublicRepos": [
@@ -29,16 +29,16 @@
     }
   ],
   "hireMe": {
-    "headline": "Open to hybrid and remote lead backend and production LLM roles",
-    "summary": "Lead Backend Engineer available for production API builds, fintech backends, RAG pipeline delivery, and cloud deployment support. Hybrid or remote preferred.",
+    "headline": "Open to hybrid and remote applied AI and production LLM roles",
+    "summary": "AI Software Engineer available for RAG pipeline delivery, LLM integration, production API builds, and cloud deployment support. Hybrid or remote preferred.",
     "services": [
-      {
-        "title": "Backend & API Engineering",
-        "description": "REST/gRPC APIs, microservices, and event-driven systems with Node.js, TypeScript, PostgreSQL, Redis, and secure authentication."
-      },
       {
         "title": "AI & LLM Systems",
         "description": "RAG pipelines, semantic search, multi-agent workflows, and vector retrieval with FastAPI, Qdrant, Gemini, LangChain, OpenAI, and Python."
+      },
+      {
+        "title": "Backend & API Engineering",
+        "description": "REST/gRPC APIs, microservices, and event-driven systems with Node.js, TypeScript, PostgreSQL, Redis, and secure authentication."
       },
       {
         "title": "Cloud & DevOps",

@@ -111,13 +111,13 @@ function renderSummarySection(data) {
 function introBioText(bio) {
   if (!bio) return "";
   return bio
-    .replace(/^(Backend (& AI )?Engineer|AI Engineer|Software Engineer)\s*[|·]\s*/i, "")
+    .replace(/^(AI Software Engineer|Applied AI Engineer|Lead Backend (& AI )?Engineer|Backend (& AI )?Engineer|AI Engineer|Software Engineer)\s*[|·]\s*/i, "")
     .replace(/\s*[|·]\s*Node\.js.*$/i, "")
     .trim();
 }
 
 function roleTitle() {
-  return SITE_CONFIG.roleTitle || "Software Engineer";
+  return SITE_CONFIG.roleTitle || "AI Software Engineer";
 }
 
 function renderIntro(profile, linkedin = {}) {
