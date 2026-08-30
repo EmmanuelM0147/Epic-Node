@@ -1,0 +1,34 @@
+name: Deploy Hostless Site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Hostless deployment
+        env:
+          HOSTLESS_TOKEN: ${{ secrets.HOSTLESS_TOKEN }}
+          HOSTLESS_SITE_NAME: ${{ vars.HOSTLESS_SITE_NAME }}
+        run: |
+          if [ -z "$HOSTLESS_TOKEN" ]; then
+            echo "::warning::HOSTLESS_TOKEN is not set. Skipping Hostless API deploy."
+            echo "Set repo secret HOSTLESS_TOKEN (Hostless API key with deployments:write)."
+            echo "Or redeploy manually: Hostless dashboard → Sites → your site → Deployments → Trigger new deployment."
+            exit 0
+          fi
+
+          SITE_NAME="${HOSTLESS_SITE_NAME:-epicnode}"
+          echo "Triggering Hostless deployment for site: $SITE_NAME"
+
+          curl -sS -f -X POST \
+            -H "Authorization: $HOSTLESS_TOKEN" \
+            -H "Content-Type: application/json" \
+            "https://api.hostless.dev/v1/sites/${SITE_NAME}/deployments/new" \
+            -d '{}'
+
+          echo "Hostless deployment triggered."
