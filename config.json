@@ -1,16 +1,16 @@
 {
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
-  "siteTitle": "Emmanuel Okeowo - AI Software Engineer",
-  "siteDescription": "AI Software Engineer building RAG pipelines, LLM systems, and production APIs.",
+  "siteTitle": "Emmanuel Okeowo - Applied AI Engineer",
+  "siteDescription": "Applied AI Engineer building RAG pipelines, LLM systems, and production APIs.",
   "siteName": "epicnode.dev",
   "portfolioUrl": "https://epicnode.hostless.site",
   "ogImageUrl": "https://epicnode.hostless.site/assets/og-image.png",
   "email": "okeowoemmanuelm@gmail.com",
-  "roleTitle": "AI Software Engineer",
+  "roleTitle": "Applied AI Engineer",
   "roleTagline": "RAG & LLM Systems · Python · Node.js · TypeScript",
   "highlights": [
-    "AI Software Engineer",
+    "Applied AI Engineer",
     "RAG & LLM Systems",
     "Open to hybrid & remote roles"
   ],
@@ -30,7 +30,7 @@
   ],
   "hireMe": {
     "headline": "Open to hybrid and remote applied AI and production LLM roles",
-    "summary": "AI Software Engineer available for RAG pipeline delivery, LLM integration, production API builds, and cloud deployment support. Hybrid or remote preferred.",
+    "summary": "Applied AI Engineer available for RAG pipeline delivery, LLM integration, production API builds, and cloud deployment support. Hybrid or remote preferred.",
     "services": [
       {
         "title": "AI & LLM Systems",

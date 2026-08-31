@@ -1,13 +1,13 @@
 const SITE_CONFIG = {
   baseUrl: "/Epic-Node",
   githubUsername: "EmmanuelM0147",
-  siteTitle: "Emmanuel Okeowo - AI Software Engineer",
+  siteTitle: "Emmanuel Okeowo - Applied AI Engineer",
   siteName: "epicnode.dev",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
-  highlights: ["AI Software Engineer", "Open to hybrid & remote roles"],
-  roleTitle: "AI Software Engineer",
+  highlights: ["Applied AI Engineer", "Open to hybrid & remote roles"],
+  roleTitle: "Applied AI Engineer",
 };
 
 let tabCounts = { projects: 0, certifications: 0 };
@@ -546,7 +546,7 @@ async function initLayout(activeTab) {
       login: SITE_CONFIG.githubUsername,
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
-      bio: "AI Software Engineer · RAG & LLM Systems · Python · Node.js · TypeScript",
+      bio: "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript",
       company: "Keyrium Consulting",
       location: "Lagos",
       followers: 9,
@@ -606,7 +606,7 @@ function renderSiteFooter(linkedin = null) {
 
   footer.innerHTML = `
     <div class="site-footer-inner">
-      <p class="site-footer-copy">© ${new Date().getFullYear()} Emmanuel Okeowo · AI Software Engineer</p>
+      <p class="site-footer-copy">© ${new Date().getFullYear()} Emmanuel Okeowo · Applied AI Engineer</p>
       <div class="site-footer-links">
         ${portfolio ? `<a href="${escapeHtml(portfolio)}" target="_blank" rel="noopener noreferrer">Portfolio</a>` : ""}
         <a href="${pageUrl("cv.html")}">CV</a>
@@ -642,7 +642,7 @@ function initPageMeta({ title, description } = {}) {
   const imageUrl =
     SITE_CONFIG.ogImageUrl ||
     new URL(assetUrl("assets/og-image.png"), window.location.origin).href;
-  const imageAlt = "Emmanuel Okeowo - AI Software Engineer";
+  const imageAlt = "Emmanuel Okeowo - Applied AI Engineer";
 
   if (title) {
     document.title = title;
@@ -672,7 +672,7 @@ function injectPersonSchema(profile, linkedin = null) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile?.name || "Emmanuel Okeowo",
-    jobTitle: SITE_CONFIG.roleTitle || "AI Software Engineer",
+    jobTitle: SITE_CONFIG.roleTitle || "Applied AI Engineer",
     url: portfolioUrl(linkedin) || window.location.origin + pageUrl("index.html"),
     email: contact.email || SITE_CONFIG.email,
     sameAs,
@@ -764,7 +764,7 @@ async function loadLinkedInData() {
 }
 
 function profileAboutTagline(data = {}) {
-  return data.aboutTagline || "AI Software Engineer · RAG & LLM Systems";
+  return data.aboutTagline || "Applied AI Engineer · RAG & LLM Systems";
 }
 
 function profileOverviewTagline(data = {}) {
