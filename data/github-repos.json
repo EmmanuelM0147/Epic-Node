@@ -1,21 +1,8 @@
 {
   "username": "EmmanuelM0147",
   "count": 61,
-  "synced_at": "2026-08-31T16:21:26.327Z",
+  "synced_at": "2026-09-01T11:22:16.398Z",
   "repos": [
-    {
-      "name": "Epic-Node",
-      "full_name": "EmmanuelM0147/Epic-Node",
-      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
-      "description": "Personal portfolio site for Emmanuel Okeowo",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-31T13:22:03Z",
-      "updated": "Aug 2026"
-    },
     {
       "name": "EmmanuelM0147",
       "full_name": "EmmanuelM0147/EmmanuelM0147",
@@ -26,7 +13,20 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-08-27T14:14:42Z",
+      "updated_at": "2026-08-31T16:42:31Z",
+      "updated": "Aug 2026"
+    },
+    {
+      "name": "Epic-Node",
+      "full_name": "EmmanuelM0147/Epic-Node",
+      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
+      "description": "Personal portfolio site for Emmanuel Okeowo",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-08-31T16:31:03Z",
       "updated": "Aug 2026"
     },
     {
