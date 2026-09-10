@@ -1,8 +1,21 @@
 {
   "username": "EmmanuelM0147",
   "count": 61,
-  "synced_at": "2026-09-09T10:59:45.377Z",
+  "synced_at": "2026-09-10T10:56:49.215Z",
   "repos": [
+    {
+      "name": "Evently-backend",
+      "full_name": "EmmanuelM0147/Evently-backend",
+      "html_url": "https://github.com/EmmanuelM0147/Evently-backend",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-09-10T05:07:28Z",
+      "updated": "Sep 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
@@ -13,7 +26,7 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-09-08T10:55:49Z",
+      "updated_at": "2026-09-09T11:02:18Z",
       "updated": "Sep 2026"
     },
     {
@@ -28,19 +41,6 @@
       "private": false,
       "updated_at": "2026-09-05T07:59:41Z",
       "updated": "Sep 2026"
-    },
-    {
-      "name": "Evently-backend",
-      "full_name": "EmmanuelM0147/Evently-backend",
-      "html_url": "https://github.com/EmmanuelM0147/Evently-backend",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-27T11:47:46Z",
-      "updated": "Aug 2026"
     },
     {
       "name": "sturdy-system",
