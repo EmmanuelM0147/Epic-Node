@@ -8,6 +8,10 @@ const SITE_CONFIG = {
   email: "okeowoemmanuelm@gmail.com",
   highlights: ["Applied AI Engineer", "Open to hybrid & remote roles"],
   roleTitle: "Applied AI Engineer",
+  pagination: {
+    projectsPageSize: 12,
+    certificationsPageSize: 6,
+  },
 };
 
 let tabCounts = { projects: 0, certifications: 0 };

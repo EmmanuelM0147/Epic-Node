@@ -1,5 +1,11 @@
 let allRepos = [];
+let filteredRepos = [];
+let currentPage = 1;
 let currentFilters = { type: "all", language: "all", sort: "updated" };
+
+function projectsPageSize() {
+  return SITE_CONFIG.pagination?.projectsPageSize || 12;
+}
 
 function renderProjectCard(repo) {
   const languageMarkup = repo.language
@@ -46,21 +52,59 @@ function renderProjectCard(repo) {
   `;
 }
 
-function renderProjects(repos) {
-  const container = document.getElementById("projects-list");
+function updateProjectsCount(meta) {
   const count = document.getElementById("projects-count");
-  if (!container) return;
+  if (!count) return;
 
-  if (count) {
-    count.textContent = `${repos.length} project${repos.length === 1 ? "" : "s"}`;
-  }
-
-  if (!repos.length) {
-    container.innerHTML = `<p class="empty-state">No projects match the current filters.</p>`;
+  if (!meta || meta.total === 0) {
+    count.textContent = "0 projects";
     return;
   }
 
-  container.innerHTML = repos.map(renderProjectCard).join("");
+  count.textContent = `Showing ${meta.start}–${meta.end} of ${meta.total} project${meta.total === 1 ? "" : "s"}`;
+}
+
+function renderProjectsPage({ resetPage = false } = {}) {
+  const container = document.getElementById("projects-list");
+  const pagination = document.getElementById("projects-pagination");
+  if (!container) return;
+
+  if (resetPage) {
+    currentPage = 1;
+    writePageToQuery(1);
+  } else {
+    currentPage = readPageFromQuery(currentPage);
+  }
+
+  const meta = paginateItems(filteredRepos, {
+    page: currentPage,
+    pageSize: projectsPageSize(),
+  });
+
+  if (meta.page !== currentPage) {
+    currentPage = meta.page;
+    writePageToQuery(currentPage);
+  }
+
+  if (!meta.total) {
+    container.innerHTML = `<p class="empty-state">No projects match the current filters.</p>`;
+    updateProjectsCount(meta);
+    if (pagination) pagination.innerHTML = "";
+    return;
+  }
+
+  container.innerHTML = meta.items.map(renderProjectCard).join("");
+  updateProjectsCount(meta);
+
+  if (pagination) {
+    pagination.innerHTML = renderPaginationNav(meta, { ariaLabel: "Projects pagination" });
+    bindPaginationNav(pagination, (nextPage) => {
+      currentPage = nextPage;
+      writePageToQuery(currentPage);
+      renderProjectsPage();
+      scrollListIntoView("#projects-list");
+    });
+  }
 }
 
 function populateLanguageFilter(repos) {
@@ -73,10 +117,10 @@ function populateLanguageFilter(repos) {
     languages.map((lang) => `<option value="${escapeHtml(lang)}">${escapeHtml(lang)}</option>`).join("");
 }
 
-function applyFilters() {
+function applyFilters({ resetPage = true } = {}) {
   const filtered = filterRepos(allRepos, currentFilters);
-  const sorted = sortRepos(filtered, currentFilters.sort);
-  renderProjects(sorted);
+  filteredRepos = sortRepos(filtered, currentFilters.sort);
+  renderProjectsPage({ resetPage });
 }
 
 function bindFilterEvents() {
@@ -87,17 +131,17 @@ function bindFilterEvents() {
 
   typeSelect?.addEventListener("change", (event) => {
     currentFilters.type = event.target.value;
-    applyFilters();
+    applyFilters({ resetPage: true });
   });
 
   languageSelect?.addEventListener("change", (event) => {
     currentFilters.language = event.target.value;
-    applyFilters();
+    applyFilters({ resetPage: true });
   });
 
   sortSelect?.addEventListener("change", (event) => {
     currentFilters.sort = event.target.value;
-    applyFilters();
+    applyFilters({ resetPage: true });
   });
 
   refreshBtn?.addEventListener("click", async () => {
@@ -106,7 +150,7 @@ function bindFilterEvents() {
     try {
       allRepos = await loadRepos({ preferLive: true });
       populateLanguageFilter(allRepos);
-      applyFilters();
+      applyFilters({ resetPage: false });
       setStatus("Live data refreshed from GitHub.");
     } catch {
       setStatus("Could not refresh live data. Showing cached repos.", true);
@@ -127,6 +171,7 @@ function setStatus(message, isError = false) {
 async function initProjectsPage() {
   const list = document.getElementById("projects-list");
   renderLoadingSkeleton(list, 4);
+  currentPage = readPageFromQuery(1);
 
   await bootstrapPage("projects", async () => {
     bindFilterEvents();
@@ -139,7 +184,7 @@ async function initProjectsPage() {
     try {
       allRepos = await loadRepos();
       populateLanguageFilter(allRepos);
-      applyFilters();
+      applyFilters({ resetPage: false });
       setStatus("Loaded from cached GitHub data.");
     } catch (error) {
       setStatus(error.message || "Failed to load projects.", true);

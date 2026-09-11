@@ -94,19 +94,55 @@ async function loadReposFromJson() {
   return mergeProjects(githubRepos, curatedProjects);
 }
 
-async function fetchLiveRepos() {
-  const [response, curatedProjects] = await Promise.all([
-    fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`, {
+function parseGitHubLinkHeader(linkHeader) {
+  if (!linkHeader) return {};
+
+  return linkHeader.split(",").reduce((links, part) => {
+    const match = part.match(/<([^>]+)>;\s*rel="([^"]+)"/);
+    if (match) {
+      links[match[2]] = match[1];
+    }
+    return links;
+  }, {});
+}
+
+async function fetchLiveReposPage(page = 1) {
+  const response = await fetch(
+    `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100&page=${page}`,
+    {
       headers: { Accept: "application/vnd.github+json" },
-    }),
-    loadCuratedProjects(),
-  ]);
+    }
+  );
 
   if (!response.ok) {
     throw new Error(`GitHub API error: ${response.status}`);
   }
 
   const repos = await response.json();
+  const links = parseGitHubLinkHeader(response.headers.get("Link"));
+  return { repos, nextUrl: links.next || null };
+}
+
+async function fetchAllLiveRepos() {
+  const collected = [];
+  let page = 1;
+
+  while (true) {
+    const result = await fetchLiveReposPage(page);
+    collected.push(...result.repos);
+
+    if (!result.repos.length || !result.nextUrl) {
+      break;
+    }
+
+    page += 1;
+  }
+
+  return collected;
+}
+
+async function fetchLiveRepos() {
+  const [repos, curatedProjects] = await Promise.all([fetchAllLiveRepos(), loadCuratedProjects()]);
   const githubRepos = repos.map(normalizeRepo).filter((repo) => !isProfileReadmeRepo(repo));
   return mergeProjects(githubRepos, curatedProjects);
 }

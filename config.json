@@ -14,6 +14,10 @@
     "RAG & LLM Systems",
     "Open to hybrid & remote roles"
   ],
+  "pagination": {
+    "projectsPageSize": 12,
+    "certificationsPageSize": 6
+  },
   "featuredPublicRepos": [
     {
       "name": "inflammatory_speech_flagger",
