@@ -4,7 +4,7 @@
 ## About Me
 Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.
 
-I ship applied AI features and production fintech backends — recommendation APIs, LLM integrations, and scalable REST services on Node.js, TypeScript, PostgreSQL, and AWS.
+I ship applied AI features and production fintech backends, including recommendation APIs, LLM integrations, and scalable REST services on Node.js, TypeScript, PostgreSQL, and AWS.
 
 Side projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.
 

@@ -1,9 +1,9 @@
 {
   "projects": [
     {
-      "name": "AI Recommendation Platform",
+      "name": "Gardenia AI",
       "dates": "Dec 2025 – Present",
-      "description": "Production AI recommendation services and internal AI Tools workspace. REST APIs, prompt and schema contracts, and environment-controlled live model access built with Python and FastAPI.",
+      "description": "Recommendation APIs and AI Tools workspace for Gardenia. REST APIs, prompt/schema contracts, and environment-controlled live model access with Python and FastAPI.",
       "language": "Python",
       "technologies": ["Python", "FastAPI", "REST APIs", "LLM Integration", "RAG"],
       "private": true,

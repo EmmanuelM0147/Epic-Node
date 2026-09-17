@@ -2,7 +2,7 @@ const SITE_CONFIG = {
   baseUrl: "/Epic-Node",
   githubUsername: "EmmanuelM0147",
   siteTitle: "Emmanuel Okeowo - Applied AI Engineer",
-  siteName: "epicnode.dev",
+  siteName: "Emmanuel Okeowo",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
@@ -74,6 +74,13 @@ async function bootstrapPage(activeTab, hydrate) {
   }
 }
 
+function updateLoaderBrand() {
+  const brand = SITE_CONFIG.siteName || "Emmanuel Okeowo";
+  document.querySelectorAll(".app-loader-brand").forEach((el) => {
+    el.textContent = brand;
+  });
+}
+
 async function loadSiteConfig() {
   try {
     const response = await fetch(assetUrl("config.json"));
@@ -84,6 +91,7 @@ async function loadSiteConfig() {
   } catch {
     // Use defaults for local preview.
   }
+  updateLoaderBrand();
 }
 
 async function loadTabCounts() {
@@ -417,7 +425,7 @@ function renderHeader() {
   const theme = document.documentElement.getAttribute("data-theme") || "dark";
   header.innerHTML = `
     <div class="site-header-inner">
-      <a class="site-brand" href="${pageUrl("index.html")}">${escapeHtml(SITE_CONFIG.siteName || "epicnode.dev")}</a>
+      <a class="site-brand" href="${pageUrl("index.html")}">${escapeHtml(SITE_CONFIG.siteName || "Emmanuel Okeowo")}</a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="${theme === "light" ? "true" : "false"}">
         ${theme === "light" ? icon("moon") : icon("sun")}
       </button>
