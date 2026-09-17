@@ -30,7 +30,7 @@ function renderAboutLinks(contact = {}, profile = {}) {
 }
 
 function aboutBodyText(data) {
-  const text = data.linkedinAbout || data.githubAbout || data.cvIntro || "";
+  const text = data.portfolioAbout || data.githubAbout || data.cvIntro || "";
   return text.split(/\n\n(\*\*)?Focus areas:/i)[0].trim();
 }
 
