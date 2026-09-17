@@ -1,0 +1,24 @@
+TO: info@securebypay.com
+SUBJECT: Application to Fullstack Role
+
+---
+
+Hello SecureByPay Team,
+
+I'm applying for the Full Stack Developer role.
+
+I build and ship production fintech backends end-to-end — APIs, integrations, cloud deploy, and testing. At Keyrium Consulting I lead Loyalty Rewards and Stock Trading systems (Node.js, TypeScript, AWS/Docker), including payment-adjacent and KYC-style flows, with strong test coverage. At Kings Technologies And Innovations I also ship applied AI features (recommendation APIs, RAG / LLM integrations), which maps well to your Groq and AI work.
+
+I'm strongest on backend, APIs, AWS, and AI integration, and comfortable collaborating across web and mobile on feature delivery.
+
+Portfolio: https://epicnode.hostless.site
+GitHub: https://github.com/EmmanuelM0147
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. Happy to discuss how I can help SecureByPay scale its platform.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com
+
+ATTACH: ../cv/pdf/Emmanuel_Okeowo_CV_Fullstack_Fintech.pdf

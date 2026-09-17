@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Kit — Review Before Send</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d1117;
+        --panel: #161b22;
+        --border: #30363d;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --accent: #4493f8;
+        --ok: #3fb950;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 48px; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      .lead { color: var(--muted); margin-bottom: 28px; }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+      }
+      .card h2 { margin: 0 0 6px; font-size: 18px; }
+      .meta { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+      a.btn, button.btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: #21262d;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      a.btn.primary, button.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #010409;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 14px;
+        font-size: 13px;
+        margin: 0;
+        max-height: 280px;
+        overflow: auto;
+      }
+      .hero {
+        background: linear-gradient(135deg, rgba(68, 147, 248, 0.15), rgba(63, 185, 80, 0.08));
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .hero h2 { margin: 0 0 8px; font-size: 20px; }
+      .hero p { margin: 0 0 14px; color: var(--muted); }
+      code { background: #010409; padding: 2px 6px; border-radius: 4px; }
+      ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); }
+      .tag {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 12px;
+        background: rgba(63, 185, 80, 0.15);
+        color: var(--ok);
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Apply Kit</h1>
+      <p class="lead">Step 1 creates real email drafts with CV attached. Step 2 is review here, then Send.</p>
+
+      <div class="hero">
+        <h2>Step 1 — Create drafts in your email</h2>
+        <p>Double-click <code>applications/CREATE-DRAFTS.bat</code> in File Explorer (same folder as this file).</p>
+        <div class="actions">
+          <a class="btn primary" href="CREATE-DRAFTS.bat">Run CREATE-DRAFTS.bat</a>
+          <a class="btn" href="drafts/" target="_blank">Open drafts folder (.eml)</a>
+        </div>
+        <ul>
+          <li><strong>Outlook:</strong> check your <strong>Drafts</strong> folder (3 messages, CV attached)</li>
+          <li><strong>No Outlook:</strong> double-click each <code>.eml</code> file in <code>applications/drafts/</code></li>
+          <li><strong>Gmail web only:</strong> copy body below + attach PDF manually (Gmail cannot import .eml drafts)</li>
+        </ul>
+      </div>
+
+      <div class="card" id="daira">
+        <h2>Daira — AI Engineer <span class="tag">Priority 1</span></h2>
+        <p class="meta">To: contact@daira.me · Attach Applied AI CV · Include GitHub</p>
+        <div class="actions">
+          <a class="btn primary" href="cv/pdf/Emmanuel_Okeowo_CV_Applied_AI.pdf" target="_blank">Preview CV PDF</a>
+          <a class="btn" href="cv/Emmanuel_Okeowo_CV_Applied_AI.html" target="_blank">Preview CV HTML</a>
+          <button class="btn" data-copy="daira-body">Copy email body</button>
+        </div>
+        <pre id="daira-body">Hello Daira Team,
+
+I'm applying for the AI Engineer role.
+
+I build applied AI systems in production — RAG pipelines, LLM integrations, and internal agent-style workflows — not just experiments. At Kings Technologies And Innovations I own Gardenia AI features (recommendation APIs, prompt/schema contracts, FastAPI). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
+
+I'm curious about new AI capabilities, but I focus on shipping useful features: retrieval, evaluation, monitoring, and reliable backend integration.
+
+GitHub: https://github.com/EmmanuelM0147
+Portfolio: https://epicnode.hostless.site
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. Happy to walk through a recent AI feature or agent workflow.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com</pre>
+      </div>
+
+      <div class="card" id="veritella">
+        <h2>Veritella — Senior Software Engineer <span class="tag">Priority 2</span></h2>
+        <p class="meta">To: people@veritella.com · Attach Senior Backend CV</p>
+        <div class="actions">
+          <a class="btn primary" href="cv/pdf/Emmanuel_Okeowo_CV_Senior_Backend.pdf" target="_blank">Preview CV PDF</a>
+          <a class="btn" href="cv/Emmanuel_Okeowo_CV_Senior_Backend.html" target="_blank">Preview CV HTML</a>
+          <button class="btn" data-copy="veritella-body">Copy email body</button>
+        </div>
+        <pre id="veritella-body">Hello Veritella Team,
+
+I'm applying for the Senior Software Engineer role.
+
+I own production backend systems end-to-end — architecture, APIs, third-party integrations, deployment, and testing. At Keyrium Consulting I lead Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL, AWS/Docker), promoted from Senior Software Engineer after a year building secure systems and an 85% coverage testing framework. Experience includes auth, payment-adjacent flows, and KYC-style integrations from earlier fintech work.
+
+I'm interested in building verification systems that are fast, accurate, and cost-efficient at scale — the same constraints I already optimize for in production.
+
+Portfolio: https://epicnode.hostless.site
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. I'd welcome a conversation about how I can help build Veritella's verification pipeline.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com</pre>
+      </div>
+
+      <div class="card" id="securebypay">
+        <h2>SecureByPay — Full Stack Developer</h2>
+        <p class="meta">To: info@securebypay.com · Subject: Application to Fullstack Role</p>
+        <div class="actions">
+          <a class="btn primary" href="cv/pdf/Emmanuel_Okeowo_CV_Fullstack_Fintech.pdf" target="_blank">Preview CV PDF</a>
+          <a class="btn" href="cv/Emmanuel_Okeowo_CV_Fullstack_Fintech.html" target="_blank">Preview CV HTML</a>
+          <button class="btn" data-copy="securebypay-body">Copy email body</button>
+        </div>
+        <pre id="securebypay-body">Hello SecureByPay Team,
+
+I'm applying for the Full Stack Developer role.
+
+I build and ship production fintech backends end-to-end — APIs, integrations, cloud deploy, and testing. At Keyrium Consulting I lead Loyalty Rewards and Stock Trading systems (Node.js, TypeScript, AWS/Docker), including payment-adjacent and KYC-style flows, with strong test coverage. At Kings Technologies And Innovations I also ship applied AI features (recommendation APIs, RAG / LLM integrations), which maps well to your Groq and AI work.
+
+I'm strongest on backend, APIs, AWS, and AI integration, and comfortable collaborating across web and mobile on feature delivery.
+
+Portfolio: https://epicnode.hostless.site
+GitHub: https://github.com/EmmanuelM0147
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. Happy to discuss how I can help SecureByPay scale its platform.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com</pre>
+      </div>
+
+      <div class="card">
+        <h2>Step 2 — Before you send</h2>
+        <ul>
+          <li>Run <code>CREATE-DRAFTS.bat</code> first if you have not already</li>
+          <li>Preview each CV PDF above</li>
+          <li>Review draft text in your mail app, then Send when ready</li>
+          <li>Nothing sends automatically</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll("[data-copy]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const id = btn.getAttribute("data-copy");
+          const text = document.getElementById(id)?.textContent || "";
+          await navigator.clipboard.writeText(text.trim());
+          btn.textContent = "Copied!";
+          setTimeout(() => { btn.textContent = "Copy email body"; }, 1500);
+        });
+      });
+    </script>
+  </body>
+</html>

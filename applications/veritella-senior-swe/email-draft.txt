@@ -1,0 +1,23 @@
+TO: people@veritella.com
+SUBJECT: Application — Senior Software Engineer
+
+---
+
+Hello Veritella Team,
+
+I'm applying for the Senior Software Engineer role.
+
+I own production backend systems end-to-end — architecture, APIs, third-party integrations, deployment, and testing. At Keyrium Consulting I lead Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL, AWS/Docker), promoted from Senior Software Engineer after a year building secure systems and an 85% coverage testing framework. Experience includes auth, payment-adjacent flows, and KYC-style integrations from earlier fintech work.
+
+I'm interested in building verification systems that are fast, accurate, and cost-efficient at scale — the same constraints I already optimize for in production.
+
+Portfolio: https://epicnode.hostless.site
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. I'd welcome a conversation about how I can help build Veritella's verification pipeline.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com
+
+ATTACH: ../cv/pdf/Emmanuel_Okeowo_CV_Senior_Backend.pdf

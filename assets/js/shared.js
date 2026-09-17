@@ -551,7 +551,7 @@ async function initLayout(activeTab) {
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
       bio: "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript",
-      company: "Keyrium Consulting",
+      company: "Kings Technologies And Innovations",
       location: "Lagos",
       followers: 9,
       following: 37,

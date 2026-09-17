@@ -1,18 +1,18 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-08-31",
-  "headline": "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript · Production APIs",
-  "aboutTagline": "Applied AI Engineer · RAG & LLM Systems · Production APIs",
+  "updatedAt": "2026-09-17",
+  "headline": "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript · PostgreSQL · APIs",
+  "aboutTagline": "Applied AI Engineer · RAG & LLM Systems · PostgreSQL · APIs",
   "portfolioUrl": "https://epicnode.hostless.site",
-  "currentCompany": "Keyrium Consulting",
-  "stackLine": "Python · RAG & LLM Systems · Node.js · TypeScript · Production APIs",
+  "currentCompany": "Kings Technologies And Innovations",
+  "stackLine": "Python · RAG & LLM Systems · Node.js · TypeScript · PostgreSQL · APIs",
   "roleLabel": "an Applied AI Engineer",
   "githubBio": "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript · epicnode.hostless.site",
-  "sidebarBio": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.",
+  "sidebarBio": "Applied AI Engineer at Kings Technologies And Innovations and Lead Backend Engineer at Keyrium Consulting. Building Gardenia AI features, RAG pipelines, and production fintech APIs.",
   "intro": "Open to hybrid and remote applied AI engineering and senior backend roles focused on RAG, LLM integration, and production APIs.",
-  "cvIntro": "Applied AI Engineer specializing in RAG pipelines, LLM integration, and production APIs. I design and ship grounded retrieval systems, scalable backend services, and reliable cloud infrastructure from architecture through deployment.",
-  "githubAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Keyrium Consulting, I build RAG-assisted internal tooling and lead backend development for Loyalty Rewards and Stock Trading platforms using Python, Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, and a testing framework with 85% code coverage.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Keyrium Consulting, I build RAG-assisted internal tooling and lead backend development for Loyalty Rewards and Stock Trading platforms using Python, Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, and a testing framework with 85% code coverage.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
+  "cvIntro": "Applied AI Engineer specializing in RAG pipelines, LLM integration, and production APIs. At Kings Technologies And Innovations I own Gardenia AI features; at Keyrium Consulting I lead fintech backend platforms. I design grounded retrieval systems, scalable backend services, and reliable cloud infrastructure from architecture through deployment.",
+  "githubAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt **Kings Technologies And Innovations**, I own AI features for Gardenia and the AI Tools workspace: recommendation services through REST APIs, prompt and schema contracts, and environment-controlled live model access with Python and FastAPI.\n\nAt **Keyrium Consulting**, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, a testing framework with 85% code coverage, and RAG-assisted internal documentation search.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "linkedinAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations, I own AI features for Gardenia and the AI Tools workspace: recommendation services through REST APIs, prompt and schema contracts, and environment-controlled live model access with Python and FastAPI.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, a testing framework with 85% code coverage, and RAG-assisted internal documentation search.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
       "title": "ChefBot AI: Inventory-Aware RAG",
@@ -45,8 +45,9 @@
   },
   "summary": {
     "softwareSince": 2021,
-    "lead": "Career Arc: Building applied AI systems and production backends, from RAG pipelines and LLM integration to fintech APIs and scalable infrastructure",
+    "lead": "Career Arc: Building applied AI products and production backends, from Gardenia AI features and RAG pipelines to fintech APIs and scalable infrastructure",
     "highlights": [
+      "Applied AI Products: Gardenia recommendation services, prompt/schema contracts, and AI Tools workspace APIs",
       "Production-Grade Backends: scalable REST APIs, microservices, auth, caching, and PostgreSQL at scale",
       "Applied AI Systems: RAG pipelines, FastAPI + Qdrant retrieval, Gemini streaming, and agentic workflows",
       "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
@@ -56,13 +57,31 @@
   },
   "experience": [
     {
+      "title": "Artificial Intelligence Engineer",
+      "company": "Kings Technologies And Innovations",
+      "location": "Lagos State, Nigeria · Remote",
+      "dates": "Dec 2025 – Present",
+      "employmentType": "Full-time",
+      "description": "Own AI features for Gardenia and the AI Tools workspace. Implement AI recommendation services through REST APIs, design prompt and schema contracts, and control live model access through environment variables. Build with Python, FastAPI, and LLM integrations.",
+      "technologies": ["Python", "FastAPI", "REST APIs", "LLM Integration", "RAG"]
+    },
+    {
       "title": "Lead Backend Engineer",
       "company": "Keyrium Consulting",
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
-      "dates": "Jul 2025 – Present",
+      "dates": "Aug 2026 – Present",
       "employmentType": "Full-time",
-      "description": "Leading development of production-grade RESTful APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architect secure systems, third-party integrations, and Docker-based deployment workflows. Established a testing framework with 85% code coverage and prototyped RAG-assisted internal tooling for documentation search.",
-      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs"]
+      "description": "Lead development of production REST APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architect secure systems, manage third-party integrations, and oversee Docker-based deployment workflows. Prototype RAG-assisted internal tooling for documentation search with Python (FastAPI).",
+      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs", "FastAPI"]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Keyrium Consulting",
+      "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
+      "dates": "Jul 2025 – Jul 2026",
+      "employmentType": "Full-time",
+      "description": "Architected secure systems and integrated third-party services for seamless multi-channel communication. Established a comprehensive testing framework with 85% code coverage and significantly reduced post-deployment bug reports.",
+      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "REST APIs"]
     },
     {
       "title": "Software Engineer",

@@ -1,0 +1,117 @@
+@page {
+  size: A4;
+  margin: 14mm 16mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.35;
+  color: #111;
+}
+
+header {
+  border-bottom: 2px solid #1f6feb;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 22pt;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin: 0 0 6px;
+  font-size: 11pt;
+  font-weight: 600;
+  color: #1f6feb;
+}
+
+.contact {
+  font-size: 9.5pt;
+  color: #444;
+}
+
+.contact a {
+  color: #1f6feb;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-size: 10pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+.job {
+  margin-bottom: 10px;
+}
+
+.job-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.job-meta {
+  color: #555;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 9pt;
+}
+
+.project {
+  margin-bottom: 8px;
+}
+
+.project strong {
+  display: block;
+}
+
+@media print {
+  a {
+    color: #111;
+  }
+}

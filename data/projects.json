@@ -1,9 +1,19 @@
 {
   "projects": [
     {
+      "name": "Gardenia AI Platform",
+      "company": "Kings Technologies And Innovations",
+      "dates": "Dec 2025 – Present",
+      "description": "AI recommendation services and AI Tools workspace for Gardenia. REST APIs, prompt and schema contracts, and environment-controlled live model access built with Python and FastAPI.",
+      "language": "Python",
+      "technologies": ["Python", "FastAPI", "REST APIs", "LLM Integration", "RAG"],
+      "private": true,
+      "updated_at": "2025-12-01T00:00:00Z"
+    },
+    {
       "name": "Loyalty & Rewards API",
       "company": "Keyrium Consulting",
-      "dates": "Jul 2025 – Present",
+      "dates": "Aug 2026 – Present",
       "description": "Backend API for a multi-brand loyalty app with points, wallets, redemptions, and admin tooling. Built with Node.js, TypeScript, Express, and PostgreSQL and deployed for mobile and admin clients.",
       "language": "TypeScript",
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "REST APIs"],
@@ -13,6 +23,7 @@
     {
       "name": "Stock Trading (Social Fintech) Backend",
       "company": "Keyrium Consulting",
+      "dates": "Jul 2025 – Present",
       "description": "Backend API for a stock-trading and community fintech platform covering auth, onboarding, KYC, portfolio, and social feeds. Built with Node.js, TypeScript, Express, PostgreSQL, and Docker, with JWT, Zod validation, and performance optimizations.",
       "language": "TypeScript",
       "technologies": ["Node.js", "TypeScript", "Express", "PostgreSQL", "Zod", "JWT", "Docker"],

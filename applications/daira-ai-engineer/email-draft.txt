@@ -1,0 +1,24 @@
+TO: contact@daira.me
+SUBJECT: Application — AI Engineer (Remote)
+
+---
+
+Hello Daira Team,
+
+I'm applying for the AI Engineer role.
+
+I build applied AI systems in production — RAG pipelines, LLM integrations, and internal agent-style workflows — not just experiments. At Kings Technologies And Innovations I own Gardenia AI features (recommendation APIs, prompt/schema contracts, FastAPI). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
+
+I'm curious about new AI capabilities, but I focus on shipping useful features: retrieval, evaluation, monitoring, and reliable backend integration.
+
+GitHub: https://github.com/EmmanuelM0147
+Portfolio: https://epicnode.hostless.site
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached. Happy to walk through a recent AI feature or agent workflow.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com
+
+ATTACH: ../cv/pdf/Emmanuel_Okeowo_CV_Applied_AI.pdf

@@ -4,7 +4,9 @@
 ## About Me
 Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.
 
-At **Keyrium Consulting**, I build RAG-assisted internal tooling and lead backend development for Loyalty Rewards and Stock Trading platforms using Python, Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, and a testing framework with 85% code coverage.
+At **Kings Technologies And Innovations**, I own AI features for Gardenia and the AI Tools workspace: recommendation services through REST APIs, prompt and schema contracts, and environment-controlled live model access with Python and FastAPI.
+
+At **Keyrium Consulting**, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, a testing framework with 85% code coverage, and RAG-assisted internal documentation search.
 
 Side projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.
 
