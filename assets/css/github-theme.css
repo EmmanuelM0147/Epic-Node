@@ -100,25 +100,19 @@ a:hover {
 .site-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 600;
   color: var(--color-fg-default);
 }
 
 .site-brand:hover {
   text-decoration: none;
+  opacity: 0.92;
 }
 
 .site-brand-logo {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-}
-
-.site-brand-label {
-  line-height: 1.2;
 }
 
 .theme-toggle {

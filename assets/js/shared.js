@@ -3,7 +3,7 @@ const SITE_CONFIG = {
   githubUsername: "EmmanuelM0147",
   siteTitle: "Emmanuel Okeowo - Applied AI Engineer",
   siteName: "Emmanuel Okeowo",
-  logoUrl: "assets/logo.svg",
+  logoUrl: "assets/logo.png",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
@@ -404,13 +404,12 @@ function renderHeader() {
   if (!header) return;
 
   const theme = document.documentElement.getAttribute("data-theme") || "dark";
-  const brandLabel = SITE_CONFIG.roleTitle || "Applied AI Engineer";
-  const logoUrl = assetUrl(SITE_CONFIG.logoUrl || "assets/logo.svg");
+  const brandName = SITE_CONFIG.siteName || "Emmanuel Okeowo";
+  const logoUrl = assetUrl(SITE_CONFIG.logoUrl || "assets/logo.png");
   header.innerHTML = `
     <div class="site-header-inner">
-      <a class="site-brand" href="${pageUrl("index.html")}" aria-label="${escapeHtml(brandLabel)}">
-        <img class="site-brand-logo" src="${escapeHtml(logoUrl)}" alt="" width="32" height="32" decoding="async" />
-        <span class="site-brand-label">${escapeHtml(brandLabel)}</span>
+      <a class="site-brand" href="${pageUrl("index.html")}" aria-label="${escapeHtml(brandName)} home">
+        <img class="site-brand-logo" src="${escapeHtml(logoUrl)}" alt="${escapeHtml(brandName)}" width="36" height="36" decoding="async" />
       </a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="${theme === "light" ? "true" : "false"}">
         ${theme === "light" ? icon("moon") : icon("sun")}
