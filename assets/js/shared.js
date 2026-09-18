@@ -3,6 +3,7 @@ const SITE_CONFIG = {
   githubUsername: "EmmanuelM0147",
   siteTitle: "Emmanuel Okeowo - Applied AI Engineer",
   siteName: "Emmanuel Okeowo",
+  logoUrl: "assets/logo.svg",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
@@ -404,10 +405,11 @@ function renderHeader() {
 
   const theme = document.documentElement.getAttribute("data-theme") || "dark";
   const brandLabel = SITE_CONFIG.roleTitle || "Applied AI Engineer";
+  const logoUrl = assetUrl(SITE_CONFIG.logoUrl || "assets/logo.svg");
   header.innerHTML = `
     <div class="site-header-inner">
       <a class="site-brand" href="${pageUrl("index.html")}" aria-label="${escapeHtml(brandLabel)}">
-        <span class="site-brand-mark" aria-hidden="true">EO</span>
+        <img class="site-brand-logo" src="${escapeHtml(logoUrl)}" alt="" width="32" height="32" decoding="async" />
         <span class="site-brand-label">${escapeHtml(brandLabel)}</span>
       </a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="${theme === "light" ? "true" : "false"}">

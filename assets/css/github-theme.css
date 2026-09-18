@@ -110,18 +110,10 @@ a:hover {
   text-decoration: none;
 }
 
-.site-brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.site-brand-logo {
+  display: block;
   width: 32px;
   height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #238636 0%, #1f6feb 100%);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
   flex-shrink: 0;
 }
 

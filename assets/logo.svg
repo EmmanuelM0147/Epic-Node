@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Emmanuel Okeowo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Emmanuel Okeowo">
   <defs>
-    <linearGradient id="eo-brand" x1="4" y1="3" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+    <linearGradient id="eo-brand" x1="6" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2ea043"/>
       <stop offset="52%" stop-color="#238636"/>
       <stop offset="100%" stop-color="#1f6feb"/>
@@ -10,16 +10,16 @@
       <stop offset="100%" stop-color="#79c0ff"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="7" fill="url(#eo-brand)"/>
+  <rect width="40" height="40" rx="9" fill="url(#eo-brand)"/>
   <text
-    x="15.5"
-    y="20.5"
+    x="19.5"
+    y="25.5"
     text-anchor="middle"
     fill="#ffffff"
     font-family="Segoe UI, system-ui, -apple-system, sans-serif"
-    font-size="11"
+    font-size="13.5"
     font-weight="700"
     letter-spacing="-0.04em"
   >EO</text>
-  <circle cx="25.2" cy="7.6" r="1.8" fill="url(#eo-node)"/>
+  <circle cx="31.5" cy="9.5" r="2.2" fill="url(#eo-node)"/>
 </svg>
