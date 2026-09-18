@@ -720,7 +720,7 @@ async function loadLinkedInData() {
 }
 
 function profileAboutTagline(data = {}) {
-  return data.aboutTagline || "Applied AI Engineer · RAG & LLM Systems";
+  return data.aboutTagline || "Applied AI Engineer · RAG & LLM Systems · Production Backends";
 }
 
 function profileOverviewTagline(data = {}) {

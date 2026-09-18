@@ -2,13 +2,13 @@
   "baseUrl": "/Epic-Node",
   "githubUsername": "EmmanuelM0147",
   "siteTitle": "Emmanuel Okeowo - Applied AI Engineer",
-  "siteDescription": "Applied AI Engineer building RAG pipelines, LLM systems, and production APIs.",
+  "siteDescription": "Applied AI Engineer building RAG pipelines, LLM systems, and production backends.",
   "siteName": "Emmanuel Okeowo",
   "portfolioUrl": "https://epicnode.hostless.site",
   "ogImageUrl": "https://epicnode.hostless.site/assets/og-image.png",
   "email": "okeowoemmanuelm@gmail.com",
   "roleTitle": "Applied AI Engineer",
-  "roleTagline": "RAG & LLM Systems · Python · Node.js · TypeScript · PostgreSQL · APIs",
+  "roleTagline": "RAG & LLM Systems · Production Backends · Python · Node.js · TypeScript · PostgreSQL · APIs",
   "pagination": {
     "projectsPageSize": 12,
     "certificationsPageSize": 6

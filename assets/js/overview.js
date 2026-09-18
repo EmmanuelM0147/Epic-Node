@@ -127,7 +127,7 @@ function renderIntro(profile, linkedin = {}) {
   const location = profile.location || "Lagos";
   const text =
     linkedin.intro ||
-    `Applied AI Engineer based in ${location}, open to hybrid and remote roles focused on RAG, LLM integration, and production APIs.`;
+    `Applied AI Engineer based in ${location}, open to hybrid and remote applied AI and senior backend roles focused on RAG, LLM integration, and production APIs.`;
 
   introEl.textContent = text;
 }
