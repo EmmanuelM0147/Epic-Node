@@ -403,9 +403,13 @@ function renderHeader() {
   if (!header) return;
 
   const theme = document.documentElement.getAttribute("data-theme") || "dark";
+  const brandLabel = SITE_CONFIG.roleTitle || "Applied AI Engineer";
   header.innerHTML = `
     <div class="site-header-inner">
-      <a class="site-brand" href="${pageUrl("index.html")}">${escapeHtml(SITE_CONFIG.siteName || "Emmanuel Okeowo")}</a>
+      <a class="site-brand" href="${pageUrl("index.html")}" aria-label="${escapeHtml(brandLabel)}">
+        <span class="site-brand-mark" aria-hidden="true">EO</span>
+        <span class="site-brand-label">${escapeHtml(brandLabel)}</span>
+      </a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="${theme === "light" ? "true" : "false"}">
         ${theme === "light" ? icon("moon") : icon("sun")}
       </button>
@@ -441,7 +445,6 @@ function renderSidebar(profile, activeTab, options = {}) {
     <div class="sidebar-profile">
       <img class="avatar" src="${escapeHtml(profile.avatar_url)}" alt="${escapeHtml(profile.name || username)}" width="280" height="280">
       <h1 class="sidebar-name">${escapeHtml(profile.name || username)}</h1>
-      <p class="sidebar-username">@${escapeHtml(username)}</p>
       <p class="sidebar-bio">${escapeHtml(sidebarBio)}</p>
     </div>
     <ul class="sidebar-info">

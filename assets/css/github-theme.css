@@ -98,13 +98,35 @@ a:hover {
 }
 
 .site-brand {
-  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--color-fg-default);
 }
 
 .site-brand:hover {
   text-decoration: none;
+}
+
+.site-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #238636 0%, #1f6feb 100%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.site-brand-label {
+  line-height: 1.2;
 }
 
 .theme-toggle {
@@ -151,15 +173,9 @@ a:hover {
 }
 
 .sidebar-name {
-  margin: 0 0 4px;
+  margin: 0 0 12px;
   font-size: 24px;
   line-height: 1.25;
-}
-
-.sidebar-username {
-  margin: 0 0 12px;
-  color: var(--color-fg-muted);
-  font-size: 20px;
 }
 
 .sidebar-bio {
