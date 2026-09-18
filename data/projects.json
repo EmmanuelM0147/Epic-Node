@@ -29,7 +29,6 @@
     },
     {
       "name": "ChefBot-AI",
-      "company": "Personal Project",
       "dates": "Aug 2026",
       "description": "Grounded inventory-aware recipe RAG with FastAPI, Qdrant, Gemini 2.5 Flash streaming, and Streamlit. Retrieves from a vector store before generating recipes so outputs stay tied to available ingredients.",
       "language": "Python",

@@ -9,11 +9,6 @@
   "email": "okeowoemmanuelm@gmail.com",
   "roleTitle": "Applied AI Engineer",
   "roleTagline": "RAG & LLM Systems · Python · Node.js · TypeScript · PostgreSQL · APIs",
-  "highlights": [
-    "Applied AI Engineer",
-    "RAG & LLM Systems",
-    "Open to hybrid & remote roles"
-  ],
   "pagination": {
     "projectsPageSize": 12,
     "certificationsPageSize": 6

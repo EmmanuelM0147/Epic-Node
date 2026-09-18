@@ -124,17 +124,12 @@ function renderIntro(profile, linkedin = {}) {
   const introEl = document.getElementById("intro-text");
   if (!introEl) return;
 
-  const name = profile.name?.split(" ")[0] || "Emmanuel";
-  const roleLabel = linkedin.roleLabel || `a ${roleTitle()}`;
-  const greeting = `My name is ${name} and I'm ${roleLabel} based in ${profile.location || "Lagos"}.`;
-  const tagline =
-    profileOverviewTagline(linkedin) ||
-    introBioText(profile.bio) ||
-    "";
+  const location = profile.location || "Lagos";
+  const text =
+    linkedin.intro ||
+    `Applied AI Engineer based in ${location}, open to hybrid and remote roles focused on RAG, LLM integration, and production APIs.`;
 
-  introEl.innerHTML = tagline
-    ? `${escapeHtml(greeting)}<span class="intro-tagline">${escapeHtml(tagline)}</span>`
-    : escapeHtml(greeting);
+  introEl.textContent = text;
 }
 
 function renderReadmeSocial(profile, contact = {}) {

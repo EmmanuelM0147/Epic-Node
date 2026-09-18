@@ -6,7 +6,6 @@ const SITE_CONFIG = {
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
-  highlights: ["Applied AI Engineer", "Open to hybrid & remote roles"],
   roleTitle: "Applied AI Engineer",
   pagination: {
     projectsPageSize: 12,
@@ -278,25 +277,6 @@ function sanitizeXProfileLinks(root = document) {
   });
 }
 
-function currentEmployer(linkedin = null) {
-  return linkedin?.currentCompany || linkedin?.experience?.[0]?.company || null;
-}
-
-function sidebarProfileOverrides(profile, linkedin = null) {
-  const nextProfile = { ...profile };
-  const employer = currentEmployer(linkedin);
-  const siteUrl = portfolioUrl(linkedin);
-
-  if (employer) {
-    nextProfile.company = employer;
-  }
-  if (siteUrl) {
-    nextProfile.blog = siteUrl;
-  }
-
-  return nextProfile;
-}
-
 function formatInlineMarkdown(text) {
   if (!text) return "";
 
@@ -454,8 +434,6 @@ function renderSidebar(profile, activeTab, options = {}) {
   if (!sidebar || !profile) return;
 
   const username = profile.login || SITE_CONFIG.githubUsername;
-  const orgs = profile.organizations || [];
-  const highlights = SITE_CONFIG.highlights || [];
   const email = SITE_CONFIG.email || profile.email;
   const sidebarBio = options.bio || profile.bio || "";
 
@@ -465,35 +443,11 @@ function renderSidebar(profile, activeTab, options = {}) {
       <h1 class="sidebar-name">${escapeHtml(profile.name || username)}</h1>
       <p class="sidebar-username">@${escapeHtml(username)}</p>
       <p class="sidebar-bio">${escapeHtml(sidebarBio)}</p>
-      <a class="btn-follow" href="${pageUrl("hire.html")}">${icon("briefcase")} Hire me</a>
-    </div>
-    <div class="sidebar-stats">
-      <span><strong>${formatCount(profile.followers)}</strong> followers</span>
-      <span>·</span>
-      <span><strong>${formatCount(profile.following)}</strong> following</span>
     </div>
     <ul class="sidebar-info">
-      ${profile.company ? `<li>${icon("briefcase")}<span>${escapeHtml(profile.company)}</span></li>` : ""}
       ${profile.location ? `<li>${icon("location")}<span>${escapeHtml(profile.location)}</span></li>` : ""}
       ${email ? `<li>${icon("email")}<a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></li>` : ""}
-      ${profile.blog ? `<li>${icon("link")}<a href="${escapeHtml(profile.blog)}" target="_blank" rel="noopener noreferrer">${escapeHtml(profile.blog.replace(/^https?:\/\//, ""))}</a></li>` : ""}
     </ul>
-    ${
-      highlights.length
-        ? `<div class="sidebar-highlights">
-            <h3>Highlights</h3>
-            <ul>${highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-          </div>`
-        : ""
-    }
-    ${
-      orgs.length
-        ? `<div class="sidebar-orgs">
-            <h3>Organizations</h3>
-            <ul>${orgs.map((org) => `<li><a href="https://github.com/${escapeHtml(org.login)}" target="_blank" rel="noopener noreferrer"><span class="org-badge">${escapeHtml(org.login.slice(0, 2).toUpperCase())}</span>${escapeHtml(org.login)}</a></li>`).join("")}</ul>
-          </div>`
-        : ""
-    }
   `;
 
   renderTabs(activeTab);
@@ -559,17 +513,8 @@ async function initLayout(activeTab) {
       name: "Emmanuel Okeowo",
       avatar_url: "https://avatars.githubusercontent.com/u/155535967?v=4",
       bio: "Applied AI Engineer · RAG & LLM Systems · Python · Node.js · TypeScript",
-      company: "Kings Technologies And Innovations",
       location: "Lagos",
-      followers: 9,
-      following: 37,
-      public_repos: 50,
       twitter_username: "Trippie_1800",
-      organizations: [
-        { login: "AMP-marketplace" },
-        { login: "AltHub-NutriPlan" },
-        { login: "Keyrium-Launchpad" },
-      ],
     };
   }
 
@@ -588,7 +533,6 @@ async function initLayout(activeTab) {
     // Fall back to GitHub bio.
   }
 
-  profile = sidebarProfileOverrides(profile, linkedin);
   renderSidebar(profile, activeTab, { bio: sidebarBio });
   renderSiteFooter(linkedin);
   injectPersonSchema(profile, linkedin);
