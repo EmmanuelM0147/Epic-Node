@@ -1,21 +1,8 @@
 {
   "username": "EmmanuelM0147",
   "count": 61,
-  "synced_at": "2026-10-14T11:29:12.502Z",
+  "synced_at": "2026-10-15T11:06:11.120Z",
   "repos": [
-    {
-      "name": "Epic-Node",
-      "full_name": "EmmanuelM0147/Epic-Node",
-      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
-      "description": "Personal portfolio site for Emmanuel Okeowo",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-10-13T13:51:44Z",
-      "updated": "Oct 2026"
-    },
     {
       "name": "EmmanuelM0147",
       "full_name": "EmmanuelM0147/EmmanuelM0147",
@@ -26,7 +13,189 @@
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-10-11T23:15:37Z",
+      "updated_at": "2026-10-14T19:17:59Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Headless-cms-project",
+      "full_name": "EmmanuelM0147/Headless-cms-project",
+      "html_url": "https://github.com/EmmanuelM0147/Headless-cms-project",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:29:20Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Health-Technology-Visualization",
+      "full_name": "EmmanuelM0147/Health-Technology-Visualization",
+      "html_url": "https://github.com/EmmanuelM0147/Health-Technology-Visualization",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:29:16Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Ld-Gen",
+      "full_name": "EmmanuelM0147/Ld-Gen",
+      "html_url": "https://github.com/EmmanuelM0147/Ld-Gen",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:29:06Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Marketplace-Delivery-Service",
+      "full_name": "EmmanuelM0147/Marketplace-Delivery-Service",
+      "html_url": "https://github.com/EmmanuelM0147/Marketplace-Delivery-Service",
+      "description": "Marketplace delivery service using Vue.js for the frontend and PHP for the backend",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:19:34Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "todo-minipj",
+      "full_name": "EmmanuelM0147/todo-minipj",
+      "html_url": "https://github.com/EmmanuelM0147/todo-minipj",
+      "description": "Todo mini project using node, mongodb and ejs. Note this is only for educational purposes only ",
+      "language": "EJS",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:19:18Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Restaurant-chatbot-pj",
+      "full_name": "EmmanuelM0147/Restaurant-chatbot-pj",
+      "html_url": "https://github.com/EmmanuelM0147/Restaurant-chatbot-pj",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:19:15Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Birthday-Reminder-app7",
+      "full_name": "EmmanuelM0147/Birthday-Reminder-app7",
+      "html_url": "https://github.com/EmmanuelM0147/Birthday-Reminder-app7",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:19:12Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "ExcelMind-Fullstack-Pj",
+      "full_name": "EmmanuelM0147/ExcelMind-Fullstack-Pj",
+      "html_url": "https://github.com/EmmanuelM0147/ExcelMind-Fullstack-Pj",
+      "description": "ExcelMind AI leverages Supabase for backend services, providing scalable, real-time educational platform capabilities.",
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:19:09Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "messaging-module",
+      "full_name": "EmmanuelM0147/messaging-module",
+      "html_url": "https://github.com/EmmanuelM0147/messaging-module",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:18:58Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "marketing_roi",
+      "full_name": "EmmanuelM0147/marketing_roi",
+      "html_url": "https://github.com/EmmanuelM0147/marketing_roi",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:16:36Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "multiple-regression-analysis",
+      "full_name": "EmmanuelM0147/multiple-regression-analysis",
+      "html_url": "https://github.com/EmmanuelM0147/multiple-regression-analysis",
+      "description": "Multi-channel marketing data pipeline",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:16:32Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "faq-rag-llmzc",
+      "full_name": "EmmanuelM0147/faq-rag-llmzc",
+      "html_url": "https://github.com/EmmanuelM0147/faq-rag-llmzc",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:16:16Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "ChefBot-AI",
+      "full_name": "EmmanuelM0147/ChefBot-AI",
+      "html_url": "https://github.com/EmmanuelM0147/ChefBot-AI",
+      "description": "Grounded inventory-aware recipe generation with FastAPI, Qdrant, Gemini, and Streamlit",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T13:16:08Z",
+      "updated": "Oct 2026"
+    },
+    {
+      "name": "Epic-Node",
+      "full_name": "EmmanuelM0147/Epic-Node",
+      "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
+      "description": "Personal portfolio site for Emmanuel Okeowo",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-10-14T11:29:20Z",
       "updated": "Oct 2026"
     },
     {
@@ -82,19 +251,6 @@
       "updated": "Aug 2026"
     },
     {
-      "name": "marketing_roi",
-      "full_name": "EmmanuelM0147/marketing_roi",
-      "html_url": "https://github.com/EmmanuelM0147/marketing_roi",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-27T11:47:25Z",
-      "updated": "Aug 2026"
-    },
-    {
       "name": "url-shortener",
       "full_name": "EmmanuelM0147/url-shortener",
       "html_url": "https://github.com/EmmanuelM0147/url-shortener",
@@ -105,45 +261,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2026-08-27T11:47:23Z",
-      "updated": "Aug 2026"
-    },
-    {
-      "name": "multiple-regression-analysis",
-      "full_name": "EmmanuelM0147/multiple-regression-analysis",
-      "html_url": "https://github.com/EmmanuelM0147/multiple-regression-analysis",
-      "description": "Multi-channel marketing data pipeline",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-27T11:47:18Z",
-      "updated": "Aug 2026"
-    },
-    {
-      "name": "faq-rag-llmzc",
-      "full_name": "EmmanuelM0147/faq-rag-llmzc",
-      "html_url": "https://github.com/EmmanuelM0147/faq-rag-llmzc",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-27T11:47:16Z",
-      "updated": "Aug 2026"
-    },
-    {
-      "name": "ChefBot-AI",
-      "full_name": "EmmanuelM0147/ChefBot-AI",
-      "html_url": "https://github.com/EmmanuelM0147/ChefBot-AI",
-      "description": "Grounded inventory-aware recipe generation with FastAPI, Qdrant, Gemini, and Streamlit",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-27T11:47:13Z",
       "updated": "Aug 2026"
     },
     {
@@ -160,19 +277,6 @@
       "updated": "Aug 2026"
     },
     {
-      "name": "messaging-module",
-      "full_name": "EmmanuelM0147/messaging-module",
-      "html_url": "https://github.com/EmmanuelM0147/messaging-module",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-08-19T13:14:25Z",
-      "updated": "Aug 2026"
-    },
-    {
       "name": "node-template",
       "full_name": "EmmanuelM0147/node-template",
       "html_url": "https://github.com/EmmanuelM0147/node-template",
@@ -183,19 +287,6 @@
       "fork": true,
       "private": false,
       "updated_at": "2026-06-17T09:23:28Z",
-      "updated": "Jun 2026"
-    },
-    {
-      "name": "Ld-Gen",
-      "full_name": "EmmanuelM0147/Ld-Gen",
-      "html_url": "https://github.com/EmmanuelM0147/Ld-Gen",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2026-06-01T20:23:25Z",
       "updated": "Jun 2026"
     },
     {
@@ -238,19 +329,6 @@
       "updated": "Nov 2025"
     },
     {
-      "name": "ExcelMind-Fullstack-Pj",
-      "full_name": "EmmanuelM0147/ExcelMind-Fullstack-Pj",
-      "html_url": "https://github.com/EmmanuelM0147/ExcelMind-Fullstack-Pj",
-      "description": "ExcelMind AI leverages Supabase for backend services, providing scalable, real-time educational platform capabilities.",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-08-09T07:42:04Z",
-      "updated": "Aug 2025"
-    },
-    {
       "name": "studio",
       "full_name": "EmmanuelM0147/studio",
       "html_url": "https://github.com/EmmanuelM0147/studio",
@@ -264,32 +342,6 @@
       "updated": "Jul 2025"
     },
     {
-      "name": "Birthday-Reminder-app7",
-      "full_name": "EmmanuelM0147/Birthday-Reminder-app7",
-      "html_url": "https://github.com/EmmanuelM0147/Birthday-Reminder-app7",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-07-14T00:47:36Z",
-      "updated": "Jul 2025"
-    },
-    {
-      "name": "Restaurant-chatbot-pj",
-      "full_name": "EmmanuelM0147/Restaurant-chatbot-pj",
-      "html_url": "https://github.com/EmmanuelM0147/Restaurant-chatbot-pj",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-07-14T00:37:46Z",
-      "updated": "Jul 2025"
-    },
-    {
       "name": "Personalportfolio-project0147",
       "full_name": "EmmanuelM0147/Personalportfolio-project0147",
       "html_url": "https://github.com/EmmanuelM0147/Personalportfolio-project0147",
@@ -300,19 +352,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2025-07-11T11:23:49Z",
-      "updated": "Jul 2025"
-    },
-    {
-      "name": "todo-minipj",
-      "full_name": "EmmanuelM0147/todo-minipj",
-      "html_url": "https://github.com/EmmanuelM0147/todo-minipj",
-      "description": "Todo mini project using node, mongodb and ejs. Note this is only for educational purposes only ",
-      "language": "EJS",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-07-07T18:02:47Z",
       "updated": "Jul 2025"
     },
     {
@@ -342,19 +381,6 @@
       "updated": "Jul 2025"
     },
     {
-      "name": "Marketplace-Delivery-Service",
-      "full_name": "EmmanuelM0147/Marketplace-Delivery-Service",
-      "html_url": "https://github.com/EmmanuelM0147/Marketplace-Delivery-Service",
-      "description": "Marketplace delivery service using Vue.js for the frontend and PHP for the backend",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-07-07T15:47:00Z",
-      "updated": "Jul 2025"
-    },
-    {
       "name": "docs",
       "full_name": "EmmanuelM0147/docs",
       "html_url": "https://github.com/EmmanuelM0147/docs",
@@ -368,19 +394,6 @@
       "updated": "Jun 2025"
     },
     {
-      "name": "Health-Technology-Visualization",
-      "full_name": "EmmanuelM0147/Health-Technology-Visualization",
-      "html_url": "https://github.com/EmmanuelM0147/Health-Technology-Visualization",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-06-04T12:46:52Z",
-      "updated": "Jun 2025"
-    },
-    {
       "name": "ecommerce-project",
       "full_name": "EmmanuelM0147/ecommerce-project",
       "html_url": "https://github.com/EmmanuelM0147/ecommerce-project",
@@ -391,19 +404,6 @@
       "fork": false,
       "private": false,
       "updated_at": "2025-05-26T12:53:56Z",
-      "updated": "May 2025"
-    },
-    {
-      "name": "Headless-cms-project",
-      "full_name": "EmmanuelM0147/Headless-cms-project",
-      "html_url": "https://github.com/EmmanuelM0147/Headless-cms-project",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "fork": false,
-      "private": false,
-      "updated_at": "2025-05-26T09:09:38Z",
       "updated": "May 2025"
     },
     {
