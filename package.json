@@ -1,0 +1,8 @@
+{
+  "name": "epic-node",
+  "private": true,
+  "description": "Static portfolio site for Hostless / GitHub Pages",
+  "scripts": {
+    "build": "node scripts/build-static.mjs"
+  }
+}

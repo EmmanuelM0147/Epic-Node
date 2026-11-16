@@ -28,7 +28,7 @@ jobs:
           curl -sS -f -X POST \
             -H "Authorization: $HOSTLESS_TOKEN" \
             -H "Content-Type: application/json" \
-            "https://api.hostless.dev/v1/sites/${SITE_NAME}/deployments/new" \
+            "https://api.hostless.cloud/v1/sites/${SITE_NAME}/deployments/new" \
             -d '{}'
 
           echo "Hostless deployment triggered."
