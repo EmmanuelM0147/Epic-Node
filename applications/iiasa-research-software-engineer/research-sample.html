@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Emmanuel Okeowo - Research Sample (Inflammatory Speech Flagger)</title>
+    <link rel="stylesheet" href="../cv/_cv-print.css" />
+    <style>
+      @page { size: A4; margin: 14mm 17mm; }
+      table { border-collapse: collapse; margin: 4px 0 8px; font-size: 9.5pt; }
+      th, td { border: 1px solid #ddd; padding: 3px 10px; text-align: left; }
+      th { background: #f3f4f6; }
+      .note { color: #555; font-size: 9pt; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 17pt">A Baseline Classifier for Inflammatory Speech in Nigerian Social Media</h1>
+      <p class="subtitle">Research sample · Emmanuel Okeowo · 2026</p>
+      <p class="contact">
+        Code, notebook, and trained artefacts:
+        <a href="https://github.com/EmmanuelM0147/inflammatory_speech_flagger">github.com/EmmanuelM0147/inflammatory_speech_flagger</a> ·
+        Live demo: <a href="https://inflammatoryspeechflagger.vercel.app">inflammatoryspeechflagger.vercel.app</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        I built a reproducible, interpretable baseline that flags potentially inflammatory posts in a Nigerian context,
+        evaluated it on a held-out set, wrote up where it fails, and deployed it as a monitored service. It is a
+        small independent project, not peer-reviewed work. I am sending it because it shows how I handle a dataset,
+        a model, and its validation end to end.
+      </p>
+    </section>
+
+    <section>
+      <h2>Problem</h2>
+      <p>
+        Generic moderation models are mostly trained on Western data and miss hate speech patterns tied to local
+        tribal, religious, and political tensions, such as the herder conflicts, Biafra separatism, and inter-ethnic
+        rivalry. The goal was a transparent first baseline that a platform could audit before investing in heavier models.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Nigerian Based Hate Dataset</strong> (Mendeley Data, DOI 10.17632/r5jsynhxsx.1): 20,176 tweets with binary
+          labels, 4,801 hate (23.8%) and 15,375 non-hate.</li>
+        <li><strong>Considered and rejected:</strong> NaijaHate (<code>worldbank/NaijaHate</code>) has richer three-class and
+          target-group labels, but it distributes tweet IDs only. Getting the text would have required paid X API access, so
+          I chose the dataset that ships its full text and recorded the trade-off.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Method</h2>
+      <ul>
+        <li><strong>Preprocessing:</strong> lowercase; strip URLs, mentions, and punctuation; collapse whitespace.</li>
+        <li><strong>Split:</strong> stratified 80/20 train/test (<code>random_state=42</code>), so the class ratio is preserved and runs are repeatable.</li>
+        <li><strong>Features:</strong> TF-IDF on unigrams and bigrams, top 5,000 features, <code>min_df=2</code>.</li>
+        <li><strong>Model:</strong> logistic regression with <code>class_weight='balanced'</code> to offset the 24/76 imbalance.</li>
+        <li><strong>Output:</strong> each post returns a flag, a confidence score, and the TF-IDF terms that most influenced the decision.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Results (held-out test set, 4,036 posts)</h2>
+      <table>
+        <tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Correct / total</th></tr>
+        <tr><td>Hate</td><td>0.63</td><td>0.75</td><td>0.68</td><td>715 / 960</td></tr>
+        <tr><td>Non-hate</td><td>0.92</td><td>0.86</td><td>0.89</td><td>2,658 / 3,076</td></tr>
+      </table>
+      <p>
+        Overall accuracy is 0.84, but I treat hate-class recall and F1 as the primary metrics because of the class imbalance.
+        The model catches three in four hateful posts at the cost of 418 false flags, which suits a review queue rather than
+        automatic removal.
+      </p>
+      <p class="note">The non-hate figures and both F1 values are computed directly from the confusion matrix in the notebook.</p>
+    </section>
+
+    <section>
+      <h2>Validation in use</h2>
+      <p>
+        The model is served through a FastAPI service. Every prediction is logged with its confidence, threshold, and latency.
+        Users can mark a result right or wrong, and a monitoring page shows live metrics, recent errors, user feedback, and a
+        confidence histogram. That gives a path to catch drift and collect correction labels after deployment, not only at
+        training time.
+      </p>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+      <ul>
+        <li><strong>Vocabulary dependence:</strong> the dataset was built around known hate terms. In my testing the model
+          handles direct, keyword-heavy posts well and misses calm, essay-style posts that carry the same prejudice.</li>
+        <li><strong>Binary labels:</strong> there is no offensive-but-not-hateful tier.</li>
+        <li><strong>Linguistic coverage:</strong> Pidgin, Yoruba, Hausa, Igbo, and code-switching are under-represented in about 20,000 tweets.</li>
+        <li><strong>Explanations are heuristic:</strong> the top TF-IDF terms are useful for review but are not SHAP or LIME attributions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Next steps</h2>
+      <p>
+        Fine-tune a transformer such as DistilBERT to capture meaning beyond vocabulary, add formally worded training examples,
+        move to three-class labels, and replace the term-based explanation with SHAP or LIME.
+      </p>
+    </section>
+
+    <section>
+      <h2>Relevance to GAINS</h2>
+      <p>
+        The habits carry over directly: document why a data source was chosen, fix the split and seed so results can be
+        reproduced, report the metric that matches the question rather than the flattering one, write down the limitations,
+        and keep checking outputs after release.
+      </p>
+    </section>
+  </body>
+</html>

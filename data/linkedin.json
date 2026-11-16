@@ -1,7 +1,8 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-11-16",
   "headline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · Python · Node.js · TypeScript · PostgreSQL · APIs",
+  "linkedinHeadline": "Applied AI Engineer | LLM Apps, RAG & Agents | Lead Backend (TypeScript, Node.js, Python, PostgreSQL)",
   "aboutTagline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · PostgreSQL · APIs",
   "portfolioUrl": "https://epicnode.hostless.site",
   "currentCompany": "Kings Technologies And Innovations",
@@ -53,7 +54,7 @@
       "Applied AI Systems: RAG pipelines, FastAPI + Qdrant retrieval, Gemini streaming, and agentic workflows",
       "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
       "Data & Infrastructure: PostgreSQL, Redis, Qdrant vector search, query optimization, and secure authentication",
-      "Continuous Growth: LLM Zoomcamp, 3MTT AI/ML fellowship (NITDA), IAENG membership, and applied AI programs"
+      "Continuous Growth: ATF AI School, LLM Zoomcamp, 3MTT AI/ML (NITDA), IAENG membership, and applied AI programs"
     ]
   },
   "experience": [
@@ -132,6 +133,18 @@
   ],
   "education": [
     {
+      "school": "African Technology Forum",
+      "degree": "ATF AI School (Powered by Google.org), Large Language Models & AI Agents — Phase 1 of 2",
+      "location": "Remote",
+      "dates": "Jun 2026 – May 2027"
+    },
+    {
+      "school": "3MTT · NITDA Nigeria",
+      "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
+      "location": "Nigeria",
+      "dates": "Jan 2026 – Aug 2026"
+    },
+    {
       "school": "AltSchool Africa",
       "degree": "Computer Software Engineering, Backend Engineering",
       "location": "Remote",
@@ -142,21 +155,17 @@
       "degree": "Bachelor of Technology (Hons.)",
       "location": "Ogbomoso, Nigeria",
       "dates": "Jan 2017 – Apr 2021"
-    },
-    {
-      "school": "3MTT · Federal Ministry of Communications, Innovation and Digital Economy",
-      "degree": "Fellowship, Artificial Intelligence & Machine Learning (AI/ML)",
-      "location": "Nigeria",
-      "dates": "Jan 2026 – Aug 2026"
-    },
-    {
-      "school": "African Tech Foundation",
-      "degree": "AI School (Powered by Google.org), Large Language Models & AI Agents",
-      "location": "Remote",
-      "dates": "Jun 2026 – May 2027"
     }
   ],
   "certifications": [
+    {
+      "name": "ATF AI School: Certificate of Completion",
+      "issuer": "African Technology Forum",
+      "date": "Nov 2026",
+      "url": "https://www.atfchallenge.org/",
+      "credentialId": "6ae753c08d428ff9000e4c1d",
+      "featured": true
+    },
     {
       "name": "Large Language Model (LLM) Zoomcamp",
       "issuer": "DataTalksClub",
@@ -166,10 +175,11 @@
       "featured": true
     },
     {
-      "name": "Certificate of Completion, Artificial Intelligence & Machine Learning",
-      "issuer": "3MTT (3 Million Technical Talent) · NITDA",
-      "date": "Aug 2026",
-      "url": "https://3mtt.nitda.gov.ng",
+      "name": "AI/ML Certificate of Completion (3MTT)",
+      "issuer": "NITDA Nigeria",
+      "date": "Jun 2026",
+      "url": "https://certificates.nitda.gov.ng/",
+      "credentialId": "FE/26/3438909745",
       "featured": true
     },
     {

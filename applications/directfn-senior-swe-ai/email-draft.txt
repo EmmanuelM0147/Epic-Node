@@ -1,0 +1,24 @@
+TO: careers@directfn.com
+SUBJECT: Application - Senior Software Engineer - AI
+
+---
+
+Hello DirectFN Team,
+
+I'm applying for the Senior Software Engineer - AI role.
+
+I build applied AI systems in production: RAG pipelines, LLM integrations, prompt and schema contracts, and agent-style workflows. At Kings Technologies And Innovations I own Gardenia AI features and the AI Tools workspace (Python, FastAPI, recommendation APIs). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
+
+I focus on retrieval, evaluation, and reliable backend integration. Open to confirm remote or location expectations early.
+
+GitHub: https://github.com/EmmanuelM0147
+Portfolio: https://epicnode.hostless.site
+LinkedIn: https://www.linkedin.com/in/okeowoemmanuelm/
+
+CV attached.
+
+Best regards,
+Emmanuel Okeowo
+okeowoemmanuelm@gmail.com
+
+ATTACH: ../cv/pdf/Emmanuel_Okeowo_CV_Applied_AI_plain.pdf

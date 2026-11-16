@@ -1,21 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Emmanuel Okeowo">
   <defs>
-    <linearGradient id="eo-bg" x1="16" y1="3" x2="16" y2="29" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#34c759"/>
-      <stop offset="46%" stop-color="#238636"/>
-      <stop offset="100%" stop-color="#1f6feb"/>
+    <linearGradient id="eo-bg" x1="2" y1="1" x2="30" y2="31" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a7f37"/>
+      <stop offset="52%" stop-color="#1a4a8c"/>
+      <stop offset="100%" stop-color="#0a2860"/>
     </linearGradient>
   </defs>
   <rect width="32" height="32" rx="7" fill="url(#eo-bg)"/>
   <text
-    x="15.8"
-    y="20.8"
+    x="16"
+    y="21.2"
     text-anchor="middle"
     fill="#ffffff"
-    font-family="Segoe UI, system-ui, -apple-system, sans-serif"
-    font-size="11.5"
+    font-family="Inter, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    font-size="12"
     font-weight="700"
-    letter-spacing="-0.06em"
+    letter-spacing="-0.04em"
   >EO</text>
-  <circle cx="24.8" cy="8.2" r="1.7" fill="#ffffff"/>
 </svg>

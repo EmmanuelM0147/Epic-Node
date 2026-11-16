@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Emmanuel Okeowo - CV (IIASA Research Software Engineer)</title>
+    <link rel="stylesheet" href="_cv-print.css" />
+    <style>
+      @page { size: A4; margin: 12mm 15mm; }
+      .job { margin-bottom: 8px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Emmanuel Okeowo</h1>
+      <p class="subtitle">Software Engineer · SQL &amp; Data Workflows · Python · Testing &amp; Validation · Applied AI</p>
+      <p class="contact">
+        Lagos, Nigeria (willing to relocate to Austria) ·
+        <a href="mailto:okeowoemmanuelm@gmail.com">okeowoemmanuelm@gmail.com</a> ·
+        <a href="https://epicnode.hostless.site">epicnode.hostless.site</a> ·
+        <a href="https://github.com/EmmanuelM0147">github.com/EmmanuelM0147</a> ·
+        <a href="https://www.linkedin.com/in/okeowoemmanuelm/">linkedin.com/in/okeowoemmanuelm</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Software engineer with five years of production work on database-backed applications. I write and tune SQL on
+        PostgreSQL and MySQL, build data and API workflows in Python and TypeScript, and treat tests, validation checks,
+        and documentation as part of the job. I have modernised legacy applications, cut query latency by fixing indexes
+        and joins, and I use LLMs in production with strict schema validation, which is the kind of practical AI I would
+        bring to scientific workflows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-head"><span>Artificial Intelligence Engineer - Kings Technologies And Innovations</span><span>Dec 2025 - Present</span></div>
+        <div class="job-meta">Lagos, Nigeria · Remote · Full-time</div>
+        <ul>
+          <li>Build Python/FastAPI recommendation services for the Gardenia product and the AI Tools workspace.</li>
+          <li>Design prompt and schema contracts so model output is typed and validated; malformed responses are rejected before they reach clients.</li>
+          <li>Control live model access through environment configuration, so models can be switched or disabled without a redeploy.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Lead Backend Engineer - Keyrium Consulting</span><span>Aug 2026 - Present</span></div>
+        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
+        <ul>
+          <li>Lead production REST APIs for Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL), including KYC-adjacent onboarding.</li>
+          <li>Own schema design, code review, third-party integrations, and Docker-based deployment.</li>
+          <li>Prototyped RAG-assisted internal documentation search with Python (FastAPI).</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Senior Software Engineer - Keyrium Consulting</span><span>Jul 2025 - Jul 2026</span></div>
+        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
+        <ul>
+          <li>Established a testing framework with ~85% code coverage that reduced post-deployment bug reports.</li>
+          <li>Built secure integrations with third-party services for multi-channel communication.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Software Engineer - MySoundsGlobal</span><span>Sep 2025 - Nov 2025</span></div>
+        <div class="job-meta">United Kingdom · Remote · Contract</div>
+        <ul>
+          <li>Profiled slow MySQL queries behind a high-traffic Node.js API; targeted indexes and simplified joins cut query time 40-60%.</li>
+          <li>Streamlined middleware and added Redis caching, raising API throughput 30-50%.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Backend Software Engineer - Talenvo</span><span>Apr 2025 - Jul 2025</span></div>
+        <div class="job-meta">Remote · Freelance</div>
+        <ul>
+          <li>Built the backend for an event platform: REST APIs in Node.js/Express, PostgreSQL schemas tuned for concurrent load, JWT role auth, PayStack payments.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Software Engineer - Folio Technologies Ltd</span><span>Jan 2023 - Jun 2025</span></div>
+        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
+        <ul>
+          <li>Built server-side caching that cut repeat load times on key routes by up to 80%.</li>
+          <li>Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC, and stable API contracts for the client app.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Associate Software Engineer (Internship) - Headstarter</span><span>Aug 2022 - Dec 2022</span></div>
+        <div class="job-meta">Remote</div>
+        <ul>
+          <li>Built full-stack applications with Python, Django REST Framework, PostgreSQL, and React.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><span>Web Developer - Macloyd Africa</span><span>Apr 2021 - May 2022</span></div>
+        <div class="job-meta">Lagos, Nigeria · Remote · Full-time</div>
+        <ul>
+          <li>Maintained and extended existing Laravel applications; designed MySQL schemas for records, course progress, and content.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research &amp; Data Projects</h2>
+      <div class="project">
+        <strong>Inflammatory Speech Flagger (research sample attached)</strong>
+        Baseline classifier for inflammatory speech in 20,176 Nigerian tweets (Mendeley dataset, DOI 10.17632/r5jsynhxsx.1).
+        TF-IDF + logistic regression with class weighting; held-out evaluation (accuracy 0.84, hate-class recall 0.75);
+        documented limitations; FastAPI service that logs every prediction and user feedback for monitoring.
+        <a href="https://github.com/EmmanuelM0147/inflammatory_speech_flagger">github.com/EmmanuelM0147/inflammatory_speech_flagger</a>
+      </div>
+      <div class="project">
+        <strong>ChefBot-AI</strong>
+        Grounded retrieval (RAG) with FastAPI, Qdrant, and Gemini, with PostgreSQL logging for monitoring.
+        <a href="https://github.com/EmmanuelM0147/ChefBot-AI">github.com/EmmanuelM0147/ChefBot-AI</a>
+      </div>
+      <div class="project">
+        <strong>FAQ RAG Pipeline</strong>
+        Semantic retrieval and LLM question answering in Python (LLM Zoomcamp).
+        <a href="https://github.com/EmmanuelM0147/faq-rag-llmzc">github.com/EmmanuelM0147/faq-rag-llmzc</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <p><strong>Data &amp; SQL:</strong> PostgreSQL · MySQL · query optimisation and indexing · schema design · Redis · SQLite</p>
+      <p><strong>Languages:</strong> Python · SQL · TypeScript · JavaScript · PHP (Laravel)</p>
+      <p><strong>Engineering:</strong> automated testing · validation checks · debugging · code review · REST APIs · technical documentation</p>
+      <p><strong>Tooling:</strong> Git · GitHub Actions · Docker · AWS · Jupyter · pandas · scikit-learn · FastAPI</p>
+      <p><strong>Applied AI:</strong> LLM APIs · prompt/schema contracts · RAG (Qdrant, Gemini) · classical ML baselines</p>
+    </section>
+
+    <section>
+      <h2>Education &amp; Training</h2>
+      <p>
+        B.Tech (Hons.), Ladoke Akintola University of Technology, Nigeria ·
+        Backend Engineering, AltSchool Africa ·
+        AI/ML Fellowship, 3MTT (NITDA) ·
+        LLM Zoomcamp, DataTalksClub ·
+        AI School (LLMs &amp; AI Agents), African Tech Foundation (in progress)
+      </p>
+      <p><strong>Languages:</strong> English (fluent)</p>
+    </section>
+  </body>
+</html>
