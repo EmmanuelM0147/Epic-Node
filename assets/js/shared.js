@@ -3,7 +3,7 @@ const SITE_CONFIG = {
   githubUsername: "EmmanuelM0147",
   siteTitle: "Emmanuel Okeowo - Applied AI Engineer",
   siteName: "Emmanuel Okeowo",
-  logoUrl: "assets/logo.png",
+  logoUrl: "assets/logo.svg",
   portfolioUrl: "https://epicnode.hostless.site",
   ogImageUrl: "https://epicnode.hostless.site/assets/og-image.png",
   email: "okeowoemmanuelm@gmail.com",
@@ -76,8 +76,9 @@ async function bootstrapPage(activeTab, hydrate) {
 
 function updateLoaderBrand() {
   const brand = SITE_CONFIG.siteName || "Emmanuel Okeowo";
+  const logoUrl = `${assetUrl(SITE_CONFIG.logoUrl || "assets/logo.svg")}?v=20261116`;
   document.querySelectorAll(".app-loader-brand").forEach((el) => {
-    el.textContent = brand;
+    el.innerHTML = `<img class="app-loader-logo" src="${escapeHtml(logoUrl)}" alt="" width="28" height="28" decoding="async" /><span>${escapeHtml(brand)}</span>`;
   });
 }
 
@@ -405,7 +406,7 @@ function renderHeader() {
 
   const theme = document.documentElement.getAttribute("data-theme") || "dark";
   const brandName = SITE_CONFIG.siteName || "Emmanuel Okeowo";
-  const logoUrl = assetUrl(SITE_CONFIG.logoUrl || "assets/logo.png");
+  const logoUrl = `${assetUrl(SITE_CONFIG.logoUrl || "assets/logo.svg")}?v=20261116`;
   header.innerHTML = `
     <div class="site-header-inner">
       <a class="site-brand" href="${pageUrl("index.html")}" aria-label="${escapeHtml(brandName)} home">

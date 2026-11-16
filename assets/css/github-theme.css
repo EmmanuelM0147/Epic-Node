@@ -1629,10 +1629,21 @@ body.page-cv .page-content {
 }
 
 .app-loader-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
   font-family: var(--font-stack);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--color-fg-muted);
+}
+
+.app-loader-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  flex-shrink: 0;
 }
