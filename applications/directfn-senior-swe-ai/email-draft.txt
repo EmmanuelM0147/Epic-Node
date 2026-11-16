@@ -7,7 +7,7 @@ Hello DirectFN Team,
 
 I'm applying for the Senior Software Engineer - AI role.
 
-I build applied AI systems in production: RAG pipelines, LLM integrations, prompt and schema contracts, and agent-style workflows. At Kings Technologies And Innovations I own Gardenia AI features and the AI Tools workspace (Python, FastAPI, recommendation APIs). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
+I build applied AI systems in production: RAG pipelines, LLM integrations, prompt and schema contracts, and agent-style workflows. At Kings Technologies And Innovations I build GFIS (multi-tenant NestJS APIs, MQTT ingest, TimescaleDB telemetry). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
 
 I focus on retrieval, evaluation, and reliable backend integration. Open to confirm remote or location expectations early.
 

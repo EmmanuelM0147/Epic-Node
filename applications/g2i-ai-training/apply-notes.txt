@@ -4,7 +4,7 @@ Headline fit:
 Senior backend and applied AI engineer. Production Node.js/TypeScript and Python/FastAPI. Daily Cursor use for AI-assisted development. Comfortable judging agent output on engineering taste, not just syntax.
 
 Cursor / AI workflow:
-I use Cursor as my primary IDE across Node.js/TypeScript (Keyrium) and Python/FastAPI (Kings / Gardenia AI). I review agent diffs for correctness, missing edge cases, unsafe assumptions, and whether the explanation would help a senior engineer ship safely.
+I use Cursor as my primary IDE across Node.js/TypeScript (Keyrium) and TypeScript/NestJS (Kings / GFIS). I review agent diffs for correctness, missing edge cases, unsafe assumptions, and whether the explanation would help a senior engineer ship safely.
 
 Evaluation angle:
 I already do senior code review on production systems. For coding agents I care about useful preamble, correct high-level approach, honest uncertainty, and whether the interaction builds trust, not only whether the snippet compiles.

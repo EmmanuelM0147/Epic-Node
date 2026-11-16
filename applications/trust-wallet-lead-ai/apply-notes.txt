@@ -1,6 +1,6 @@
 Trust Wallet Ashby - short pitch (do not claim Go or Web3 employer)
 
-I'm an Applied AI Engineer who ships LLM features into production backends: recommendation APIs and prompt/schema contracts at Kings Technologies (Gardenia / AI Tools workspace, Python + FastAPI), plus grounded RAG systems (ChefBot-AI, FAQ pipeline, Qdrant/Gemini) and RAG-assisted internal tooling alongside Keyrium fintech APIs.
+I'm an Applied AI Engineer who ships LLM features into production backends: GFIS at Kings Technologies (multi-tenant NestJS APIs, MQTT ingest, TimescaleDB telemetry), plus grounded RAG systems (ChefBot-AI, FAQ pipeline, Qdrant/Gemini) and RAG-assisted internal tooling alongside Keyrium fintech APIs.
 
 I own production concerns that map to this role: API contracts, retrieval quality, iteration after launch, and backend integration. My primary languages today are Python and TypeScript/Node.js. I do not claim production Golang, and I have not worked at a crypto wallet or DeFi protocol. I am applying because the agent/RAG/eval ownership matches what I already ship, and I can ramp Go for Trust Wallet's AI services if that is the team's language.
 

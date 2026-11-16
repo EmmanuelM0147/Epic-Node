@@ -1,13 +1,13 @@
 {
   "projects": [
     {
-      "name": "Gardenia AI",
-      "dates": "Dec 2025 – Present",
-      "description": "Recommendation APIs and AI Tools workspace for Gardenia. REST APIs, prompt/schema contracts, and environment-controlled live model access with Python and FastAPI.",
-      "language": "Python",
-      "technologies": ["Python", "FastAPI", "REST APIs", "LLM Integration", "RAG"],
+      "name": "Generator Fuel Intelligence System (GFIS)",
+      "dates": "Aug 2026 – Present",
+      "description": "Multi-tenant NestJS API for generator fuel and site operations: role-scoped REST, MQTT device ingest, TimescaleDB telemetry, and a deployed lab environment used by web/mobile clients.",
+      "language": "TypeScript",
+      "technologies": ["NestJS", "Fastify", "Drizzle ORM", "PostgreSQL/TimescaleDB", "Redis", "MQTT/EMQX", "Docker", "Caddy"],
       "private": true,
-      "updated_at": "2025-12-01T00:00:00Z"
+      "updated_at": "2026-08-01T00:00:00Z"
     },
     {
       "name": "Loyalty & Rewards API",

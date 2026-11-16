@@ -13,4 +13,4 @@
 ## Honest gaps
 - JD asks for Golang AI backends - current stack is Python/FastAPI and Node/TypeScript
 - Prefers 1+ year crypto/DeFi/Web3 company - Keyrium stock-trading is fintech, not wallet/Web3
-- 10k+ active users on LLM features - do not invent metrics; speak to production ownership at Kings/Gardenia and shipped RAG systems
+- 10k+ active users on LLM features - do not invent metrics; speak to production ownership at Kings/GFIS and shipped RAG systems

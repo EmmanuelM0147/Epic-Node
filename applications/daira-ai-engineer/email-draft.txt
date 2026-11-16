@@ -7,7 +7,7 @@ Hello Daira Team,
 
 I'm applying for the AI Engineer role.
 
-I build applied AI systems in production — RAG pipelines, LLM integrations, and internal agent-style workflows — not just experiments. At Kings Technologies And Innovations I own Gardenia AI features (recommendation APIs, prompt/schema contracts, FastAPI). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
+I build applied AI systems in production — RAG pipelines, LLM integrations, and internal agent-style workflows — not just experiments. At Kings Technologies And Innovations I build GFIS (multi-tenant NestJS APIs, MQTT ingest, TimescaleDB telemetry). Side projects include ChefBot-AI (grounded RAG with Qdrant and Gemini), an FAQ RAG pipeline, and RAG-assisted tooling at Keyrium alongside production fintech APIs.
 
 I'm curious about new AI capabilities, but I focus on shipping useful features: retrieval, evaluation, monitoring, and reliable backend integration.
 
