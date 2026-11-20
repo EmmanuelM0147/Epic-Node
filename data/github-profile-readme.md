@@ -4,11 +4,9 @@
 ## About Me
 Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.
 
-I ship applied AI features and production fintech backends, including recommendation APIs, LLM integrations, and scalable REST services on Node.js, TypeScript, PostgreSQL, and AWS.
+At Kings Technologies And Innovations I build GFIS (NestJS, MQTT, TimescaleDB). At Keyrium Consulting I lead fintech backends on Node.js, TypeScript, PostgreSQL, and AWS.
 
 Side projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.
-
-Previously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.
 
 Open to **applied AI engineering** and senior backend roles (hybrid or remote).
 

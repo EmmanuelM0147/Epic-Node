@@ -1,6 +1,6 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-20",
   "headline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · Python · Node.js · TypeScript · PostgreSQL · APIs",
   "linkedinHeadline": "Applied AI Engineer | LLM Apps, RAG & Agents | Lead Backend (TypeScript, Node.js, Python, PostgreSQL)",
   "aboutTagline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · PostgreSQL · APIs",
@@ -13,7 +13,7 @@
   "intro": "Open to hybrid and remote applied AI and senior backend roles focused on RAG, LLM integration, and production APIs.",
   "cvIntro": "Applied AI Engineer specializing in RAG pipelines, LLM integration, and production APIs. At Kings Technologies And Innovations I build the Generator Fuel Intelligence System (GFIS); at Keyrium Consulting I lead fintech backend platforms. I design grounded retrieval systems, scalable backend services, and reliable cloud infrastructure from architecture through deployment.",
   "portfolioAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations I build GFIS — a multi-tenant NestJS API for generator fuel and site operations with role-scoped REST, MQTT device ingest, and TimescaleDB telemetry. I also lead backend development for fintech platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "githubAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nI ship production backends including GFIS (NestJS, MQTT, TimescaleDB) and fintech APIs on Node.js, TypeScript, PostgreSQL, and AWS, plus applied AI side projects with FastAPI and Qdrant.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines.\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "githubAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations I build GFIS (NestJS, MQTT, TimescaleDB). At Keyrium Consulting I lead fintech backends on Node.js, TypeScript, PostgreSQL, and AWS.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
   "linkedinAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations, I build the Generator Fuel Intelligence System (GFIS): multi-tenant NestJS APIs for generator fuel and site operations, role-scoped REST, MQTT device ingest, TimescaleDB telemetry, and a deployed lab environment for web/mobile clients.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, a testing framework with 85% code coverage, and RAG-assisted internal documentation search.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
@@ -64,7 +64,7 @@
       "location": "Lagos State, Nigeria · Remote",
       "dates": "Dec 2025 – Present",
       "employmentType": "Full-time",
-      "description": "Build the Generator Fuel Intelligence System (GFIS): multi-tenant NestJS APIs for generator fuel and site operations, role-scoped REST, MQTT device ingest, TimescaleDB telemetry, and a deployed lab environment used by web/mobile clients.",
+      "description": "• Build the Generator Fuel Intelligence System (GFIS): multi-tenant NestJS APIs for generator fuel and site operations\n• Ship role-scoped REST, MQTT device ingest, and TimescaleDB telemetry for web/mobile clients\n• Run a deployed lab environment with Docker, Redis, EMQX, and Caddy",
       "technologies": ["NestJS", "Fastify", "TypeScript", "Drizzle ORM", "PostgreSQL/TimescaleDB", "Redis", "MQTT/EMQX", "Docker", "Caddy"]
     },
     {
@@ -73,7 +73,7 @@
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Aug 2026 – Present",
       "employmentType": "Full-time",
-      "description": "Lead development of production REST APIs for Loyalty Rewards and Stock Trading platforms using Node.js and TypeScript. Architect secure systems, manage third-party integrations, and oversee Docker-based deployment workflows. Prototype RAG-assisted internal tooling for documentation search with Python (FastAPI).",
+      "description": "• Lead production REST APIs for Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL)\n• Own architecture, third-party integrations, Docker/AWS deployment, and CI/CD\n• Prototype RAG-assisted internal tooling for documentation search with Python (FastAPI)\n• Maintain a testing framework with ~85% code coverage",
       "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs", "FastAPI"]
     },
     {
@@ -82,7 +82,7 @@
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Jul 2025 – Jul 2026",
       "employmentType": "Full-time",
-      "description": "Architected secure systems and integrated third-party services for seamless multi-channel communication. Established a comprehensive testing framework with 85% code coverage and significantly reduced post-deployment bug reports.",
+      "description": "• Architected secure systems and third-party integrations for multi-channel communication\n• Established a testing framework with 85% code coverage and reduced post-deployment bug reports\n• Delivered production REST APIs with Node.js, TypeScript, PostgreSQL, and Docker",
       "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "REST APIs"]
     },
     {
@@ -91,7 +91,7 @@
       "location": "United Kingdom · Remote",
       "dates": "Sep 2025 – Nov 2025 · Contract",
       "employmentType": "Contract",
-      "description": "Refactored and optimized database queries by adding targeted indexes and streamlining joins, achieving 40–60% faster query times with reduced latency. Streamlined the middleware stack to improve API throughput by 30–50%. Introduced Redis-backed caching and tuned cache headers for faster repeat reads on high-traffic endpoints.",
+      "description": "• Optimized database queries with indexes and streamlined joins (40–60% faster query times)\n• Streamlined middleware to improve API throughput by 30–50%\n• Introduced Redis-backed caching and tuned cache headers for high-traffic endpoints",
       "technologies": ["Node.js", "Express.js", "MySQL", "Redis", "Performance Optimization"]
     },
     {
@@ -100,7 +100,7 @@
       "location": "Lagos State, Nigeria · Remote",
       "dates": "Apr 2025 – Jul 2025 · Freelance",
       "employmentType": "Freelance",
-      "description": "Engineered the backend for a dynamic event management web platform enabling users to discover, RSVP to, and manage events seamlessly. Built RESTful APIs with Node.js and Express, implemented JWT-based role authentication, integrated PayStack and PCI-DSS compliance, and optimized PostgreSQL schemas for secure, scalable performance under concurrent load.",
+      "description": "• Built the backend for an event management platform (discover, RSVP, manage events)\n• Delivered REST APIs with Node.js/Express, JWT role auth, and PayStack with PCI-DSS considerations\n• Optimized PostgreSQL schemas for secure performance under concurrent load",
       "technologies": ["Node.js", "Express.js", "PostgreSQL", "JWT", "PayStack", "PCI-DSS"]
     },
     {
@@ -109,7 +109,7 @@
       "location": "Lagos State, Nigeria · Hybrid",
       "dates": "Jan 2023 – Jun 2025",
       "employmentType": "Full-time",
-      "description": "Built server-side caching and cache-control tuning that reduced repeat asset load times on key routes by up to 80%. Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC and integrations for email, SMS, and push notifications. Connected backend APIs to the client app with stable contracts and responsive data flows.",
+      "description": "• Built server-side caching and cache-control tuning that cut repeat asset load times by up to 80%\n• Shipped multi-provider auth (JWT, OAuth 2.0, MFA) with RBAC\n• Integrated email, SMS, and push notifications with stable API contracts to the client app",
       "technologies": ["Node.js", "OAuth 2.0", "JWT", "AWS", "Caching", "RBAC"]
     },
     {
@@ -118,7 +118,7 @@
       "location": "Long Island, Virginia, United States · Remote",
       "dates": "Aug 2022 – Dec 2022",
       "employmentType": "Internship",
-      "description": "Built full-stack applications using React, Python, Django REST Framework, and PostgreSQL to demonstrate production-ready code architecture. Sharpened algorithmic problem-solving through intensive DSA workshops covering time complexity, optimization, and system design fundamentals.",
+      "description": "• Built full-stack apps with React, Python, Django REST Framework, and PostgreSQL\n• Strengthened DSA and system-design fundamentals through workshops and project delivery",
       "technologies": ["React", "Python", "Django", "PostgreSQL", "DSA"]
     },
     {
@@ -127,7 +127,7 @@
       "location": "Lagos State, Nigeria · Remote",
       "dates": "Apr 2021 – May 2022",
       "employmentType": "Full-time",
-      "description": "Maintained and extended web applications built on the Laravel framework, optimizing backend architecture for reliable data management. Designed relational database schemas in MySQL to securely handle records, course progress tracking, and content management. Built responsive, mobile-friendly dashboards and course catalogs using Bootstrap, improving user engagement and content accessibility across devices.",
+      "description": "• Maintained and extended Laravel web apps with reliable MySQL data management\n• Designed relational schemas for records, course progress, and content management\n• Built responsive dashboards and course catalogs with Bootstrap",
       "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"]
     }
   ],
