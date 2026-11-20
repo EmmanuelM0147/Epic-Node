@@ -1,20 +1,20 @@
 {
   "profileUrl": "https://www.linkedin.com/in/okeowoemmanuelm/",
   "updatedAt": "2026-11-20",
-  "headline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · Python · Node.js · TypeScript · PostgreSQL · APIs",
-  "linkedinHeadline": "Applied AI Engineer | LLM Apps, RAG & Agents | Lead Backend (TypeScript, Node.js, Python, PostgreSQL)",
-  "aboutTagline": "Applied AI Engineer · RAG & LLM Systems · Production Backends · PostgreSQL · APIs",
+  "headline": "AI Engineer | LLM Apps, RAG & Agents | Lead Backend (TypeScript, Node.js, Python, PostgreSQL)",
+  "linkedinHeadline": "AI Engineer | LLM Apps, RAG & Agents | Lead Backend (TypeScript, Node.js, Python, PostgreSQL)",
+  "aboutTagline": "Software Engineer specializing in AI and Data Systems",
   "portfolioUrl": "https://epicnode.hostless.site",
   "currentCompany": "Kings Technologies And Innovations",
-  "stackLine": "RAG & LLM Systems · Production Backends · Python · Node.js · TypeScript · PostgreSQL · APIs",
-  "roleLabel": "an Applied AI Engineer",
-  "githubBio": "Applied AI Engineer · RAG & LLM Systems · Production Backends · epicnode.hostless.site",
-  "sidebarBio": "Applied AI Engineer building RAG pipelines, LLM systems, and production backends.",
-  "intro": "Open to hybrid and remote applied AI and senior backend roles focused on RAG, LLM integration, and production APIs.",
-  "cvIntro": "Applied AI Engineer specializing in RAG pipelines, LLM integration, and production APIs. At Kings Technologies And Innovations I build the Generator Fuel Intelligence System (GFIS); at Keyrium Consulting I lead fintech backend platforms. I design grounded retrieval systems, scalable backend services, and reliable cloud infrastructure from architecture through deployment.",
-  "portfolioAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations I build GFIS — a multi-tenant NestJS API for generator fuel and site operations with role-scoped REST, MQTT device ingest, and TimescaleDB telemetry. I also lead backend development for fintech platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "githubAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations I build GFIS (NestJS, MQTT, TimescaleDB). At Keyrium Consulting I lead fintech backends on Node.js, TypeScript, PostgreSQL, and AWS.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
-  "linkedinAbout": "Applied AI Engineer building production RAG pipelines, LLM systems, and the backend APIs that power them.\n\nAt Kings Technologies And Innovations, I build the Generator Fuel Intelligence System (GFIS): multi-tenant NestJS APIs for generator fuel and site operations, role-scoped REST, MQTT device ingest, TimescaleDB telemetry, and a deployed lab environment for web/mobile clients.\n\nAt Keyrium Consulting, I lead backend development for Loyalty Rewards and Stock Trading platforms using Node.js, TypeScript, PostgreSQL, Redis, and AWS. I own architecture, third-party integrations, Docker deployment, CI/CD, a testing framework with 85% code coverage, and RAG-assisted internal documentation search.\n\nSide projects include grounded recipe RAG (ChefBot-AI), FAQ semantic search, and ML classification pipelines with FastAPI and Qdrant.\n\nPreviously, I've improved API and database performance by 30–80% across production backends and shipped multi-provider auth systems (JWT, OAuth 2.0, MFA, RBAC) to production.\n\nOpen to applied AI engineering and senior backend roles (hybrid or remote).\n\nPortfolio: epicnode.hostless.site · okeowoemmanuelm@gmail.com",
+  "stackLine": "TypeScript · Node.js · NestJS · Python · PostgreSQL · React · AWS",
+  "roleLabel": "an AI Engineer",
+  "githubBio": "AI Engineer building LLM systems, RAG pipelines, agentic apps, and APIs.",
+  "sidebarBio": "AI Engineer building LLM systems, RAG pipelines, agentic apps, and APIs.",
+  "intro": "Open to hybrid and remote AI engineering and lead backend roles focused on LLM apps, RAG, agents, and production APIs.",
+  "cvIntro": "Software Engineer specializing in AI and Data Systems, with experience building production fintech APIs, LLM-powered applications, RAG pipelines, and agent workflows. At Kings Technologies And Innovations I ship AI recommendation services and the AI Tools workspace; at Keyrium Consulting I lead fintech backend platforms.",
+  "portfolioAbout": "I am a Software Engineer specializing in AI and Data Systems, with experience building production fintech APIs, LLM-powered applications, RAG pipelines, and agent workflows.\n\nI lead engineering teams building products across backend systems, mobile applications, and cloud platforms. My responsibilities span engineering strategy, system architecture, technical reviews, budgeting, performance management, and collaboration with C-level executives on product direction, cost optimization, and portfolio growth. I remain actively involved in hands-on development.\n\nMy technical experience includes TypeScript, Node.js, NestJS, Python, PostgreSQL, React, and related ecosystems. My current focus is on AWS, AI/ML integration, and cloud-native architectures.\n\nPortfolio: [epicnode.hostless.site](https://epicnode.hostless.site) · [okeowoemmanuelm@gmail.com](mailto:okeowoemmanuelm@gmail.com)",
+  "githubAbout": "Software Engineer specialized in AI & Data systems with experience building production fintech APIs and LLM-powered systems including RAG pipelines, and agent workflows. I lead an engineering organization building full-stack products across diverse domains: Backend APIs, Mobile apps, and cloud platforms. I manage the complete engineering lifecycle, architectural reviews and specifications, quarterly budget management, performance management, code reviews, and strategic planning with C-level executives on pricing, cost optimization, and portfolio evolution. I still write code regularly. I have frequently switched between technologies, becoming proficient in TypeScript, Python, NodeJS, NestJS, PostgreSQL, React, and other related ecosystems. My current target area of expertise is around Amazon Web Services, AI/ML integration and cloud native architectures.",
+  "linkedinAbout": "I am a Software Engineer specializing in AI and Data Systems, with experience building production fintech APIs, LLM-powered applications, RAG pipelines, and agent workflows.\n\nI lead engineering teams building products across backend systems, mobile applications, and cloud platforms. My responsibilities span engineering strategy, system architecture, technical reviews, budgeting, performance management, and collaboration with C-level executives on product direction, cost optimization, and portfolio growth. I remain actively involved in hands-on development.\n\nMy technical experience includes TypeScript, Node.js, NestJS, Python, PostgreSQL, React, and related ecosystems. My current focus is on AWS, AI/ML integration, and cloud-native architectures.\n\nPortfolio: epicnode.hostless.site\nokeowoemmanuelm@gmail.com",
   "linkedinFeatured": [
     {
       "title": "ChefBot AI: Inventory-Aware RAG",
@@ -49,11 +49,11 @@
     "softwareSince": 2021,
     "lead": "Career Arc: Building applied AI systems and production backends with RAG pipelines, LLM integration, and scalable API infrastructure",
     "highlights": [
-      "Applied AI in Production: RAG pipelines, LLM integrations, and RAG-assisted internal tooling",
-      "Production-Grade Backends: multi-tenant NestJS APIs, MQTT ingest, TimescaleDB telemetry, and PostgreSQL at scale",
-      "Applied AI Systems: RAG pipelines, FastAPI + Qdrant retrieval, Gemini streaming, and agentic workflows",
-      "Core Tech Stack: Node.js, TypeScript, and Python with Docker, AWS, and CI/CD automation",
-      "Data & Infrastructure: PostgreSQL, Redis, Qdrant vector search, query optimization, and secure authentication",
+      "Backend & fintech systems: high-concurrency APIs, ledgers, and transactional workflows",
+      "Production engineering: Docker, AWS, CI/CD with GitHub Actions, and testing with Pytest",
+      "Applied AI: RAG pipelines, agentic apps with LangChain/LangGraph, vector search with Qdrant/Pinecone",
+      "Core Tech Stack: TypeScript, Python, Node.js, NestJS, PostgreSQL, React, and AWS",
+      "Leadership: engineering lifecycle, architecture reviews, budgeting, and C-level planning",
       "Continuous Growth: ATF AI School, LLM Zoomcamp, 3MTT AI/ML (NITDA), IAENG membership, and applied AI programs"
     ]
   },
@@ -64,8 +64,8 @@
       "location": "Lagos State, Nigeria · Remote",
       "dates": "Dec 2025 – Present",
       "employmentType": "Full-time",
-      "description": "• Build the Generator Fuel Intelligence System (GFIS): multi-tenant NestJS APIs for generator fuel and site operations\n• Ship role-scoped REST, MQTT device ingest, and TimescaleDB telemetry for web/mobile clients\n• Run a deployed lab environment with Docker, Redis, EMQX, and Caddy",
-      "technologies": ["NestJS", "Fastify", "TypeScript", "Drizzle ORM", "PostgreSQL/TimescaleDB", "Redis", "MQTT/EMQX", "Docker", "Caddy"]
+      "description": "• Implemented AI recommendation services through REST APIs used in the AI Tools workspace\n• Designed prompt and schema contracts, controlling live AI access through environment variables\n• Build with Python, FastAPI, and LLM integrations",
+      "technologies": ["Python", "FastAPI", "REST APIs", "LLM Integration", "RAG"]
     },
     {
       "title": "Lead Backend Engineer",
@@ -73,8 +73,8 @@
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Aug 2026 – Present",
       "employmentType": "Full-time",
-      "description": "• Lead production REST APIs for Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL)\n• Own architecture, third-party integrations, Docker/AWS deployment, and CI/CD\n• Prototype RAG-assisted internal tooling for documentation search with Python (FastAPI)\n• Maintain a testing framework with ~85% code coverage",
-      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS", "REST APIs", "FastAPI"]
+      "description": "• Architect systems, manage third-party integrations, and oversee Docker deployments\n• Lead production REST APIs for Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL)\n• Prototyped RAG-assisted internal tools for documentation search with Python (FastAPI)",
+      "technologies": ["TypeScript", "Node.js", "PostgreSQL", "Docker", "AWS", "REST APIs", "FastAPI"]
     },
     {
       "title": "Senior Software Engineer",
@@ -82,8 +82,8 @@
       "location": "Lagos Island, Lagos State, Nigeria · Hybrid",
       "dates": "Jul 2025 – Jul 2026",
       "employmentType": "Full-time",
-      "description": "• Architected secure systems and third-party integrations for multi-channel communication\n• Established a testing framework with 85% code coverage and reduced post-deployment bug reports\n• Delivered production REST APIs with Node.js, TypeScript, PostgreSQL, and Docker",
-      "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Docker", "REST APIs"]
+      "description": "• Architected secure systems and integrated third-party services for seamless multi-channel communication\n• Established a testing framework with 85% code coverage and reduced post-deployment bug reports",
+      "technologies": ["TypeScript", "Node.js", "PostgreSQL", "Docker", "REST APIs"]
     },
     {
       "title": "Software Engineer",
