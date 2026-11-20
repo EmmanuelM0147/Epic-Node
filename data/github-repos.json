@@ -1,19 +1,45 @@
 {
   "username": "EmmanuelM0147",
-  "count": 61,
-  "synced_at": "2026-11-05T14:21:30.300Z",
+  "count": 63,
+  "synced_at": "2026-11-20T15:05:53.391Z",
   "repos": [
+    {
+      "name": "ws-eng-conduit-ai-assessment",
+      "full_name": "EmmanuelM0147/ws-eng-conduit-ai-assessment",
+      "html_url": "https://github.com/EmmanuelM0147/ws-eng-conduit-ai-assessment",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": true,
+      "private": false,
+      "updated_at": "2026-11-20T08:40:28Z",
+      "updated": "Nov 2026"
+    },
     {
       "name": "Epic-Node",
       "full_name": "EmmanuelM0147/Epic-Node",
       "html_url": "https://github.com/EmmanuelM0147/Epic-Node",
       "description": "Personal portfolio site for Emmanuel Okeowo",
-      "language": "JavaScript",
+      "language": "HTML",
       "stargazers_count": 1,
       "forks_count": 0,
       "fork": false,
       "private": false,
-      "updated_at": "2026-11-04T14:00:56Z",
+      "updated_at": "2026-11-16T17:56:39Z",
+      "updated": "Nov 2026"
+    },
+    {
+      "name": "ldr-app",
+      "full_name": "EmmanuelM0147/ldr-app",
+      "html_url": "https://github.com/EmmanuelM0147/ldr-app",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "fork": false,
+      "private": false,
+      "updated_at": "2026-11-12T21:32:15Z",
       "updated": "Nov 2026"
     },
     {
