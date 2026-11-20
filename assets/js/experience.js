@@ -1,7 +1,17 @@
 function splitDescriptionBullets(text) {
   if (!text) return [];
 
-  return text
+  const normalized = String(text).replace(/\r\n/g, "\n").trim();
+  if (!normalized) return [];
+
+  if (/^•\s/m.test(normalized) || normalized.includes("\n")) {
+    return normalized
+      .split(/\n+/)
+      .map((line) => line.replace(/^•\s*/, "").trim())
+      .filter(Boolean);
+  }
+
+  return normalized
     .split(/(?<=[.!?])\s+/)
     .map((sentence) => sentence.trim())
     .filter(Boolean);
