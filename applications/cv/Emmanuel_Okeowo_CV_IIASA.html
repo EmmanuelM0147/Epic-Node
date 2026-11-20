@@ -1,145 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Emmanuel Okeowo - CV (IIASA Research Software Engineer)</title>
-    <link rel="stylesheet" href="_cv-print.css" />
-    <style>
-      @page { size: A4; margin: 12mm 15mm; }
-      .job { margin-bottom: 8px; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Emmanuel Okeowo</h1>
-      <p class="subtitle">Software Engineer · SQL &amp; Data Workflows · Python · Testing &amp; Validation · Applied AI</p>
-      <p class="contact">
-        Lagos, Nigeria (willing to relocate to Austria) ·
-        <a href="mailto:okeowoemmanuelm@gmail.com">okeowoemmanuelm@gmail.com</a> ·
-        <a href="https://epicnode.hostless.site">epicnode.hostless.site</a> ·
-        <a href="https://github.com/EmmanuelM0147">github.com/EmmanuelM0147</a> ·
-        <a href="https://www.linkedin.com/in/okeowoemmanuelm/">linkedin.com/in/okeowoemmanuelm</a>
-      </p>
-    </header>
-
-    <section>
-      <h2>Summary</h2>
-      <p>
-        Software engineer with five years of production work on database-backed applications. I write and tune SQL on
-        PostgreSQL and MySQL, build data and API workflows in Python and TypeScript, and treat tests, validation checks,
-        and documentation as part of the job. I have modernised legacy applications, cut query latency by fixing indexes
-        and joins, and I use LLMs in production with strict schema validation, which is the kind of practical AI I would
-        bring to scientific workflows.
-      </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="job">
-        <div class="job-head"><span>Artificial Intelligence Engineer - Kings Technologies And Innovations</span><span>Dec 2025 - Present</span></div>
-        <div class="job-meta">Lagos, Nigeria · Remote · Full-time</div>
-        <ul>
-          <li>Build GFIS multi-tenant NestJS APIs with MQTT ingest and TimescaleDB telemetry for site operations.</li>
-          <li>Design prompt and schema contracts so model output is typed and validated; malformed responses are rejected before they reach clients.</li>
-          <li>Control live model access through environment configuration, so models can be switched or disabled without a redeploy.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Lead Backend Engineer - Keyrium Consulting</span><span>Aug 2026 - Present</span></div>
-        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
-        <ul>
-          <li>Lead production REST APIs for Loyalty Rewards and Stock Trading platforms (Node.js, TypeScript, PostgreSQL), including KYC-adjacent onboarding.</li>
-          <li>Own schema design, code review, third-party integrations, and Docker-based deployment.</li>
-          <li>Prototyped RAG-assisted internal documentation search with Python (FastAPI).</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Senior Software Engineer - Keyrium Consulting</span><span>Jul 2025 - Jul 2026</span></div>
-        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
-        <ul>
-          <li>Established a testing framework with ~85% code coverage that reduced post-deployment bug reports.</li>
-          <li>Built secure integrations with third-party services for multi-channel communication.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Software Engineer - MySoundsGlobal</span><span>Sep 2025 - Nov 2025</span></div>
-        <div class="job-meta">United Kingdom · Remote · Contract</div>
-        <ul>
-          <li>Profiled slow MySQL queries behind a high-traffic Node.js API; targeted indexes and simplified joins cut query time 40-60%.</li>
-          <li>Streamlined middleware and added Redis caching, raising API throughput 30-50%.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Backend Software Engineer - Talenvo</span><span>Apr 2025 - Jul 2025</span></div>
-        <div class="job-meta">Remote · Freelance</div>
-        <ul>
-          <li>Built the backend for an event platform: REST APIs in Node.js/Express, PostgreSQL schemas tuned for concurrent load, JWT role auth, PayStack payments.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Software Engineer - Folio Technologies Ltd</span><span>Jan 2023 - Jun 2025</span></div>
-        <div class="job-meta">Lagos, Nigeria · Hybrid · Full-time</div>
-        <ul>
-          <li>Built server-side caching that cut repeat load times on key routes by up to 80%.</li>
-          <li>Delivered a multi-provider auth layer (JWT, OAuth 2.0, MFA) with RBAC, and stable API contracts for the client app.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Associate Software Engineer (Internship) - Headstarter</span><span>Aug 2022 - Dec 2022</span></div>
-        <div class="job-meta">Remote</div>
-        <ul>
-          <li>Built full-stack applications with Python, Django REST Framework, PostgreSQL, and React.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="job-head"><span>Web Developer - Macloyd Africa</span><span>Apr 2021 - May 2022</span></div>
-        <div class="job-meta">Lagos, Nigeria · Remote · Full-time</div>
-        <ul>
-          <li>Maintained and extended existing Laravel applications; designed MySQL schemas for records, course progress, and content.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Research &amp; Data Projects</h2>
-      <div class="project">
-        <strong>Inflammatory Speech Flagger (research sample attached)</strong>
-        Baseline classifier for inflammatory speech in 20,176 Nigerian tweets (Mendeley dataset, DOI 10.17632/r5jsynhxsx.1).
-        TF-IDF + logistic regression with class weighting; held-out evaluation (accuracy 0.84, hate-class recall 0.75);
-        documented limitations; FastAPI service that logs every prediction and user feedback for monitoring.
-        <a href="https://github.com/EmmanuelM0147/inflammatory_speech_flagger">github.com/EmmanuelM0147/inflammatory_speech_flagger</a>
-      </div>
-      <div class="project">
-        <strong>ChefBot-AI</strong>
-        Grounded retrieval (RAG) with FastAPI, Qdrant, and Gemini, with PostgreSQL logging for monitoring.
-        <a href="https://github.com/EmmanuelM0147/ChefBot-AI">github.com/EmmanuelM0147/ChefBot-AI</a>
-      </div>
-      <div class="project">
-        <strong>FAQ RAG Pipeline</strong>
-        Semantic retrieval and LLM question answering in Python (LLM Zoomcamp).
-        <a href="https://github.com/EmmanuelM0147/faq-rag-llmzc">github.com/EmmanuelM0147/faq-rag-llmzc</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <p><strong>Data &amp; SQL:</strong> PostgreSQL · MySQL · query optimisation and indexing · schema design · Redis · SQLite</p>
-      <p><strong>Languages:</strong> Python · SQL · TypeScript · JavaScript · PHP (Laravel)</p>
-      <p><strong>Engineering:</strong> automated testing · validation checks · debugging · code review · REST APIs · technical documentation</p>
-      <p><strong>Tooling:</strong> Git · GitHub Actions · Docker · AWS · Jupyter · pandas · scikit-learn · FastAPI</p>
-      <p><strong>Applied AI:</strong> LLM APIs · prompt/schema contracts · RAG (Qdrant, Gemini) · classical ML baselines</p>
-    </section>
-
-    <section>
-      <h2>Education &amp; Training</h2>
-      <p>
-        B.Tech (Hons.), Ladoke Akintola University of Technology, Nigeria ·
-        Backend Engineering, AltSchool Africa ·
-        AI/ML Fellowship, 3MTT (NITDA) ·
-        LLM Zoomcamp, DataTalksClub ·
-        AI School (LLMs &amp; AI Agents), African Tech Foundation (in progress)
-      </p>
-      <p><strong>Languages:</strong> English (fluent)</p>
-    </section>
-  </body>
-</html>
+—<—!—D—O—C—T—Y—P—E— —h—t—m—l—>——
+—<—h—t—m—l— —l—a—n—g—=—"—e—n—"—>——
+— — —<—h—e—a—d—>——
+— — — — —<—m—e—t—a— —c—h—a—r—s—e—t—=—"—U—T—F—-—8—"— —/—>——
+— — — — —<—t—i—t—l—e—>—E—m—m—a—n—u—e—l— —O—k—e—o—w—o— —-— —C—V— —(—I—I—A—S—A— —R—e—s—e—a—r—c—h— —S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r—)—<—/—t—i—t—l—e—>——
+— — — — —<—l—i—n—k— —r—e—l—=—"—s—t—y—l—e—s—h—e—e—t—"— —h—r—e—f—=—"—_—c—v—-—p—r—i—n—t—.—c—s—s—"— —/—>——
+— — — — —<—s—t—y—l—e—>——
+— — — — — — —@—p—a—g—e— —{— —s—i—z—e—:— —A—4—;— —m—a—r—g—i—n—:— —1—2—m—m— —1—5—m—m—;— —}——
+— — — — — — —.—j—o—b— —{— —m—a—r—g—i—n—-—b—o—t—t—o—m—:— —8—p—x—;— —}——
+— — — — —<—/—s—t—y—l—e—>——
+— — —<—/—h—e—a—d—>——
+— — —<—b—o—d—y—>——
+— — — — —<—h—e—a—d—e—r—>——
+— — — — — — —<—h—1—>—E—m—m—a—n—u—e—l— —O—k—e—o—w—o—<—/—h—1—>——
+— — — — — — —<—p— —c—l—a—s—s—=—"—s—u—b—t—i—t—l—e—"—>—S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —·— —S—Q—L— —&—a—m—p—;— —D—a—t—a— —W—o—r—k—f—l—o—w—s— —·— —P—y—t—h—o—n— —·— —T—e—s—t—i—n—g— —&—a—m—p—;— —V—a—l—i—d—a—t—i—o—n— —·— —A—p—p—l—i—e—d— —A—I—<—/—p—>——
+— — — — — — —<—p— —c—l—a—s—s—=—"—c—o—n—t—a—c—t—"—>——
+— — — — — — — — —L—a—g—o—s—,— —N—i—g—e—r—i—a— —(—w—i—l—l—i—n—g— —t—o— —r—e—l—o—c—a—t—e— —t—o— —A—u—s—t—r—i—a—)— —·——
+— — — — — — — — —<—a— —h—r—e—f—=—"—m—a—i—l—t—o—:—o—k—e—o—w—o—e—m—m—a—n—u—e—l—m—@—g—m—a—i—l—.—c—o—m—"—>—o—k—e—o—w—o—e—m—m—a—n—u—e—l—m—@—g—m—a—i—l—.—c—o—m—<—/—a—>— —·——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—e—p—i—c—n—o—d—e—.—h—o—s—t—l—e—s—s—.—s—i—t—e—"—>—e—p—i—c—n—o—d—e—.—h—o—s—t—l—e—s—s—.—s—i—t—e—<—/—a—>— —·——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—"—>—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—<—/—a—>— —·——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—w—w—w—.—l—i—n—k—e—d—i—n—.—c—o—m—/—i—n—/—o—k—e—o—w—o—e—m—m—a—n—u—e—l—m—/—"—>—l—i—n—k—e—d—i—n—.—c—o—m—/—i—n—/—o—k—e—o—w—o—e—m—m—a—n—u—e—l—m—<—/—a—>——
+— — — — — — —<—/—p—>——
+— — — — —<—/—h—e—a—d—e—r—>——
+——
+— — — — —<—s—e—c—t—i—o—n—>——
+— — — — — — —<—h—2—>—S—u—m—m—a—r—y—<—/—h—2—>——
+— — — — — — —<—p—>——
+— — — — — — — — —S—o—f—t—w—a—r—e— —e—n—g—i—n—e—e—r— —w—i—t—h— —f—i—v—e— —y—e—a—r—s— —o—f— —p—r—o—d—u—c—t—i—o—n— —w—o—r—k— —o—n— —d—a—t—a—b—a—s—e—-—b—a—c—k—e—d— —a—p—p—l—i—c—a—t—i—o—n—s—.— —I— —w—r—i—t—e— —a—n—d— —t—u—n—e— —S—Q—L— —o—n——
+— — — — — — — — —P—o—s—t—g—r—e—S—Q—L— —a—n—d— —M—y—S—Q—L—,— —b—u—i—l—d— —d—a—t—a— —a—n—d— —A—P—I— —w—o—r—k—f—l—o—w—s— —i—n— —P—y—t—h—o—n— —a—n—d— —T—y—p—e—S—c—r—i—p—t—,— —a—n—d— —t—r—e—a—t— —t—e—s—t—s—,— —v—a—l—i—d—a—t—i—o—n— —c—h—e—c—k—s—,——
+— — — — — — — — —a—n—d— —d—o—c—u—m—e—n—t—a—t—i—o—n— —a—s— —p—a—r—t— —o—f— —t—h—e— —j—o—b—.— —I— —h—a—v—e— —m—o—d—e—r—n—i—s—e—d— —l—e—g—a—c—y— —a—p—p—l—i—c—a—t—i—o—n—s—,— —c—u—t— —q—u—e—r—y— —l—a—t—e—n—c—y— —b—y— —f—i—x—i—n—g— —i—n—d—e—x—e—s——
+— — — — — — — — —a—n—d— —j—o—i—n—s—,— —a—n—d— —I— —u—s—e— —L—L—M—s— —i—n— —p—r—o—d—u—c—t—i—o—n— —w—i—t—h— —s—t—r—i—c—t— —s—c—h—e—m—a— —v—a—l—i—d—a—t—i—o—n—,— —w—h—i—c—h— —i—s— —t—h—e— —k—i—n—d— —o—f— —p—r—a—c—t—i—c—a—l— —A—I— —I— —w—o—u—l—d——
+— — — — — — — — —b—r—i—n—g— —t—o— —s—c—i—e—n—t—i—f—i—c— —w—o—r—k—f—l—o—w—s—.——
+— — — — — — —<—/—p—>——
+— — — — —<—/—s—e—c—t—i—o—n—>——
+——
+— — — — —<—s—e—c—t—i—o—n—>——
+— — — — — — —<—h—2—>—E—x—p—e—r—i—e—n—c—e—<—/—h—2—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—A—r—t—i—f—i—c—i—a—l— —I—n—t—e—l—l—i—g—e—n—c—e— —E—n—g—i—n—e—e—r— —-— —K—i—n—g—s— —T—e—c—h—n—o—l—o—g—i—e—s— —A—n—d— —I—n—n—o—v—a—t—i—o—n—s—<—/—s—p—a—n—>—<—s—p—a—n—>—D—e—c— —2—0—2—5— —-— —P—r—e—s—e—n—t—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—L—a—g—o—s—,— —N—i—g—e—r—i—a— —·— —R—e—m—o—t—e— —·— —F—u—l—l—-—t—i—m—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—B—u—i—l—d— —G—F—I—S— —m—u—l—t—i—-—t—e—n—a—n—t— —N—e—s—t—J—S— —A—P—I—s— —w—i—t—h— —M—Q—T—T— —i—n—g—e—s—t— —a—n—d— —T—i—m—e—s—c—a—l—e—D—B— —t—e—l—e—m—e—t—r—y— —f—o—r— —s—i—t—e— —o—p—e—r—a—t—i—o—n—s—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—D—e—s—i—g—n— —p—r—o—m—p—t— —a—n—d— —s—c—h—e—m—a— —c—o—n—t—r—a—c—t—s— —s—o— —m—o—d—e—l— —o—u—t—p—u—t— —i—s— —t—y—p—e—d— —a—n—d— —v—a—l—i—d—a—t—e—d—;— —m—a—l—f—o—r—m—e—d— —r—e—s—p—o—n—s—e—s— —a—r—e— —r—e—j—e—c—t—e—d— —b—e—f—o—r—e— —t—h—e—y— —r—e—a—c—h— —c—l—i—e—n—t—s—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—C—o—n—t—r—o—l— —l—i—v—e— —m—o—d—e—l— —a—c—c—e—s—s— —t—h—r—o—u—g—h— —e—n—v—i—r—o—n—m—e—n—t— —c—o—n—f—i—g—u—r—a—t—i—o—n—,— —s—o— —m—o—d—e—l—s— —c—a—n— —b—e— —s—w—i—t—c—h—e—d— —o—r— —d—i—s—a—b—l—e—d— —w—i—t—h—o—u—t— —a— —r—e—d—e—p—l—o—y—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—L—e—a—d— —B—a—c—k—e—n—d— —E—n—g—i—n—e—e—r— —-— —K—e—y—r—i—u—m— —C—o—n—s—u—l—t—i—n—g—<—/—s—p—a—n—>—<—s—p—a—n—>—A—u—g— —2—0—2—6— —-— —P—r—e—s—e—n—t—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—L—a—g—o—s—,— —N—i—g—e—r—i—a— —·— —H—y—b—r—i—d— —·— —F—u—l—l—-—t—i—m—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—L—e—a—d— —p—r—o—d—u—c—t—i—o—n— —R—E—S—T— —A—P—I—s— —f—o—r— —L—o—y—a—l—t—y— —R—e—w—a—r—d—s— —a—n—d— —S—t—o—c—k— —T—r—a—d—i—n—g— —p—l—a—t—f—o—r—m—s— —(—N—o—d—e—.—j—s—,— —T—y—p—e—S—c—r—i—p—t—,— —P—o—s—t—g—r—e—S—Q—L—)—,— —i—n—c—l—u—d—i—n—g— —K—Y—C—-—a—d—j—a—c—e—n—t— —o—n—b—o—a—r—d—i—n—g—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—O—w—n— —s—c—h—e—m—a— —d—e—s—i—g—n—,— —c—o—d—e— —r—e—v—i—e—w—,— —t—h—i—r—d—-—p—a—r—t—y— —i—n—t—e—g—r—a—t—i—o—n—s—,— —a—n—d— —D—o—c—k—e—r—-—b—a—s—e—d— —d—e—p—l—o—y—m—e—n—t—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—P—r—o—t—o—t—y—p—e—d— —R—A—G—-—a—s—s—i—s—t—e—d— —i—n—t—e—r—n—a—l— —d—o—c—u—m—e—n—t—a—t—i—o—n— —s—e—a—r—c—h— —w—i—t—h— —P—y—t—h—o—n— —(—F—a—s—t—A—P—I—)—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—S—e—n—i—o—r— —S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —-— —K—e—y—r—i—u—m— —C—o—n—s—u—l—t—i—n—g—<—/—s—p—a—n—>—<—s—p—a—n—>—J—u—l— —2—0—2—5— —-— —J—u—l— —2—0—2—6—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—L—a—g—o—s—,— —N—i—g—e—r—i—a— —·— —H—y—b—r—i—d— —·— —F—u—l—l—-—t—i—m—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—E—s—t—a—b—l—i—s—h—e—d— —a— —t—e—s—t—i—n—g— —f—r—a—m—e—w—o—r—k— —w—i—t—h— —~—8—5—%— —c—o—d—e— —c—o—v—e—r—a—g—e— —t—h—a—t— —r—e—d—u—c—e—d— —p—o—s—t—-—d—e—p—l—o—y—m—e—n—t— —b—u—g— —r—e—p—o—r—t—s—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—B—u—i—l—t— —s—e—c—u—r—e— —i—n—t—e—g—r—a—t—i—o—n—s— —w—i—t—h— —t—h—i—r—d—-—p—a—r—t—y— —s—e—r—v—i—c—e—s— —f—o—r— —m—u—l—t—i—-—c—h—a—n—n—e—l— —c—o—m—m—u—n—i—c—a—t—i—o—n—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —-— —M—y—S—o—u—n—d—s—G—l—o—b—a—l—<—/—s—p—a—n—>—<—s—p—a—n—>—S—e—p— —2—0—2—5— —-— —N—o—v— —2—0—2—5—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—U—n—i—t—e—d— —K—i—n—g—d—o—m— —·— —R—e—m—o—t—e— —·— —C—o—n—t—r—a—c—t—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—P—r—o—f—i—l—e—d— —s—l—o—w— —M—y—S—Q—L— —q—u—e—r—i—e—s— —b—e—h—i—n—d— —a— —h—i—g—h—-—t—r—a—f—f—i—c— —N—o—d—e—.—j—s— —A—P—I—;— —t—a—r—g—e—t—e—d— —i—n—d—e—x—e—s— —a—n—d— —s—i—m—p—l—i—f—i—e—d— —j—o—i—n—s— —c—u—t— —q—u—e—r—y— —t—i—m—e— —4—0—-—6—0—%—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—S—t—r—e—a—m—l—i—n—e—d— —m—i—d—d—l—e—w—a—r—e— —a—n—d— —a—d—d—e—d— —R—e—d—i—s— —c—a—c—h—i—n—g—,— —r—a—i—s—i—n—g— —A—P—I— —t—h—r—o—u—g—h—p—u—t— —3—0—-—5—0—%—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—B—a—c—k—e—n—d— —S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —-— —T—a—l—e—n—v—o—<—/—s—p—a—n—>—<—s—p—a—n—>—A—p—r— —2—0—2—5— —-— —J—u—l— —2—0—2—5—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—R—e—m—o—t—e— —·— —F—r—e—e—l—a—n—c—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—B—u—i—l—t— —t—h—e— —b—a—c—k—e—n—d— —f—o—r— —a—n— —e—v—e—n—t— —p—l—a—t—f—o—r—m—:— —R—E—S—T— —A—P—I—s— —i—n— —N—o—d—e—.—j—s—/—E—x—p—r—e—s—s—,— —P—o—s—t—g—r—e—S—Q—L— —s—c—h—e—m—a—s— —t—u—n—e—d— —f—o—r— —c—o—n—c—u—r—r—e—n—t— —l—o—a—d—,— —J—W—T— —r—o—l—e— —a—u—t—h—,— —P—a—y—S—t—a—c—k— —p—a—y—m—e—n—t—s—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —-— —F—o—l—i—o— —T—e—c—h—n—o—l—o—g—i—e—s— —L—t—d—<—/—s—p—a—n—>—<—s—p—a—n—>—J—a—n— —2—0—2—3— —-— —J—u—n— —2—0—2—5—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—L—a—g—o—s—,— —N—i—g—e—r—i—a— —·— —H—y—b—r—i—d— —·— —F—u—l—l—-—t—i—m—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—B—u—i—l—t— —s—e—r—v—e—r—-—s—i—d—e— —c—a—c—h—i—n—g— —t—h—a—t— —c—u—t— —r—e—p—e—a—t— —l—o—a—d— —t—i—m—e—s— —o—n— —k—e—y— —r—o—u—t—e—s— —b—y— —u—p— —t—o— —8—0—%—.—<—/—l—i—>——
+— — — — — — — — — — —<—l—i—>—D—e—l—i—v—e—r—e—d— —a— —m—u—l—t—i—-—p—r—o—v—i—d—e—r— —a—u—t—h— —l—a—y—e—r— —(—J—W—T—,— —O—A—u—t—h— —2—.—0—,— —M—F—A—)— —w—i—t—h— —R—B—A—C—,— —a—n—d— —s—t—a—b—l—e— —A—P—I— —c—o—n—t—r—a—c—t—s— —f—o—r— —t—h—e— —c—l—i—e—n—t— —a—p—p—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—A—s—s—o—c—i—a—t—e— —S—o—f—t—w—a—r—e— —E—n—g—i—n—e—e—r— —(—I—n—t—e—r—n—s—h—i—p—)— —-— —H—e—a—d—s—t—a—r—t—e—r—<—/—s—p—a—n—>—<—s—p—a—n—>—A—u—g— —2—0—2—2— —-— —D—e—c— —2—0—2—2—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—R—e—m—o—t—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—B—u—i—l—t— —f—u—l—l—-—s—t—a—c—k— —a—p—p—l—i—c—a—t—i—o—n—s— —w—i—t—h— —P—y—t—h—o—n—,— —D—j—a—n—g—o— —R—E—S—T— —F—r—a—m—e—w—o—r—k—,— —P—o—s—t—g—r—e—S—Q—L—,— —a—n—d— —R—e—a—c—t—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—"—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—h—e—a—d—"—>—<—s—p—a—n—>—W—e—b— —D—e—v—e—l—o—p—e—r— —-— —M—a—c—l—o—y—d— —A—f—r—i—c—a—<—/—s—p—a—n—>—<—s—p—a—n—>—A—p—r— —2—0—2—1— —-— —M—a—y— —2—0—2—2—<—/—s—p—a—n—>—<—/—d—i—v—>——
+— — — — — — — — —<—d—i—v— —c—l—a—s—s—=—"—j—o—b—-—m—e—t—a—"—>—L—a—g—o—s—,— —N—i—g—e—r—i—a— —·— —R—e—m—o—t—e— —·— —F—u—l—l—-—t—i—m—e—<—/—d—i—v—>——
+— — — — — — — — —<—u—l—>——
+— — — — — — — — — — —<—l—i—>—M—a—i—n—t—a—i—n—e—d— —a—n—d— —e—x—t—e—n—d—e—d— —e—x—i—s—t—i—n—g— —L—a—r—a—v—e—l— —a—p—p—l—i—c—a—t—i—o—n—s—;— —d—e—s—i—g—n—e—d— —M—y—S—Q—L— —s—c—h—e—m—a—s— —f—o—r— —r—e—c—o—r—d—s—,— —c—o—u—r—s—e— —p—r—o—g—r—e—s—s—,— —a—n—d— —c—o—n—t—e—n—t—.—<—/—l—i—>——
+— — — — — — — — —<—/—u—l—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — —<—/—s—e—c—t—i—o—n—>——
+——
+— — — — —<—s—e—c—t—i—o—n—>——
+— — — — — — —<—h—2—>—R—e—s—e—a—r—c—h— —&—a—m—p—;— —D—a—t—a— —P—r—o—j—e—c—t—s—<—/—h—2—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—p—r—o—j—e—c—t—"—>——
+— — — — — — — — —<—s—t—r—o—n—g—>—I—n—f—l—a—m—m—a—t—o—r—y— —S—p—e—e—c—h— —F—l—a—g—g—e—r— —(—r—e—s—e—a—r—c—h— —s—a—m—p—l—e— —a—t—t—a—c—h—e—d—)—<—/—s—t—r—o—n—g—>——
+— — — — — — — — —B—a—s—e—l—i—n—e— —c—l—a—s—s—i—f—i—e—r— —f—o—r— —i—n—f—l—a—m—m—a—t—o—r—y— —s—p—e—e—c—h— —i—n— —2—0—,—1—7—6— —N—i—g—e—r—i—a—n— —t—w—e—e—t—s— —(—M—e—n—d—e—l—e—y— —d—a—t—a—s—e—t—,— —D—O—I— —1—0—.—1—7—6—3—2—/—r—5—j—s—y—n—h—x—s—x—.—1—)—.——
+— — — — — — — — —T—F—-—I—D—F— —+— —l—o—g—i—s—t—i—c— —r—e—g—r—e—s—s—i—o—n— —w—i—t—h— —c—l—a—s—s— —w—e—i—g—h—t—i—n—g—;— —h—e—l—d—-—o—u—t— —e—v—a—l—u—a—t—i—o—n— —(—a—c—c—u—r—a—c—y— —0—.—8—4—,— —h—a—t—e—-—c—l—a—s—s— —r—e—c—a—l—l— —0—.—7—5—)—;——
+— — — — — — — — —d—o—c—u—m—e—n—t—e—d— —l—i—m—i—t—a—t—i—o—n—s—;— —F—a—s—t—A—P—I— —s—e—r—v—i—c—e— —t—h—a—t— —l—o—g—s— —e—v—e—r—y— —p—r—e—d—i—c—t—i—o—n— —a—n—d— —u—s—e—r— —f—e—e—d—b—a—c—k— —f—o—r— —m—o—n—i—t—o—r—i—n—g—.——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—i—n—f—l—a—m—m—a—t—o—r—y—_—s—p—e—e—c—h—_—f—l—a—g—g—e—r—"—>—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—i—n—f—l—a—m—m—a—t—o—r—y—_—s—p—e—e—c—h—_—f—l—a—g—g—e—r—<—/—a—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—p—r—o—j—e—c—t—"—>——
+— — — — — — — — —<—s—t—r—o—n—g—>—C—h—e—f—B—o—t—-—A—I—<—/—s—t—r—o—n—g—>——
+— — — — — — — — —G—r—o—u—n—d—e—d— —r—e—t—r—i—e—v—a—l— —(—R—A—G—)— —w—i—t—h— —F—a—s—t—A—P—I—,— —Q—d—r—a—n—t—,— —a—n—d— —G—e—m—i—n—i—,— —w—i—t—h— —P—o—s—t—g—r—e—S—Q—L— —l—o—g—g—i—n—g— —f—o—r— —m—o—n—i—t—o—r—i—n—g—.——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—C—h—e—f—B—o—t—-—A—I—"—>—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—C—h—e—f—B—o—t—-—A—I—<—/—a—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — — — —<—d—i—v— —c—l—a—s—s—=—"—p—r—o—j—e—c—t—"—>——
+— — — — — — — — —<—s—t—r—o—n—g—>—F—A—Q— —R—A—G— —P—i—p—e—l—i—n—e—<—/—s—t—r—o—n—g—>——
+— — — — — — — — —S—e—m—a—n—t—i—c— —r—e—t—r—i—e—v—a—l— —a—n—d— —L—L—M— —q—u—e—s—t—i—o—n— —a—n—s—w—e—r—i—n—g— —i—n— —P—y—t—h—o—n— —(—L—L—M— —Z—o—o—m—c—a—m—p—)—.——
+— — — — — — — — —<—a— —h—r—e—f—=—"—h—t—t—p—s—:—/—/—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—f—a—q—-—r—a—g—-—l—l—m—z—c—"—>—g—i—t—h—u—b—.—c—o—m—/—E—m—m—a—n—u—e—l—M—0—1—4—7—/—f—a—q—-—r—a—g—-—l—l—m—z—c—<—/—a—>——
+— — — — — — —<—/—d—i—v—>——
+— — — — —<—/—s—e—c—t—i—o—n—>——
+——
+— — — — —<—s—e—c—t—i—o—n—>——
+— — — — — — —<—h—2—>—T—e—c—h—n—i—c—a—l— —S—k—i—l—l—s—<—/—h—2—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—D—a—t—a— —&—a—m—p—;— —S—Q—L—:—<—/—s—t—r—o—n—g—>— —P—o—s—t—g—r—e—S—Q—L— —·— —M—y—S—Q—L— —·— —q—u—e—r—y— —o—p—t—i—m—i—s—a—t—i—o—n— —a—n—d— —i—n—d—e—x—i—n—g— —·— —s—c—h—e—m—a— —d—e—s—i—g—n— —·— —R—e—d—i—s— —·— —S—Q—L—i—t—e—<—/—p—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—L—a—n—g—u—a—g—e—s—:—<—/—s—t—r—o—n—g—>— —P—y—t—h—o—n— —·— —S—Q—L— —·— —T—y—p—e—S—c—r—i—p—t— —·— —J—a—v—a—S—c—r—i—p—t— —·— —P—H—P— —(—L—a—r—a—v—e—l—)—<—/—p—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—E—n—g—i—n—e—e—r—i—n—g—:—<—/—s—t—r—o—n—g—>— —a—u—t—o—m—a—t—e—d— —t—e—s—t—i—n—g— —·— —v—a—l—i—d—a—t—i—o—n— —c—h—e—c—k—s— —·— —d—e—b—u—g—g—i—n—g— —·— —c—o—d—e— —r—e—v—i—e—w— —·— —R—E—S—T— —A—P—I—s— —·— —t—e—c—h—n—i—c—a—l— —d—o—c—u—m—e—n—t—a—t—i—o—n—<—/—p—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—T—o—o—l—i—n—g—:—<—/—s—t—r—o—n—g—>— —G—i—t— —·— —G—i—t—H—u—b— —A—c—t—i—o—n—s— —·— —D—o—c—k—e—r— —·— —A—W—S— —·— —J—u—p—y—t—e—r— —·— —p—a—n—d—a—s— —·— —s—c—i—k—i—t—-—l—e—a—r—n— —·— —F—a—s—t—A—P—I—<—/—p—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—A—p—p—l—i—e—d— —A—I—:—<—/—s—t—r—o—n—g—>— —L—L—M— —A—P—I—s— —·— —p—r—o—m—p—t—/—s—c—h—e—m—a— —c—o—n—t—r—a—c—t—s— —·— —R—A—G— —(—Q—d—r—a—n—t—,— —G—e—m—i—n—i—)— —·— —c—l—a—s—s—i—c—a—l— —M—L— —b—a—s—e—l—i—n—e—s—<—/—p—>——
+— — — — —<—/—s—e—c—t—i—o—n—>——
+——
+— — — — —<—s—e—c—t—i—o—n—>——
+— — — — — — —<—h—2—>—E—d—u—c—a—t—i—o—n— —&—a—m—p—;— —T—r—a—i—n—i—n—g—<—/—h—2—>——
+— — — — — — —<—p—>——
+— — — — — — — — —B—.—T—e—c—h— —(—H—o—n—s—.—)—,— —L—a—d—o—k—e— —A—k—i—n—t—o—l—a— —U—n—i—v—e—r—s—i—t—y— —o—f— —T—e—c—h—n—o—l—o—g—y—,— —N—i—g—e—r—i—a— —·——
+— — — — — — — — —B—a—c—k—e—n—d— —E—n—g—i—n—e—e—r—i—n—g—,— —A—l—t—S—c—h—o—o—l— —A—f—r—i—c—a— —·——
+— — — — — — — — —A—I—/—M—L— —F—e—l—l—o—w—s—h—i—p—,— —3—M—T—T— —(—N—I—T—D—A—)— —·——
+— — — — — — — — —L—L—M— —Z—o—o—m—c—a—m—p—,— —D—a—t—a—T—a—l—k—s—C—l—u—b— —·——
+— — — — — — — — —A—I— —S—c—h—o—o—l— —(—L—L—M—s— —&—a—m—p—;— —A—I— —A—g—e—n—t—s—)—,— —A—f—r—i—c—a—n— —T—e—c—h— —F—o—u—n—d—a—t—i—o—n— —(—i—n— —p—r—o—g—r—e—s—s—)——
+— — — — — — —<—/—p—>——
+— — — — — — —<—p—>—<—s—t—r—o—n—g—>—L—a—n—g—u—a—g—e—s—:—<—/—s—t—r—o—n—g—>— —E—n—g—l—i—s—h— —(—f—l—u—e—n—t—)—<—/—p—>——
+— — — — —<—/—s—e—c—t—i—o—n—>——
+— — —<—/—b—o—d—y—>——
+—<—/—h—t—m—l—>——
+—
